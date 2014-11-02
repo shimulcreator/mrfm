@@ -1,0 +1,84 @@
+{% extends 'MaklarresursAdminBundle::layout.html.twig' %}
+{% set pageClass = 'customer' %}
+
+{% block title %}Home{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/mrfmadmin/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/mrfmadmin/css/font-awesome.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/mrfmadmin/css/jquery-ui.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/mrfmadmin/css/icheck/flat/blue.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/mrfmadmin/css/select2.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/mrfmadmin/css/unicorn.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/mrfmadmin/css/unicorn.blue.css') }}" class="skin-color" />
+
+{% endblock %}
+
+
+{% block body %}
+    <div id="content">
+        <div id="content-header">
+            <h1>Customer Management</h1>
+        </div>
+        <div id="breadcrumb">
+            <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+            <a href="#" class="current">Customer</a>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="widget-box">
+                    <div class="widget-title">
+                        <span class="icon">
+                            <i class="icon-th"></i>
+                        </span>
+                        <h5>Customer List</h5>
+                    </div>
+                    <div class="widget-content nopadding">
+                        <table class="table table-bordered table-striped table-hover data-table">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox" id="title-table-checkbox" name="title-table-checkbox" /></th>
+                                    <th>Company Name</th>
+                                    <th>Org Nr</th>
+                                    <th>Street Address</th>
+                                    <th>Billing address</th>
+                                    <th>Contact Person</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for entity in pagination %}
+                                    <tr class="gradeA">
+                                        <td><input type="checkbox" /></td>
+                                        <td>{{ entity.companyName }}</td>
+                                        <td>{{ entity.orgNr }}</td>
+                                        <td>{{ entity.streetAddress }}</td>
+                                        <td class="center">{{ entity.billingAddress }}</td>
+                                        <td>{{ entity.contactPerson }}</td>
+                                        <td><a href="{{ path('admin_user_edit', {'id': entity.id}) }}">Edit</a></td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <!-- ***************** - JavaScript Starts Here - ***************** -->
+    <script src="{{ asset('bundles/mrfmadmin/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('bundles/mrfmadmin/js/jquery-ui.custom.js') }}"></script>
+    <script src="{{ asset('bundles/mrfmadmin/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('bundles/mrfmadmin/js/jquery.icheck.min.js') }}"></script>
+    <script src="{{ asset('bundles/mrfmadmin/js/select2.min.js') }}"></script>
+    <script src="{{ asset('bundles/mrfmadmin/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('bundles/mrfmadmin/js/jquery.jpanelmenu.min.js') }}"></script>
+    <script src="{{ asset('bundles/mrfmadmin/js/jquery.nicescroll.min.js') }}"></script>
+    <script src="{{ asset('bundles/mrfmadmin/js/unicorn.js') }}"></script>
+    <script src="{{ asset('bundles/mrfmadmin/js/unicorn.tables.js') }}"></script>
+
+
+{% endblock %}

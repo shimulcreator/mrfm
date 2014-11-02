@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Mäklarresurs Sverige hjälper enskilda mäklare och byråer med bemanning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Lato' rel='stylesheet' type='text/css'>
+
+    {% block stylesheets %}
+        <link href="{{ asset('bundles/mrfmapp/css/style.css') }}" type="text/css" rel="stylesheet">
+        <link href="{{ asset('bundles/mrfmapp/css/_mobile.css') }}" type="text/css" rel="stylesheet">
+        <link href="{{ asset('bundles/mrfmapp/css/karma-political-blue.css') }}" type="text/css" rel="stylesheet">
+        <link href="{{ asset('bundles/mrfmapp/css/secondary-political-blue.css') }}" type="text/css" rel="stylesheet">
+        <link href="{{ asset('bundles/mrfmapp/css/_font-awesome.css') }}" type="text/css" rel="stylesheet">
+        <link href="{{ asset('bundles/mrfmapp/css/extra.css') }}" type="text/css" rel="stylesheet">
+
+    {% endblock %}
+
+</head>
+
+<body>
+    <div id="tt-wide-layout" class="content-style-default">
+        <div id="wrapper">
+            {%block header%}
+                {%include 'MaklarresursAppBundle::header.html.twig' %}
+            {%endblock%}
+
+            {% block body %}{% endblock %}
+
+            {%block footer%}
+                {%include 'MaklarresursAppBundle::footer.html.twig' %}
+            {%endblock%}
+
+
+            {% block javascripts %}
+                <!-- ***************** - JavaScript Starts Here - ***************** -->
+                <script type="text/javascript" src="{{ asset('bundles/mrfmapp/js/jquery.js') }}"></script>
+                <script type="text/javascript" src="{{ asset('bundles/mrfmapp/js/custom-main.js') }}"></script>
+                <script type="text/javascript" src="{{ asset('bundles/mrfmapp/js/superfish.js') }}"></script>
+                <script type="text/javascript" src="{{ asset('bundles/mrfmapp/js/jquery.flexslider.js') }}"></script>
+                <script type="text/javascript" src="{{ asset('bundles/mrfmapp/js/jquery.fitvids.js') }}"></script>
+                <script type="text/javascript" src="{{ asset('bundles/mrfmapp/js/scrollWatch.js') }}"></script>
+                <script type="text/javascript" src="{{ asset('bundles/mrfmapp/js/jquery.isotope.js') }}"></script>
+                <script type="text/javascript" src="{{ asset('bundles/mrfmapp/js/jquery.ui.core.min.js') }}"></script>
+                <script type="text/javascript" src="{{ asset('bundles/mrfmapp/js/jquery.ui.widget.min.js') }}"></script>
+                <script type="text/javascript" src="{{ asset('bundles/mrfmapp/js/jquery.ui.tabs.min.js') }}"></script>
+                <script type="text/javascript" src="{{ asset('bundles/mrfmapp/js/jquery.ui.accordion.min.js') }}"></script>
+                <script type="text/javascript" src="{{ asset('bundles/mrfmapp/js/jquery.prettyPhoto.js') }}"></script>
+                <script>
+                    jQuery(document).ready(function () {
+                        jQuery('.tt-parallax-text').fadeIn(1000); //delete this to remove fading content
+
+                        var $window = jQuery(window);
+                        jQuery('section[data-type="background"]').each(function () {
+                            var $bgobj = jQuery(this);
+
+                            jQuery(window).scroll(function () {
+                                var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+                                var coords = '50% ' + yPos + 'px';
+                                $bgobj.css({
+                                    backgroundPosition: coords
+                                });
+                            });
+                        });
+                    });
+                </script>
+
+                <!--[if !IE]><!--><script>
+                if (/*@cc_on!@*/false) {
+                    document.documentElement.className+=' ie10';
+                }
+            </script><!--<![endif]-->
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>

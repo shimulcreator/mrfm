@@ -1,0 +1,48 @@
+{% extends 'MaklarresursAppBundle::layout.html.twig' %}
+{% set pageClass = 'home' %}
+
+{% block title %}Home{% endblock %}
+
+
+{% block body %}
+
+
+    <!-- ***************** - Main Content Area - ***************** -->
+    <div id="main" class="tt-slider-karma-custom-jquery-1">
+        <div class="main-area">
+
+            <form action="{{ path("_login_check") }}" method="post">
+                <div class="form clear">
+                    {% if(_redir is defined) %}
+                        <input type="hidden" name="_redir" value="{{_redir}}" />
+                    {% endif %}
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                    {% if error %}
+                        <div style="color:red; text-align: center">{{ error }}</div>
+                    {% endif %}
+                    <div class="col-sm-12">
+                        <div class="spbox3">
+                            <p>User name<input type="text" id="username" name="_username" placeholder="Username" required="required" ></p>
+
+                            <p>Password<input type="password" id="password" name="_password" placeholder="Password" required="required" ></p>
+
+                            <p style="position: relative;">Remember Me <input type="checkbox" id="remember_me" name="_remember_me" value="on" checked="checked" style="margin: 0;position: absolute;left: 6px;"></p>
+                        </div>
+                    </div>
+                    <!-- /col-md-3 -->
+                    <div class="clear"></div>
+                    <input type="submit" placeholder="" value="Sign in"/>
+                    <span><a href="{{ path('fos_user_resetting_request') }}" style="color: #01BAEB;">Forget your password ?</a></span>
+
+
+                </div>
+                <!-- /col-md-3 -->
+            </form>
+
+        </div><!-- END main-area -->
+
+        <div id="footer-top">&nbsp;</div>
+    </div><!-- END main -->
+
+
+{% endblock %}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Maklarresurs Admin</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {% block stylesheets %}{% endblock %}
+
+</head>
+
+<body>
+    <div id="header">
+        <h1><a href="#">Maklarresurs Admin</a></h1>
+        <a id="menu-trigger" href="#"><i class="icon-align-justify"></i></a>
+    </div>
+
+    <div id="user-nav">
+        <ul class="btn-group">
+            <li class="btn"><a title="" href="#"><i class="icon-cog"></i> <span class="text">Settings</span></a></li>
+            <li class="btn"><a title="" href=""><i class="icon-share-alt"></i> <span class="text">Logout</span></a></li>
+        </ul>
+    </div>
+
+    <div id="sidebar">
+        <ul>
+            <li class="active"><a href="#"><i class="icon-home"></i> <span>Dashboard</span></a></li>
+            <li class="submenu">
+                <a href="#"><i class="icon-beaker"></i> <span>Zone</span> <i class="arrow icon-chevron-right"></i></a>
+                <ul>
+                    <li><a href="#">View Zones</a></li>
+                    <li><a href="#">Create Zone</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="#"><i class="icon-beaker"></i> <span>District</span> <i class="arrow icon-chevron-right"></i></a>
+                <ul>
+                    <li><a href="#">View Districts</a></li>
+                    <li><a href="#">Add District</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="#"><i class="icon-beaker"></i> <span>Customer</span> <i class="arrow icon-chevron-right"></i></a>
+                <ul>
+                    <li><a href="{{ path('admin_user') }}">View Customers</a></li>
+                    <li><a href="{{ path('admin_user_new') }}">Create Customers</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="#"><i class="icon-beaker"></i> <span>PDF Files</span> <i class="arrow icon-chevron-right"></i></a>
+            </li>
+
+            <li class="submenu">
+                <a href="#"><i class="icon-beaker"></i> <span>Create Order</span> <i class="arrow icon-chevron-right"></i></a>
+            </li>
+            <li class="submenu">
+                <a href="#"><i class="icon-beaker"></i> <span>Invoices</span> <i class="arrow icon-chevron-right"></i></a>
+            </li>
+            <li class="submenu">
+                <a href="#"><i class="icon-beaker"></i> <span>Administrate</span> <i class="arrow icon-chevron-right"></i></a>
+                <ul>
+                    <li><a href="#">View Users</a></li>
+                    <li><a href="#">Create Users</a></li>
+                </ul>
+            </li>
+
+        </ul>
+
+    </div>
+
+    {% block body %}{% endblock %}
+
+    <div class="row">
+        <div id="footer" class="col-xs-12">
+            2014 &copy; Maklarresurs Admin. Developed by <a href="#">Shimul</a>
+        </div>
+    </div>
+
+{% block javascripts %}{% endblock %}
+</body>
+</html>
