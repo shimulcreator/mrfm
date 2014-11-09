@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Maklarresurs Customer Panel</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {% block stylesheets %}{% endblock %}
+
+</head>
+
+<body>
+    <div id="header">
+        <h1><a href="#">Maklarresurs Admin</a></h1>
+        <a id="menu-trigger" href="#"><i class="icon-align-justify"></i></a>
+    </div>
+
+    <div id="user-nav">
+        <ul class="btn-group">
+            <li class="btn"><a title="" href="#"><i class="icon-cog"></i> <span class="text">Settings</span></a></li>
+            <li class="btn"><a title="" href=""><i class="icon-share-alt"></i> <span class="text">Logout</span></a></li>
+        </ul>
+    </div>
+
+    <div id="sidebar">
+        <ul>
+            <li class="active"><a href="#"><i class="icon-home"></i> <span>Dashboard</span></a></li>
+            <li class="submenu">
+                <a href="#"><i class="icon-beaker"></i> <span>LAPPNING</span> <i class="arrow icon-chevron-right"></i></a>
+                <ul>
+                    <li><a href="#">View Orders</a></li>
+                    <li><a href="{{ path('user_zones') }}">Create Order</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+    {% block body %}{% endblock %}
+
+    <div class="row">
+        <div id="footer" class="col-xs-12">
+            2014 &copy; Maklarresurs Admin. Developed by <a href="#">Shimul</a>
+        </div>
+    </div>
+
+{% block javascripts %}{% endblock %}
+</body>
+</html>

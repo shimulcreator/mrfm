@@ -26,17 +26,10 @@
         <ul>
             <li class="active"><a href="#"><i class="icon-home"></i> <span>Dashboard</span></a></li>
             <li class="submenu">
-                <a href="#"><i class="icon-beaker"></i> <span>Zone</span> <i class="arrow icon-chevron-right"></i></a>
+                <a href="#"><i class="icon-beaker"></i> <span>Address Management</span> <i class="arrow icon-chevron-right"></i></a>
                 <ul>
-                    <li><a href="#">View Zones</a></li>
-                    <li><a href="#">Create Zone</a></li>
-                </ul>
-            </li>
-            <li class="submenu">
-                <a href="#"><i class="icon-beaker"></i> <span>District</span> <i class="arrow icon-chevron-right"></i></a>
-                <ul>
-                    <li><a href="#">View Districts</a></li>
-                    <li><a href="#">Add District</a></li>
+                    <li><a href="{{ path('address') }}">View addresses</a></li>
+                    <li><a href="{{ path('address_create') }}">Create Address</a></li>
                 </ul>
             </li>
             <li class="submenu">

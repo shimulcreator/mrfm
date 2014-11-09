@@ -1,0 +1,121 @@
+[
+    {
+        "region": "SH",
+        "areas": [
+            {
+                "name": "Vasastan",
+                "regionalName": "Vasastan",
+                "mapRef": "VT",
+                "areas": [
+                    {
+                        "mapRef": "VT-A",
+                        "name": "District 1",
+                        "regionalName": "District 1"
+                    }, {
+                        "mapRef": "VT-B",
+                        "name": "District 2",
+                        "regionalName": "District 2"
+                    }, {
+                        "mapRef": "VT-C",
+                        "name": "District 3",
+                        "regionalName": "District 3"
+                    }, {
+                        "mapRef": "VT-D",
+                        "name": "District 4",
+                        "regionalName": "District 4"
+                    }, {
+                        "mapRef": "VT-E",
+                        "name": "District 5",
+                        "regionalName": "District 5"
+                    }, {
+                        "mapRef": "VT-F",
+                        "name": "District 6",
+                        "regionalName": "District 6"
+                    }, {
+                        "mapRef": "VT-G",
+                        "name": "District 7",
+                        "regionalName": "District 7"
+                    }, {
+                        "mapRef": "VT-H",
+                        "name": "District 8",
+                        "regionalName": "District 8"
+                    }, {
+                        "mapRef": "VT-I",
+                        "name": "District 9",
+                        "regionalName": "District 9"
+                    }, {
+                        "mapRef": "VT-J",
+                        "name": "District 10",
+                        "regionalName": "District 10"
+                    }, {
+                        "mapRef": "VT-K",
+                        "name": "District 11",
+                        "regionalName": "District 11"
+                    }, {
+                        "mapRef": "VT-L",
+                        "name": "District 12",
+                        "regionalName": "District 12"
+                    }, {
+                        "mapRef": "VT-M",
+                        "name": "District 13",
+                        "regionalName": "District 13"
+                    }, {
+                        "mapRef": "VT-N",
+                        "name": "District 14",
+                        "regionalName": "District 14"
+                    }, {
+                        "mapRef": "VT-O",
+                        "name": "District 15",
+                        "regionalName": "District 15"
+                    }, {
+                        "mapRef": "VT-P",
+                        "name": "District 16",
+                        "regionalName": "District 16"
+                    }, {
+                        "mapRef": "VT-Q",
+                        "name": "District 17",
+                        "regionalName": "District 17"
+                    }, {
+                        "mapRef": "VT-R",
+                        "name": "District 18",
+                        "regionalName": "District 18"
+                    }, {
+                        "mapRef": "VT-S",
+                        "name": "District 19",
+                        "regionalName": "District 19"
+                    }, {
+                        "mapRef": "VT-T",
+                        "name": "District 20",
+                        "regionalName": "District 20"
+                    }, {
+                        "mapRef": "VT-U",
+                        "name": "District 21",
+                        "regionalName": "District 21"
+                    }, {
+                        "mapRef": "VT-V",
+                        "name": "District 22",
+                        "regionalName": "District 22"
+                    }, {
+                        "mapRef": "VT-W",
+                        "name": "District 23",
+                        "regionalName": "District 23"
+                    }, {
+                        "mapRef": "VT-X",
+                        "name": "District 24",
+                        "regionalName": "District 24"
+                    }, {
+                        "mapRef": "VT-Y",
+                        "name": "District 25",
+                        "regionalName": "District 25"
+                    }, {
+                        "mapRef": "VT-Z",
+                        "name": "District 26",
+                        "regionalName": "District 26"
+                    }
+
+                ]
+            }
+
+        ]
+    }
+]
