@@ -1,10 +1,10 @@
 #default_run_options[:env] = { 'TERM' => 'xterm' }
-set :application, "Yettic"
-set :domain,      "yettic.fr"
-set :deploy_to,   "/var/www/yettic"
+set :application, "Maklarresurs"
+set :domain,      "shimulrahman.com"
+set :deploy_to,   "/var/www/Projects/maklarresurs.shimulrahman.com"
 set :app_path,    "app"
 
-set :repository,  "git@urontobolaka.com:yettic.git"
+set :repository,  "ssh://git@bitbucket.org/shimul/maklarresurs.git"
 set :scm,         :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `subversion`, `mercurial`, `perforce`, or `none`
 

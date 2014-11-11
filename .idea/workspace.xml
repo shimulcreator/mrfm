@@ -2,16 +2,360 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bd7fd47-5b2d-4491-ac9e-dd804a09b618" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/confirmed.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/overview.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Entity/Lappning.php" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Entity/Lappning.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Controller/OrderController.php" afterPath="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Controller/OrderController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/images/3-column-digital-creativity.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/images/3-column-van-surf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/images/3-column-wishy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/font/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/aero.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/aero.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/aero.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/aero@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/aero@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/aero@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/alpha.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/av1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/av1_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/av2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/av3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/images/bg-div-footer-top.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/images/bg-div-main.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/images/bg-footer-bottom-political-blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/images/blog-digital-creativity-65x65.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/images/blog-make-a-wish-65x65.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/images/blog-palm-van1-65x65.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/blue@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/blue@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/blue@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/16/book.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/book.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/breadcrumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/images/business-team.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/16/cabinet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/cabinet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/16/calendar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/calendar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/16/client.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/client.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/16/database.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/database.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/16/download.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/download.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/envelope.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/images/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/flat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/flat@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/font/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/font/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/font/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/futurico/futurico.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/futurico/futurico@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/images/global-sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/font/glyphiconshalflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/font/glyphiconshalflings-regular.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/font/glyphiconshalflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/font/glyphiconshalflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/16/graph.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/graph.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/green@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/green@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/green@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/grey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/grey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/grey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/grey@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/grey@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/grey@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/gritter-light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/gritter-long.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/gritter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/16/home.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/home.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/hue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/ie-spacer.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/img1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/img10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/img11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/img12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/img13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/img14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/img15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/img16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/img17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/img18.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/img2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/img3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/img4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/img5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/img6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/img7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/img8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/img9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/larrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/line/line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/line/line@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/images/loader-default.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/16/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/maestro-32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/16/mail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/mail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/menu-active.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/minimal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/minimal@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/images/open-book-magical.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/orange.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/orange.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/orange.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/orange@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/orange@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/orange@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/16/pdf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/pdf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/16/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/16/piechart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/piechart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/pink.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/pink.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/pink.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/pink@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/pink@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/pink@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/polaris/polaris.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/polaris/polaris@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/purple.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/purple.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/purple.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/purple@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/purple@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/purple@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/rarrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/demo/red-green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/red.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/red.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/red.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/red@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/red@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/red@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/images/responsive-wordpress.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/saturation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/16/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/select2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/select2x2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/16/shopping-bag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/shopping-bag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/spinner.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/square.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/square@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/16/survey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/survey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/16/tag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/tag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/jquery-ui/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/jquery-ui/ui-bg_glass_55_fbf9ee_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/jquery-ui/ui-bg_glass_65_ffffff_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/jquery-ui/ui-bg_glass_75_dadada_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/jquery-ui/ui-bg_glass_75_e6e6e6_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/jquery-ui/ui-bg_glass_75_ffffff_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/jquery-ui/ui-bg_highlight-soft_75_cccccc_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/jquery-ui/ui-bg_inset-soft_95_fef1ec_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/jquery-ui/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/jquery-ui/ui-icons_2e83ff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/jquery-ui/ui-icons_454545_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/jquery-ui/ui-icons_888888_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/jquery-ui/ui-icons_cd0a0a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/jquery-ui/ui-icons_f6cf3b_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/16/user.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/user.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/16/wallet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/wallet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/16/web.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/img/icons/32/web.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/yellow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/yellow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/yellow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/yellow@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/yellow@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/yellow@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/_all.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/line/_all.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/_all.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/_all.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/css/_font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/css/_mobile.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/aero.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/line/aero.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/aero.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/aero.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/all.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/line/blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/bootbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/bootbox.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/bootstrap-colorpicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/bootstrap-datepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/bootstrap-wysihtml5.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/bootstrap-wysihtml5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/colorpicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/js/custom-main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/datepicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/excanvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/excanvas.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/css/extra.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/flat.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/font/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/fullcalendar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/fullcalendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/fullcalendar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/futurico/futurico.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/font/glyphiconshalflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/green.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/line/green.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/green.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/green.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/grey.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/line/grey.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/grey.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/grey.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/mapjs/jquery-1.8.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/mapjs/jquery-jvectormap-2.0.1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/mapjs/jquery-jvectormap-2.0.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/mapjs/jquery-jvectormap-fr_regions-merc-en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery-ui.custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery-ui.custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.dataTables.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.dataTables.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/js/jquery.fitvids.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/js/jquery.flexslider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.flot.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.flot.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.flot.pie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.flot.pie.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.flot.resize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.flot.resize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/jquery.gritter.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.gritter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.gritter.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.icheck.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.icheck.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/js/jquery.isotope.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.jpanelmenu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.jpanelmenu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/jquery.jscrollpane.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.masonry.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.masonry.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.mousewheel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.nicescroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.nicescroll.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/js/jquery.prettyPhoto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.sparkline.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.sparkline.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/js/jquery.ui.accordion.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/js/jquery.ui.core.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/jquery.ui.ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/js/jquery.ui.tabs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/js/jquery.ui.widget.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.validate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/jquery.wizard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/css/karma-political-blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/line/line.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/minimal.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/mwheelintent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/orange.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/line/orange.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/orange.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/orange.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/pink.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/line/pink.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/pink.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/pink.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/polaris/polaris.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/purple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/line/purple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/purple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/purple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/red.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/line/red.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/red.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/red.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/js/scrollWatch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/css/secondary-political-blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/select2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/select2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/select2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/square.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public/js/superfish.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/unicorn-gallery.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/unicorn-login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/unicorn.blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/unicorn.calendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/unicorn.charts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/unicorn.chat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/unicorn.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/unicorn.dashboard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/unicorn.form_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/unicorn.form_validation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/unicorn.grey-old.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/unicorn.grey.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/unicorn.interface.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/unicorn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/unicorn.jui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/unicorn.light-blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/unicorn.login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/unicorn.login.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/unicorn.red-green.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/unicorn.red.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/unicorn.tables.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/unicorn.wizard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/js/wysihtml5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/flat/yellow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/line/yellow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/minimal/yellow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/icheck/square/yellow.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/address.html.twig" afterPath="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/address.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/confirmed.html.twig" afterPath="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/confirmed.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/deploy.rb" afterPath="$PROJECT_DIR$/app/config/deploy.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Address/edit.html.twig" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Address/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/User/edit.html.twig" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/User/edit.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/extras.html.twig" afterPath="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/extras.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/img.html.twig" afterPath="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/img.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/views/Login/login.html.twig" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/views/Login/login.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Address/index.html.twig" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Address/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Dashboard/index.html.twig" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Dashboard/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/User/index.html.twig" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/User/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Dashboard/index.html.twig" afterPath="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Dashboard/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/views/layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Address/new.html.twig" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Address/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/User/new.html.twig" afterPath="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/User/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/overview.html.twig" afterPath="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/overview.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters.yml.dist" afterPath="$PROJECT_DIR$/app/config/parameters.yml.dist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/zoneMap.html.twig" afterPath="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/zoneMap.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/zones.html.twig" afterPath="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/zones.html.twig" />
     </list>
     <ignored path="mrfm.localhost.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,14 +380,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="OrderController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Controller/OrderController.php">
+      <file leaf-file-name="overview.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/overview.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3316" max-vertical-offset="4230">
-              <caret line="225" column="20" selection-start-line="225" selection-start-column="20" selection-end-line="225" selection-end-column="20" />
-              <folding>
-                <element signature="e#54#107#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-4.6" vertical-offset="1147" max-vertical-offset="1650">
+              <caret line="101" column="52" selection-start-line="101" selection-start-column="52" selection-end-line="101" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,28 +393,30 @@
       <file leaf-file-name="confirmed.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/confirmed.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="58" max-vertical-offset="675">
-              <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+            <state vertical-scroll-proportion="-6.75" vertical-offset="0" max-vertical-offset="675">
+              <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Controller/UserController.php">
+      <file leaf-file-name="address.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/address.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2008" max-vertical-offset="2580">
-              <caret line="165" column="12" selection-start-line="165" selection-start-column="12" selection-end-line="165" selection-end-column="12" />
-              <folding />
+            <state vertical-scroll-proportion="-14.625" vertical-offset="0" max-vertical-offset="1305">
+              <caret line="78" column="52" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
+              <folding>
+                <element signature="e#1499#1540#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="overview.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/overview.html.twig">
+      <file leaf-file-name="zones.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/zones.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="453" max-vertical-offset="1650">
-              <caret line="44" column="66" selection-start-line="44" selection-start-column="66" selection-end-line="44" selection-end-column="66" />
+            <state vertical-scroll-proportion="-4.7625" vertical-offset="594" max-vertical-offset="1110">
+              <caret line="65" column="52" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -81,18 +425,33 @@
       <file leaf-file-name="img.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/img.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="1725">
-              <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+            <state vertical-scroll-proportion="-19.525" vertical-offset="13" max-vertical-offset="1725">
+              <caret line="105" column="52" selection-start-line="105" selection-start-column="52" selection-end-line="105" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zones.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/zones.html.twig">
+      <file leaf-file-name="zoneMap.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/zoneMap.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="293" max-vertical-offset="1110">
-              <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+            <state vertical-scroll-proportion="-1.525" vertical-offset="43" max-vertical-offset="1980">
+              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+              <folding>
+                <element signature="e#12#52#0#Twig" expanded="true" />
+                <element signature="e#1576#1633#0#HTML" expanded="true" />
+                <element signature="e#1664#1715#0#HTML" expanded="true" />
+                <element signature="e#1885#1967#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery-jvectormap-fr_regions-merc-en.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/bundles/maklarresursadmin/mapjs/jquery-jvectormap-fr_regions-merc-en.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="2.9948542" vertical-offset="174" max-vertical-offset="2190">
+              <caret line="128" column="11" selection-start-line="128" selection-start-column="11" selection-end-line="128" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -101,8 +460,8 @@
       <file leaf-file-name="extras.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/extras.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="1830">
-              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+            <state vertical-scroll-proportion="-21.1875" vertical-offset="0" max-vertical-offset="1830">
+              <caret line="113" column="52" selection-start-line="113" selection-start-column="52" selection-end-line="113" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -111,31 +470,21 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Dashboard/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="94" max-vertical-offset="690">
-              <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/views/Login/login.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24329159" vertical-offset="134" max-vertical-offset="1200">
-              <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lappning.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AppBundle/Entity/Lappning.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2578" max-vertical-offset="3255">
-              <caret line="188" column="0" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.5625" vertical-offset="0" max-vertical-offset="690">
+              <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
               <folding>
-                <element signature="e#49#81#0#PHP" expanded="true" />
+                <element signature="e#12#52#0#Twig" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createOrder.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/createOrder.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
+              <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -149,17 +498,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="php app/console doctrine:database:create" />
-      <command text="php app/console doctrine:schema:update --force" />
-      <command text="php app/console doctrine:fixtures:load" />
-      <command text="php app/console doctrine:database:drop --force" />
-      <command text="php app/console doctrine:database:create" />
-      <command text="php app/console doctrine:database:drop --force" />
-      <command text="php app/console doctrine:database:create" />
-      <command text="php app/console doctrine:schema:update --force" />
-      <command text="php app/console doctrine:fixtures:load" />
-      <command text="php app/console doctrine:database:drop --force" />
-      <command text="php app/console doctrine:database:create" />
       <command text="php app/console doctrine:schema:update --force" />
       <command text="php app/console doctrine:fixtures:load" />
       <command text="php app/console generate:doctrine:entity --entity=MaklarresursAppBundle:Address" />
@@ -174,6 +512,17 @@
       <command text="php app/console doctrine:fixtures:load" />
       <command text="php app/console generate:doctrine:entity --entity=MaklarresursAppBundle:Lappning" />
       <command text="php app/console doctrine:schema:update --force" />
+      <command text="cap deploy:setup" />
+      <command text="cap deploy" />
+      <command text="cap -d deploy" />
+      <command text="cap deploy" />
+      <command text="cap -d deploy" />
+      <command text="cap deploy" />
+      <command text="php app/console assets:install --symlink" />
+      <command text="php app/console assets:update" />
+      <command text="php app/console assets:install --symlink" />
+      <command text="php app/console cache:clear" />
+      <command text="php app/console assets:install --symlink" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -184,21 +533,15 @@
       <MyDateState />
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web/bundles/mrfmadmin/js/jquery.nicescroll.min.js" />
-        <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/User/new.html.twig" />
-        <option value="$PROJECT_DIR$/web/bundles/mrfmadmin/js/jquery.nicescroll.js" />
-        <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/User/edit.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Controller/DashboardController.php" />
-        <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Controller/DashboardController.php" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/AppBundle/EventListener/LoginListener.php" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Controller/LoginController.php" />
-        <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/User/index.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/deploy.rb" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Entity/Country.php" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Entity/Area.php" />
@@ -209,35 +552,44 @@
         <option value="$PROJECT_DIR$/src/Maklarresurs/AppBundle/DataFixtures/ORM/ZoneFixtures.php" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/AppBundle/DataFixtures/ORM/RegionFixtures.php" />
-        <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Dashboard/index.html.twig" />
         <option value="$PROJECT_DIR$/web/bundles/mrfmadmin/mapjs/jquery-jvectormap-2.0.1.css" />
         <option value="$PROJECT_DIR$/web/bundles/mrfmadmin/mapjs/jquery-jvectormap-fr_regions-merc-en.js" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/fixture-data/zones.json" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Entity/Address.php" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Entity/Address.php" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Entity/Address.php" />
-        <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Address/new.html.twig" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Form/AddressType.php" />
-        <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Address/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Controller/AddressController.php" />
-        <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Address/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/AppBundle/DataFixtures/ORM/LoadStaticData.php" />
-        <option value="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/zones.html.twig" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/createOrder.html.twig" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Form/DocumentType.php" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Entity/Document.php" />
-        <option value="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/zoneMap.html.twig" />
-        <option value="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/address.html.twig" />
-        <option value="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/img.html.twig" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Entity/Lappning.php" />
+        <option value="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Controller/OrderController.php" />
+        <option value="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/views/Login/login.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
+        <option value="$PROJECT_DIR$/app/config/deploy.rb" />
+        <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/unicorn.css" />
+        <option value="$PROJECT_DIR$/web/bundles/mrfmadmin/css/unicorn.css" />
+        <option value="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/User/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/User/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/User/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Dashboard/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Address/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Address/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Address/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/zones.html.twig" />
+        <option value="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/zoneMap.html.twig" />
+        <option value="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/overview.html.twig" />
+        <option value="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/img.html.twig" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/extras.html.twig" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/confirmed.html.twig" />
-        <option value="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/overview.html.twig" />
-        <option value="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Controller/OrderController.php" />
+        <option value="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/address.html.twig" />
         <option value="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Dashboard/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/views/Login/login.html.twig" />
+        <option value="$PROJECT_DIR$/web/bundles/maklarresursadmin/mapjs/jquery-jvectormap-fr_regions-merc-en.js" />
       </list>
     </option>
   </component>
@@ -322,6 +674,72 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="uploads" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mrfm.localhost.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mrfm.localhost.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bundles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mrfm.localhost.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mrfm.localhost.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bundles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maklarresursadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mrfm.localhost.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mrfm.localhost.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bundles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maklarresursadmin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -450,14 +868,6 @@
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -474,126 +884,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Maklarresurs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mrfm.localhost.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mrfm.localhost.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maklarresurs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mrfm.localhost.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mrfm.localhost.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maklarresurs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mrfm.localhost.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mrfm.localhost.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maklarresurs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mrfm.localhost.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mrfm.localhost.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maklarresurs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -641,7 +931,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mrfm.localhost.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mrfm.localhost.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maklarresurs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdminBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -675,11 +995,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/bundles/maklarresursadmin/mapjs" />
+      <recent name="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/public" />
+      <recent name="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public" />
       <recent name="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order" />
       <recent name="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Form" />
-      <recent name="$PROJECT_DIR$/src/Maklarresurs/AppBundle/Entity" />
-      <recent name="$PROJECT_DIR$/src/Maklarresurs/UserBundle/Entity" />
-      <recent name="$PROJECT_DIR$/web/bundles/mrfmadmin/mapjs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Entity" />
@@ -731,7 +1051,13 @@
       <option name="project" value="LOCAL" />
       <updated>1414970816077</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated Map funtion">
+      <created>1415724248917</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1415724248917</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -739,22 +1065,22 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24158126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29147288" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36899224" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24377745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24031007" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -779,7 +1105,8 @@
     </option>
     <MESSAGE value="Initial Project" />
     <MESSAGE value="Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test" />
+    <MESSAGE value="Updated Map funtion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Map funtion" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -788,58 +1115,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37751678" vertical-offset="0" max-vertical-offset="596">
-          <caret line="15" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7802013" vertical-offset="0" max-vertical-offset="596">
-          <caret line="31" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AppBundle/Controller/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1275">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="285">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AppBundle/Controller/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="540">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/deploy.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61864406" vertical-offset="501" max-vertical-offset="855">
-          <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.9411764" vertical-offset="75" max-vertical-offset="705">
@@ -882,13 +1157,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Dashboard/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="690">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Controller/DashboardController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="540">
@@ -900,20 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="435">
           <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/bundles/mrfmadmin/mapjs/jquery-jvectormap-2.0.1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2669903" vertical-offset="0" max-vertical-offset="2025">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/bundles/mrfmadmin/mapjs/jquery-jvectormap-2.0.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="50010">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -938,59 +1192,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/bundles/mrfmadmin/mapjs/jquery-jvectormap-fr_regions-merc-en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2190">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AppBundle/Entity/Area.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.2916665" vertical-offset="137" max-vertical-offset="3315">
           <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/User/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="2040">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/User/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.583333" vertical-offset="739" max-vertical-offset="1335">
-          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Address/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.4166665" vertical-offset="673" max-vertical-offset="1245">
-          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/User/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0" vertical-offset="360" max-vertical-offset="2025">
-          <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Address/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.583334" vertical-offset="628" max-vertical-offset="1260">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17307693" vertical-offset="366" max-vertical-offset="1185">
-          <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -1008,20 +1213,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.833333" vertical-offset="160" max-vertical-offset="810">
-          <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Address/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125" vertical-offset="315" max-vertical-offset="1260">
-          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AppBundle/Entity/Address.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.791667" vertical-offset="218" max-vertical-offset="1320">
@@ -1033,6 +1224,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2705" max-vertical-offset="3795">
           <caret line="190" column="43" selection-start-line="190" selection-start-column="43" selection-end-line="190" selection-end-column="43" />
+          <folding>
+            <element signature="e#55#100#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1047,43 +1241,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="530" max-vertical-offset="2745">
           <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/zoneMap.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5416667" vertical-offset="200" max-vertical-offset="1980">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/address.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.2083335" vertical-offset="307" max-vertical-offset="1305">
-          <caret line="32" column="110" selection-start-line="32" selection-start-column="110" selection-end-line="32" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/createOrder.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/zones.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="293" max-vertical-offset="1110">
-          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/img.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="1725">
-          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="e#49#81#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1092,7 +1252,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="2578" max-vertical-offset="3255">
           <caret line="188" column="0" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
           <folding>
-            <element signature="e#49#81#0#PHP" expanded="true" />
+            <element signature="e#49#81#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1112,52 +1272,270 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/extras.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Controller/OrderController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="1830">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3316" max-vertical-offset="4230">
+          <caret line="225" column="20" selection-start-line="225" selection-start-column="20" selection-end-line="225" selection-end-column="20" />
+          <folding>
+            <element signature="e#54#107#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/views/Login/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="1200">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding>
+            <element signature="e#12#51#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/confirmed.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="58" max-vertical-offset="675">
-          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/deploy.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.685185" vertical-offset="313" max-vertical-offset="855">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/public/css/unicorn.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="49755">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/views/header.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="1035">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/views/footer.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.875" vertical-offset="45" max-vertical-offset="1740">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/views/Home/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="2085">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4" vertical-offset="548" max-vertical-offset="1245">
+          <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.9375" vertical-offset="0" max-vertical-offset="1185">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/User/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.9" vertical-offset="8" max-vertical-offset="1335">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/User/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.125" vertical-offset="0" max-vertical-offset="2025">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+          <folding>
+            <element signature="e#12#53#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/User/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.85" vertical-offset="1537" max-vertical-offset="2040">
+          <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+          <folding>
+            <element signature="e#12#53#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Dashboard/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.75" vertical-offset="0" max-vertical-offset="690">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#53#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Address/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.7625" vertical-offset="729" max-vertical-offset="1245">
+          <caret line="74" column="52" selection-start-line="74" selection-start-column="52" selection-end-line="74" selection-end-column="52" />
+          <folding>
+            <element signature="e#12#53#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Address/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.575" vertical-offset="744" max-vertical-offset="1260">
+          <caret line="74" column="52" selection-start-line="74" selection-start-column="52" selection-end-line="74" selection-end-column="52" />
+          <folding>
+            <element signature="e#12#53#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Address/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.575" vertical-offset="744" max-vertical-offset="1260">
+          <caret line="74" column="52" selection-start-line="74" selection-start-column="52" selection-end-line="74" selection-end-column="52" />
+          <folding>
+            <element signature="e#12#53#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AdminBundle/Resources/views/Address/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="570">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="810">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/zones.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.7625" vertical-offset="594" max-vertical-offset="1110">
+          <caret line="65" column="52" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/overview.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="453" max-vertical-offset="1650">
-          <caret line="44" column="66" selection-start-line="44" selection-start-column="66" selection-end-line="44" selection-end-column="66" />
+        <state vertical-scroll-proportion="-4.6" vertical-offset="1147" max-vertical-offset="1650">
+          <caret line="101" column="52" selection-start-line="101" selection-start-column="52" selection-end-line="101" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Controller/OrderController.php">
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/img.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3316" max-vertical-offset="4230">
-          <caret line="225" column="20" selection-start-line="225" selection-start-column="20" selection-end-line="225" selection-end-column="20" />
+        <state vertical-scroll-proportion="-19.525" vertical-offset="13" max-vertical-offset="1725">
+          <caret line="105" column="52" selection-start-line="105" selection-start-column="52" selection-end-line="105" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/extras.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.1875" vertical-offset="0" max-vertical-offset="1830">
+          <caret line="113" column="52" selection-start-line="113" selection-start-column="52" selection-end-line="113" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/createOrder.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/confirmed.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.75" vertical-offset="0" max-vertical-offset="675">
+          <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/address.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.625" vertical-offset="0" max-vertical-offset="1305">
+          <caret line="78" column="52" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
           <folding>
-            <element signature="e#54#107#0#PHP" expanded="true" />
+            <element signature="e#1499#1540#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Dashboard/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="94" max-vertical-offset="690">
-          <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
-          <folding />
+        <state vertical-scroll-proportion="-0.5625" vertical-offset="0" max-vertical-offset="690">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding>
+            <element signature="e#12#52#0#Twig" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/AppBundle/Resources/views/Login/login.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Maklarresurs/UserBundle/Resources/views/Order/zoneMap.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24329159" vertical-offset="134" max-vertical-offset="1200">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        <state vertical-scroll-proportion="-1.525" vertical-offset="43" max-vertical-offset="1980">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding>
+            <element signature="e#12#52#0#Twig" expanded="true" />
+            <element signature="e#1576#1633#0#HTML" expanded="true" />
+            <element signature="e#1664#1715#0#HTML" expanded="true" />
+            <element signature="e#1885#1967#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/maklarresursadmin/mapjs/jquery-jvectormap-fr_regions-merc-en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.9948542" vertical-offset="174" max-vertical-offset="2190">
+          <caret line="128" column="11" selection-start-line="128" selection-start-column="11" selection-end-line="128" selection-end-column="11" />
           <folding />
         </state>
       </provider>

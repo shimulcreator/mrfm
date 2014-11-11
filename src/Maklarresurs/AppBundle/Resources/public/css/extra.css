@@ -1,0 +1,30 @@
+/* uncomment for IE8 rounded corners
+        #menu-main-nav .drop ul a,
+        #menu-main-nav .drop,
+        #menu-main-nav ul.sub-menu,
+        #menu-main-nav .drop .c,
+        #menu-main-nav li.parent, */
+#footer,
+.header-holder,
+#horizontal_nav ul li,
+#horizontal_nav ul a,
+#tt-gallery-nav li,
+#tt-gallery-nav a,
+ul.tabset li,
+ul.tabset a,
+.karma-pages a,
+.karma-pages span,
+.wp-pagenavi a,
+.wp-pagenavi span,
+.post_date,
+.post_comments,
+.ka_button,
+.flex-control-paging li a,
+.colored_box,
+.tools,
+.karma_notify
+.opener,
+.callout_button,
+.testimonials {
+    behavior: url(js/PIE/PIE.htc);
+}
