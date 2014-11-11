@@ -30,10 +30,10 @@
             <div class="col-xs-12">
                 <h3>Zone : Vasastan [ Total : {{ total }} addresses ]</h3>
 
-                <form action="{{ path('user_extras') }}" method="get">
+                <form action="{{ path('user_extras') }}" method="get" style="float: right; margin-right: 50px;">
                     <input type="hidden" name="district" value="{% for d in districts %} {{ d }}, {% endfor %}">
                     <input type="hidden" name="flyers" value="{{ total }}">
-                    <input type="submit" value="NEXT">
+                    <input type="submit" value="NEXT" class="btn btn-dark-red">
                 </form>
 
                 <div class="widget-box">

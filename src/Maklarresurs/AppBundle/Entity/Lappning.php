@@ -55,6 +55,11 @@ class Lappning
     protected $addressType;
 
     /**
+     * @ORM\Column(name="confirmation", type="boolean")
+     */
+    protected $confirmation;
+
+    /**
      * @ORM\Column(type="datetime", nullable=true)
      * @Gedmo\Timestampable(on="create")
      */
@@ -181,6 +186,24 @@ class Lappning
     {
         $this->user = $user;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getConfirmation()
+    {
+        return $this->confirmation;
+    }
+
+    /**
+     * @param mixed $confirmation
+     */
+    public function setConfirmation($confirmation)
+    {
+        $this->confirmation = $confirmation;
+    }
+
+
 
 
 

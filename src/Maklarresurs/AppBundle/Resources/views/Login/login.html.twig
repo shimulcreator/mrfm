@@ -6,10 +6,23 @@
 
 {% block body %}
 
+    <style>
+        input{
+            border: 1px solid #ccc;
+            height: 15px;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        input[type=submit]{
+            height: 25px;
+        }
+    </style>
 
     <!-- ***************** - Main Content Area - ***************** -->
     <div id="main" class="tt-slider-karma-custom-jquery-1">
         <div class="main-area">
+            <div class="spbox3" style="margin: 0 auto; width: 50%; height: auto; background: #ffffff; border: 1px solid #cccccc; border-radius: 5px; padding: 15px;">
+                <h1> Login Here</h1>
 
             <form action="{{ path("_login_check") }}" method="post">
                 <div class="form clear">
@@ -20,24 +33,38 @@
                     {% if error %}
                         <div style="color:red; text-align: center">{{ error }}</div>
                     {% endif %}
-                    <div class="col-sm-12">
-                        <div class="spbox3">
-                            <p>User name<input type="text" id="username" name="_username" placeholder="Username" required="required" ></p>
 
-                            <p>Password<input type="password" id="password" name="_password" placeholder="Password" required="required" ></p>
+                    <table>
+                        <tr>
+                            <td>Username :</td>
+                            <td><input type="text" id="username" name="_username"  required="required" ></td>
+                        </tr>
+                        <tr>
+                            <td>Password :</td>
+                            <td><input type="password" id="password" name="_password"  required="required" ></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><input type="checkbox" id="remember_me" name="_remember_me" value="on" checked="checked" > Remember me</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><input type="submit" placeholder="" value="Sign in"/></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><a href="{{ path('fos_user_resetting_request') }}" style="color: #01BAEB;">Forget your password ?</a></td>
+                        </tr>
+                    </table>
 
-                            <p style="position: relative;">Remember Me <input type="checkbox" id="remember_me" name="_remember_me" value="on" checked="checked" style="margin: 0;position: absolute;left: 6px;"></p>
-                        </div>
-                    </div>
-                    <!-- /col-md-3 -->
-                    <div class="clear"></div>
-                    <input type="submit" placeholder="" value="Sign in"/>
-                    <span><a href="{{ path('fos_user_resetting_request') }}" style="color: #01BAEB;">Forget your password ?</a></span>
+
+
 
 
                 </div>
                 <!-- /col-md-3 -->
             </form>
+            </div>
 
         </div><!-- END main-area -->
 

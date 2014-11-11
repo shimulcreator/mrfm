@@ -198,9 +198,57 @@ class OrderController extends BaseController
 
         }
 
-        return $this->redirect($this->generateUrl('lappning_uploads', array('id' => $id)));
+        return $this->redirect($this->generateUrl('user_lappning_order_overview', array('id' => $id)));
 
     }
+
+    /**
+     * Lists all Lappning entities.
+     *
+     * @Route("/order-overview/{id}", name="user_lappning_order_overview")
+     * @Method("GET")
+     * @Template()
+     */
+    public function overviewAction(Request $request, $id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $entity = $em->getRepository('MaklarresursAppBundle:Lappning')->find($id);
+
+        return array(
+            'entity'      => $entity
+        );
+    }
+
+    /**
+     * Lists all Lappning entities.
+     *
+     * @Route("/order-confirmation/{id}", name="user_lappning_order_confirmation")
+     * @Method("POST")
+     * @Template()
+     */
+    public function confirmationAction(Request $request, $id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $entity = $em->getRepository('MaklarresursAppBundle:Lappning')->find($id);
+
+        $entity->setConfirmation(1);
+        $em->flush();
+
+        return $this->redirect($this->generateUrl('user_lappning_order_confirmed'));
+    }
+
+    /**
+     * Lists all Lappning entities.
+     *
+     * @Route("/order-confirmed", name="user_lappning_order_confirmed")
+     * @Method("GET")
+     * @Template()
+     */
+    public function confirmedAction()
+    {
+        return array();
+    }
+
 
 
     /**
