@@ -34,7 +34,7 @@ set :composer_bin,          false
 set :interactive_mode,      true
 
 set :shared_files,          ["app/config/parameters.yml"]
-set :shared_children,       ["app/logs", "vendor"]
+set :shared_children,       ["app/logs", "vendor", "web/uploads"]
 set :writable_dirs,         ["app/cache", "app/logs"]
 
 set :branch, "master"

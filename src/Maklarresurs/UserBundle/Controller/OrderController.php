@@ -128,6 +128,7 @@ class OrderController extends BaseController
         $lappning->setPaperSize($paperSize);
         $lappning->setAddressType($addressType);
         $lappning->setUser($user);
+        $lappning->setConfirmation(0);
 
         $em->persist($lappning);
         $em->flush();
