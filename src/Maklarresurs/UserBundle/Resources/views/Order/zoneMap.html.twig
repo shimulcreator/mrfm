@@ -193,28 +193,16 @@
 //                                   return true;
                                 },
                                 onConfigured: mapsterConfigured,
-                                showToolTip: false,
+                                showToolTip: true,
                                 toolTipClose: ["area-mouseout"],
                                 areas: [
-                                    { key: "VT-A",
-                                        toolTip: $('<div>District 1</div>')
+                                    {% for entity in entities %}
+                                    { key: "{{ entity.mapRef }}",
+                                        toolTip: $('<div>{{ entity.name }}  (231 Flyers)</div>')
 
                                     },
-                                    { key: "ME",
-                                        toolTip: $('<div style="margin:auto; width:100px;"><img src="images/lobster-small.gif"/></div><div style="clear:both;"></div><p>Trees, ocean, lobsters, it\'s all here.</p>'),
-                                        selected: true
+                                    {% endfor %}
 
-                                    },
-                                    { key: "AK",
-                                        toolTip: "Alaska.. wild, and cold. And, you cannot select this area, but you can see the tooltip.",
-                                        isSelectable: false
-                                    },
-                                    { key: "WA",
-                                        staticState: true
-                                    },
-                                    { key: "OR",
-                                        staticState: false
-                                    }
                                 ]
                             };
 
