@@ -55,6 +55,11 @@ class Lappning
     protected $addressType;
 
     /**
+     * @ORM\Column(name="price", type="string")
+     */
+    protected $price;
+
+    /**
      * @ORM\Column(name="confirmation", type="boolean")
      */
     protected $confirmation;
@@ -202,6 +207,23 @@ class Lappning
     {
         $this->confirmation = $confirmation;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getPrice()
+    {
+        return $this->price;
+    }
+
+    /**
+     * @param mixed $price
+     */
+    public function setPrice($price)
+    {
+        $this->price = $price;
+    }
+
 
 
 

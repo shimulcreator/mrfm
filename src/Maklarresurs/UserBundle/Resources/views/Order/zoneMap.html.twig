@@ -10,9 +10,63 @@
     <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/icheck/flat/blue.css') }}" />
     <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/select2.css') }}" />
     <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.red.css') }}" class="skin-color" />
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.blue.css') }}" class="skin-color" />
 
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/mapjs/jquery-jvectormap-2.0.1.css') }}" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+
+
+    <script type="text/javascript" src="{{ asset('bundles/maklarresursadmin/mapFiles/src/redist/when.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/maklarresursadmin/mapFiles/src/core.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/maklarresursadmin/mapFiles/src/graphics.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/maklarresursadmin/mapFiles/src/mapimage.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/maklarresursadmin/mapFiles/src/mapdata.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/maklarresursadmin/mapFiles/src/areadata.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/maklarresursadmin/mapFiles/src/areacorners.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/maklarresursadmin/mapFiles/src/scale.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/maklarresursadmin/mapFiles/src/tooltip.js') }}"></script>
+
+
+    <STYLE TYPE="text/css">
+
+        body
+        {
+            font-family: Arial, Helvetica;
+            font-size: 12px;
+        }
+        h1
+        {
+            padding-top: 4px; padding-bottom:4px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        input[type="text"]
+        {
+            width:30px;
+        }
+        td
+        {
+            padding: 6px;
+            border: 1px solid black;
+        }
+        div.label
+        {
+            clear:both;
+            float:left;
+            width:100px;
+            height:24px;
+            margin-top: 5px;
+        }
+        div.input
+        {
+            float:left;
+            height:24px;
+            margin-top: 5px;
+        }
+    </STYLE>
+
 {% endblock %}
 
 
@@ -31,16 +85,389 @@
         <div class="row">
             <div class="col-xs-12">
                 <h3>Select District region from the map and then click "NEXT"</h3>
+
                 <div class="widget-box">
-                    <div style="width: 100%; margin: 0 auto; background: #000000 ">
-                        <div style="width: 100%; height: 400px; margin: 0 auto;" id="map" class="jvectormap jvectormap-mill" data-projection="merc" data-name="fr_merc_en"></div>
+
+
+
+                <div id="map_demo" style=" padding: 20px;">
+
+                    <div style="width:720px; border:0; overflow: hidden; float:left;">
+                        <img style="width:720px;border:0;" id="usa_image" src="{{ asset('bundles/maklarresursadmin/mapFiles/map.png') }}" usemap="#usa" >
+                    </div>
+                    <div  id="statelist" style="float:left; padding-left: 10px; width:180px; "></div>
+
+                    <div style="clear:both; height:8px;"></div>
+                    <div>
+
+
                     </div>
 
-                    <div id="form_district" style="float: right; position: relative; width: 20%; margin: 10px; height: 100px;">
-                        <form action="{{ path('user_address') }}" method="get">
-                            <input type="submit" value="NEXT" class="btn btn-dark-red">
-                        </form>
-                    </div>
+                </div>
+
+                <script type="text/javascript">
+                if (window.Zepto) {
+                    jQuery = Zepto;
+                    (function ($) {
+                        if ($) {
+                            $.fn.prop = $.fn.attr;
+                        }
+                    } (jQuery));
+                }
+
+                $(document).ready(function () {
+
+                    var $statelist, $usamap, ratio,
+                            mapsterConfigured = function () {
+                                // set html settings values
+                                var opts = $usamap.mapster('get_options', null, true);
+                                if (!ratio) {
+                                    ratio = $usamap.width() / $usamap.height();
+                                }
+                                $('#stroke_highlight').prop("checked", opts.render_highlight.stroke);
+                                $('#strokewidth_highlight').val(opts.render_highlight.strokeWidth);
+                                $('#fill_highlight').val(opts.render_highlight.fillOpacity);
+                                $('#strokeopacity_highlight').val(opts.render_highlight.strokeOpacity);
+                                $('#stroke_select').prop("checked", opts.render_select.stroke);
+                                $('#strokewidth_select').val(opts.render_select.strokeWidth);
+                                $('#fill_select').val(opts.render_select.fillOpacity);
+                                $('#strokeopacity_select').val(opts.render_select.strokeOpacity);
+                                $('#mouseout-delay').val(opts.mouseoutDelay);
+                                $('#img_width').val($usamap.width());
+                            },
+                            default_options =
+                            {
+                                fillOpacity: 0.5,
+                                render_highlight: {
+                                    fillColor: '3D4159',
+                                    stroke: false
+                                },
+                                render_select: {
+                                    fillColor: '09710E',
+                                    stroke: false
+                                },
+                                //render_zoom: {
+                                //    altImage: 'images/usa_map_huge.jpg'
+                                //},
+                                mouseoutDelay: 0,
+                                fadeInterval: 50,
+                                isSelectable: true,
+                                singleSelect: false,
+                                mapKey: 'state',
+                                mapValue: 'full',
+                                mapId: 'id',
+                                listKey: 'name',
+                                listSelectedAttribute: 'checked',
+//                                sortList: "asc",
+                                onGetList: addCheckBoxes,
+                                onClick: function (e) {
+                                    var id = $(this).attr('id');
+                                    var temp = 0;
+                                    $('input[name="district[]"]').each(function() {
+                                        var district = $(this).attr("mapRef");
+                                        if(district == e.key){
+                                            temp = 1;
+                                            $(this).remove();
+                                        }
+                                    });
+                                    if(temp == 0){
+                                        $('#form_district form').prepend("<input type='hidden' name='district[]' mapRef='"+ e.key +"' value='" + id + "'/>");
+                                    }
+//                                    if(temp == 0){
+//                                        var districtId, i;
+//                                        for(i= 0; i < items.length; i++) {
+//                                            if(items[i].key == e.key) {
+//                                                districtId = id;
+//                                            }
+//                                        }
+//                                        $('#form_district form').prepend("<input type='hidden' name='district[]' mapRef='"+ e.key +"' value='" + id + "'/>");
+//                                    }
+//                                    styleCheckbox(e.selected, e.listTarget);
+//                                    if (!utils.isScrolledIntoView(e.listTarget, false, $statelist)) {
+//                                        utils.centerOn($statelist, e.listTarget);
+//                                    }
+//                                if (e.key==='OH') {
+//                                    $usamap.mapster('zoom','OH');
+//                                     return false;
+//                                }
+//                                   return true;
+                                },
+                                onConfigured: mapsterConfigured,
+                                showToolTip: false,
+                                toolTipClose: ["area-mouseout"],
+                                areas: [
+                                    { key: "VT-A",
+                                        toolTip: $('<div>District 1</div>')
+
+                                    },
+                                    { key: "ME",
+                                        toolTip: $('<div style="margin:auto; width:100px;"><img src="images/lobster-small.gif"/></div><div style="clear:both;"></div><p>Trees, ocean, lobsters, it\'s all here.</p>'),
+                                        selected: true
+
+                                    },
+                                    { key: "AK",
+                                        toolTip: "Alaska.. wild, and cold. And, you cannot select this area, but you can see the tooltip.",
+                                        isSelectable: false
+                                    },
+                                    { key: "WA",
+                                        staticState: true
+                                    },
+                                    { key: "OR",
+                                        staticState: false
+                                    }
+                                ]
+                            };
+
+                    function styleCheckbox(selected, $checkbox) {
+                        var nowWeight = selected ? "bold" : "normal";
+                        $checkbox.closest('div').css("font-weight", nowWeight);
+                    }
+
+                    function addCheckBoxes(items) {
+                        var item, selected;
+                        $statelist.children().remove();
+                        for (var i = 0; i <items.length; i++) {
+                            selected = items[i].isSelected();
+                            item = $('<div><input type="checkbox" name="' + items[i].key + '"' + (selected ? "checked" : "") + '><span class="sel" key="' + items[i].key + '">' + items[i].value + '</span></div>');
+
+                            $statelist.append(item);
+                        }
+                        $statelist.find('span.sel').unbind('click').bind('click', function (e) {
+                            var key = $(this).attr('key');
+                            $usamap.mapster('highlight', true, key);
+                        });
+                        // return the list to mapster so it can bind to it
+                        return $statelist.find('input[type="checkbox"]').unbind('click').click(function (e) {
+                            var selected = $(this).is(':checked');
+                            $usamap.mapster('set', selected, $(this).attr('name'));
+                            styleCheckbox(selected, $(this));
+                        });
+                    }
+
+
+                    $statelist = $('#statelist');
+                    $usamap = $('#usa_image');
+                    function bindlinks() {
+                        $('*').unbind();
+                        $("#unbind_link").bind("click", function (e) {
+                            e.preventDefault();
+                            $usamap.mapster("unbind");
+                            $usamap.width(720);
+                            bindlinks();
+                        });
+                        $("#rebind_link").bind("click", function (e) {
+                            e.preventDefault();
+                            $usamap.mapster(default_options);
+                        });
+
+                        $("#unbind_link_preserve").bind("click", function (e) {
+                            e.preventDefault();
+                            $usamap.mapster("unbind", true);
+                            bindlinks();
+                        });
+                        $("#tooltip").bind("click", function (e) {
+                            e.preventDefault();
+                            var state = !$usamap.mapster('get_options').showToolTip;
+                            $('#tooltip_state').text(state ? "enabled" : "disabled");
+                            $usamap.mapster("set_options", { showToolTip: state });
+                        });
+                        $("#show_selected").bind("click", function (e) {
+                            e.preventDefault();
+                            $('#selections').text($("#usa_image").mapster("get"));
+                        });
+                        $("#single_select").bind("click", function (e) {
+                            e.preventDefault();
+                            var state = !$usamap.mapster('get_options').singleSelect;
+                            $('#single_select_state').text(state ? "enabled" : "disabled");
+                            $usamap.mapster("set_options", { singleSelect: state });
+                        });
+                        $("#is_deselectable").bind("click", function (e) {
+                            e.preventDefault();
+                            var state = !$usamap.mapster('get_options').isDeselectable;
+                            $('#is_deselectable_state').text(state ? "enabled" : "disabled");
+                            $usamap.mapster("set_options", { isDeselectable: state });
+                        });
+                        function getSelected(sel) {
+                            var item=$();
+                            sel.each(function() {
+                                if (this.selected) {
+                                    item=item.add(this);
+                                    return false;
+                                }
+
+                            });
+                            return item;
+
+                        }
+
+                        function getFillOptions(el) {
+                            var new_options,
+                                    val = getSelected($(el).find("option")).val();
+
+                            if (val > "0") {
+                                new_options = {
+                                    altImage: 'images/usa_map_720_alt_' + val + '.jpg',
+                                    stroke: true
+                                };
+                            } else {
+                                new_options = {
+                                    altImage: null,
+                                    stroke: false
+                                };
+                            }
+                            return new_options;
+                        }
+
+                        function getNewOptions() {
+                            var options,
+                                    render_highlight = getFillOptions($('#highlight_style')),
+                                    render_select = getFillOptions($('#select_style'));
+
+                            options = $.extend({},
+                                    default_options,
+                                    {
+                                        render_select: render_select,
+                                        render_highlight: render_highlight
+                                    });
+
+                            return options;
+
+                        }
+                        $("#highlight_style, #select_style").bind("change", function (e) {
+                            e.preventDefault();
+                            $statelist.children().remove();
+
+                            $usamap.mapster(getNewOptions());
+
+                        });
+                        $("#update").click(function (e) {
+                            var newOpts = {};
+                            function setOption(base, opt, value) {
+                                if (value !== '' && value !== null) {
+                                    base[opt] = value;
+                                }
+                            }
+                            e.preventDefault();
+
+                            newOpts.render_highlight = {};
+                            setOption(newOpts.render_highlight, "stroke", $('#stroke_highlight').prop("checked"));
+
+                            setOption(newOpts.render_highlight, "strokeWidth", $('#strokewidth_highlight').val());
+                            setOption(newOpts.render_highlight, "fillOpacity", $('#fill_highlight').val());
+                            setOption(newOpts.render_highlight, "strokeOpacity", $('#strokeopacity_highlight').val());
+
+                            newOpts.render_select = {};
+                            setOption(newOpts.render_select, "stroke", $('#stroke_select').prop("checked"));
+                            setOption(newOpts.render_select, "strokeWidth", $('#strokewidth_select').val());
+                            setOption(newOpts.render_select, "fillOpacity", $('#fill_select').val());
+                            setOption(newOpts.render_select, "strokeOpacity", $('#strokeopacity_select').val());
+                            setOption(newOpts, "mouseoutDelay", $('#mouseout-delay').val());
+                            var width = parseInt($('#img_width').val(), 10);
+
+                            if ($usamap.width() != width) {
+                                $('#update').prop("disabled",true);
+                                $usamap.mapster('resize', width, null, 1000,function() {
+                                    $('#update').prop("disabled",false);
+                                });
+                            } else {
+                                $usamap.mapster('set_options', newOpts);
+                            }
+
+                        });
+
+                    }
+
+                    bindlinks();
+
+                    $usamap.mapster(default_options);
+
+
+                });
+
+
+                // Utility functions
+                // If you are copying code you probably won't need these.
+
+
+                var utils = {};
+                // Tells if an element is completely visible. if the 2nd parm is true, it only looks at the top.
+
+                utils.isScrolledIntoView = function (elem, topOnly, container) {
+                    var useWindow = false, docViewTop, docViewBottom, elemTop, elemBottom;
+
+                    if (!container) {
+                        container = window;
+                        useWindow = true;
+                    }
+
+
+                    if (useWindow) {
+                        docViewTop = $(container).scrollTop();
+                        elemTop = elem.offset().top;
+                    } else {
+                        docViewTop = 0;
+                        elemTop = elem.position().top;
+                    }
+                    docViewBottom = docViewTop + $(container).height();
+                    elemBottom = elemTop + elem.height();
+
+
+                    if (topOnly) {
+                        return elemTop >= docViewTop && elemTop <= docViewBottom;
+                    } else {
+                        return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom));
+                    }
+                };
+
+                utils.centerOn = function ($container, $element) {
+                    $container.animate({
+                        scrollTop: $element.position().top - ($container.height() / 2)
+                    }, 'slow');
+                };
+
+                </script>
+
+                <map id="usa_image_map" name="usa">
+                    <area state="VT-A" full="District 1" class="district" id="1" alt="" title="District 1" href="#" shape="poly" coords="13,377,24,367,45,353,67,336,84,326,101,314,119,300,131,289,143,298,157,310,165,327,173,348,183,371,193,393,199,412,177,416,162,418,139,419,119,420,108,419,88,408,73,400,58,391,16,378" />
+                    <area state="VT-B" full="District 2" class="district" id="2" alt="" title="" href="#" shape="poly" coords="133,286,139,274,146,264,156,258,167,245,192,224,213,222,231,202,249,178,271,161,280,174,289,186,300,202,290,211,274,220,263,227,232,249,213,265,189,281,169,296,151,297,136,288" />
+                    <area state="VT-C" full="District 3" class="district" id="3" alt="" title="" href="#" shape="poly" coords="149,297,161,312,170,334,178,352,193,383,203,409,206,413,228,410,233,382,242,352,258,338,242,331,228,325,215,319,198,310,179,304,165,297" />
+                    <area state="VT-D" full="District 4" class="district" id="4" alt="" title="" href="#" shape="poly" coords="172,295,175,296,185,304,198,307,214,315,228,322,242,326,247,308,248,296,248,283,255,266,260,242,263,232,253,238,244,242,235,252,221,264,203,277,191,288,191,285,172,298" />
+                    <area state="VT-E" full="District 5" class="district" id="5" alt="" title="" href="#" shape="poly" coords="265,232,285,220,304,206,317,230,297,248,262,248" />
+                    <area state="VT-F" full="District 6" class="district" id="6" alt="" title="" href="#" shape="poly" coords="275,160,308,152,352,153,346,124,346,99,348,31,381,1,443,33,447,58,469,84,484,111,500,151,460,166,421,176,368,184,338,185,305,199" />
+                    <area state="VT-G" full="District 7" class="district" id="7" alt="" title="" href="#" shape="poly" coords="308,205,340,189,395,186,398,190,324,226,318,222" />
+                    <area state="VT-H" full="District 8" class="district" id="8" alt="" title="" href="#" shape="poly" coords="262,254,299,251,321,236,317,277,255,279" />
+                    <area state="VT-I" full="District 9" class="district" id="9" alt="" title="" href="#" shape="poly" coords="6,385,13,380,54,395,111,426,95,474,39,457,23,434" />
+                    <area state="VT-J" full="District 10" class="district" id="10" alt="" title="" href="#" shape="poly" coords="118,427,166,426,196,419,176,459,165,492,161,495,99,476" />
+                    <area state="VT-K" full="District 11" class="district" id="11" alt="" title="" href="#" shape="poly" coords="206,418,232,416,260,478,206,507,199,506,167,496,189,445" />
+                    <area state="VT-L" full="District 12" class="district" id="12" alt="" title="" href="#" shape="poly" coords="259,346,284,392,311,376,366,352,394,340,418,392,327,398,286,404,233,406,246,354" />
+                    <area state="VT-M" full="District 13" class="district" id="13" alt="" title="" href="#" shape="poly" coords="255,284,248,327,260,329,327,296,320,284" />
+                    <area state="VT-N" full="District 14" class="district" id="14" alt="" title="" href="#" shape="poly" coords="263,340,332,304,358,349,286,384" />
+                    <area state="VT-O" full="District 15" class="district" id="15" alt="" title="" href="#" shape="poly" coords="333,294,327,283,325,274,326,232,402,194,423,218,430,241,413,257" />
+                    <area state="VT-P" full="District 16" class="district" id="16" alt="" title="" href="#" shape="poly" coords="239,415,265,472,297,458,342,441,390,422,442,396,381,400,339,402" />
+                    <area state="VT-Q" full="District 17" class="district" id="17" alt="" title="" href="#" shape="poly" coords="335,299,364,345,415,323,457,295,433,249" />
+                    <area state="VT-R" full="District 18" class="district" id="18" alt="" title="" href="#" shape="poly" coords="400,337,423,326,465,300,502,286,518,313,532,344,499,365,454,388,425,390" />
+                    <area state="VT-S" full="District 19" class="district" id="19" alt="" title="" href="#" shape="poly" coords="404,186,458,175,504,159,511,175,507,201,516,225,520,245,528,265,505,281,463,294,430,227,446,260,422,211" />
+                    <area state="VT-T" full="District 20" class="district" id="20" alt="" title="" href="#" shape="poly" coords="497,130,522,142,547,165,563,214,575,247,532,261,524,244,511,198,515,175" />
+                    <area state="VT-U" full="District 21" class="district" id="21" alt="" title="" href="#" shape="poly" coords="506,284,531,266,556,259,571,278,588,319,559,335,538,341" />
+                    <area state="VT-V" full="District 22" class="district" id="22" alt="" title="" href="#" shape="poly" coords="562,258,578,250,595,284,606,310,594,315,577,281" />
+                    <area state="VT-W" full="District 23" class="district" id="23" alt="" title="" href="#" shape="poly" coords="42,465,49,479,52,515,99,541,141,565,159,572,185,539,196,512,129,496,75,472" />
+                    <area state="VT-X" full="District 24" class="district" id="24" alt="" title="" href="#" shape="poly" coords="169,577,190,546,204,516,235,498,267,479,345,446,381,504,405,556,386,571,384,599,371,611,356,638,301,615,250,605,200,585,173,578" />
+                    <area state="VT-Y" full="District 25" class="district" id="25" alt="" title="" href="#" shape="poly" coords="349,445,395,425,407,450,421,478,384,497" />
+                    <area state="VT-Z" full="District 26" class="district" id="26" alt="" title="" href="#" shape="poly" coords="399,425,450,397,499,372,532,428,483,452,454,464,428,475" />
+                    <area state="VT-AA" full="District 27" class="district" id="27" alt="" title="" href="#" shape="poly" coords="506,369,539,346,591,324,610,316,627,344,623,385,582,403,538,423" />
+                    <area state="VT-AB" full="District 28" class="district" id="28" alt="" title="" href="#" shape="poly" coords="392,576,391,597,407,600,432,579,470,560,457,530,438,501,426,484,387,502,411,560" />
+                    <area state="VT-AC" full="District 29" class="district" id="29" alt="" title="" href="#" shape="poly" coords="431,480,457,518,475,555,489,540,508,542,519,535,484,481,456,470" />
+                    <area state="VT-AD" full="District 30" class="district" id="30" alt="" title="" href="#" shape="poly" coords="463,466,541,432,593,404,623,391,624,419,637,435,650,461,631,481,585,501,525,531,482,475" />
+                </map>
+
+
+
+                </div>
+
+                <div id="form_district" style="float: right; position: relative; width: 20%; margin: 10px; height: 100px;">
+                    <form action="/user/order/address" method="get">
+                        <input type="submit" value="NEXT" class="btn btn-dark-red">
+                    </form>
                 </div>
 
             </div>
@@ -50,10 +477,8 @@
 
 {% block javascripts %}
     <!-- ***************** - JavaScript Starts Here - ***************** -->
-    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.min.js') }}"></script>
     <script src="{{ asset('bundles/maklarresursadmin/js/jquery-ui.custom.js') }}"></script>
     <script src="{{ asset('bundles/maklarresursadmin/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.icheck.min.js') }}"></script>
     <script src="{{ asset('bundles/maklarresursadmin/js/select2.min.js') }}"></script>
     <script src="{{ asset('bundles/maklarresursadmin/js/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('bundles/maklarresursadmin/js/jquery.jpanelmenu.min.js') }}"></script>
@@ -61,67 +486,9 @@
     <script src="{{ asset('bundles/maklarresursadmin/js/unicorn.js') }}"></script>
     <script src="{{ asset('bundles/maklarresursadmin/js/unicorn.tables.js') }}"></script>
 
-    <script src="{{ asset('bundles/maklarresursadmin/mapjs/jquery-jvectormap-2.0.1.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/mapjs/jquery-jvectormap-fr_regions-merc-en.js') }}"></script>
-
-
-    <script>
-        jQuery(function($){
-            var mapData = [];
-            $.getJSON('{{ path('map_data') }}', function(data){
-                mapData = data;
-            });
-            $('#map').vectorMap({
-                map: 'fr_regions_merc_en',
-                regionsSelectable: true,
-                regionStyle: {
-                    initial: {
-                        fill: '#B8E186',
-                        "fill-opacity": 1.0,
-                        stroke: 'none',
-                        "stroke-width": 0,
-                        "stroke-opacity": 1,
-                        clicked: '0'
-                    },
-                    hover: {
-                        "fill-opacity": 0.8
-                    },
-                    selected: {
-                        fill: '#F4A582',
-                        clicked: '1'
-                    },
-                    selectedHover: {
-                    }
-                },
-
-                onRegionSelected: function(e, regionCode){
-                    var temp = 0;
-                    $('input[name="district[]"]').each(function() {
-                        var district = $(this).attr("mapRef");
-                        if(district == regionCode){
-                            temp = 1;
-                            $(this).remove();
-                        }
-                    });
-                    if(temp == 0){
-                        var districtId, i;
-                        for(i= 0; i < mapData.length; i++) {
-                            if(mapData[i].mapRef == regionCode) {
-                                districtId = mapData[i].id;
-                            }
-                        }
-                        $('#form_district form').prepend("<input type='hidden' name='district[]' mapRef='"+ regionCode +"' value='" + districtId + "'/>");
-                    }
 
 
 
-                }
-            });
 
-            $('#btn').on('click', function(e){
-
-            });
-        });
-    </script>
 
 {% endblock %}

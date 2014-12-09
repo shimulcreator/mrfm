@@ -10,11 +10,24 @@
     <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/icheck/flat/blue.css') }}" />
     <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/select2.css') }}" />
     <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.blue.css') }}" class="skin-color" />
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.red.css') }}" class="skin-color" />
+
+    <link rel="stylesheet" type="text/css" href="https://jonthornton.github.io/jquery-timepicker/jquery.timepicker.css" />
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/datepicker.css') }}" />
 
     <style>
         .form-horizontal .control-label {
             padding-top: 10px;
+        }
+        input.time{
+            width: 90px;
+        }
+        input.date{
+            width: 120px;
+        }
+        textarea{
+            width: 450px;
+            height: 80px;
         }
     </style>
 {% endblock %}
@@ -23,11 +36,11 @@
 {% block body %}
     <div id="content">
         <div id="content-header">
-            <h1>LAPPNING</h1>
+            <h1>BOKA-VISNINGSVARD</h1>
         </div>
         <div id="breadcrumb">
             <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-            <a href="#" class="current">Creating Order</a>
+            <a href="#" class="current">Overview</a>
         </div>
         <div class="row">
             <div class="col-xs-12">
@@ -36,63 +49,59 @@
                         <span class="icon">
                             <i class="icon-align-justify"></i>
                         </span>
-                        <h5>Creating Order</h5>
+                        <h5>Overview</h5>
                     </div>
                     <div class="widget-content nopadding">
 
-                        <form class="form-horizontal" method="post" action="{{ path('user_order_create') }}">
+                        <form class="form-horizontal" method="post" action="{{ path('user_boka_visningsvard_order_confirmation', {'id': entity.id}) }}">
                             <div class="form-group">
-                                <label class="control-label">Zone : </label>
+                                <label class="control-label">Start Date : </label>
                                 <div class="controls">
-                                    Vasastan
-                                    <input type="hidden" name="zone" value="Vasastan">
+                                    {{ entity.startDate }}
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label">Districts : </label>
+                                <label class="control-label">End Date : </label>
                                 <div class="controls">
-                                    {{ districts }}
-                                    <input type="hidden" name="districts" value="{{ districts }}">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">Flyers : </label>
-                                <div class="controls">
-                                    Total {{ flyers }}st
-                                    <input type="hidden" name="flyers" value="{{ flyers }}">
+                                    {{ entity.endDate }}
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="control-label">Select Paper Size : </label>
+                                <label class="control-label">Start Time : </label>
                                 <div class="controls">
-                                    <select name="paper_size">
-                                        <option>200g</option>
-                                        <option>150g</option>
-                                        <option>250g</option>
-                                        <option>300g</option>
-                                    </select>
+                                    {{ entity.startTime }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">End Time : </label>
+                                <div class="controls">
+                                    {{ entity.endTime }}
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="control-label">Select Address Type: </label>
+                                <label class="control-label">Address: </label>
                                 <div class="controls">
-                                    <select name="address_type">
-                                        <option></option>
-                                        <option>Adresserat</option>
-                                        <option>Oadresserat</option>
-                                    </select>
+                                    {{ entity.address }}
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Note : </label>
+                                <div class="controls">
+                                    {{ entity.note }}
                                 </div>
                             </div>
 
 
                             <div class="form-actions">
-                                <input type="submit" value="NEXT" class="btn btn-dark-red">
+                                <a class="btn btn-dark-red" href="{{ path('user_boka_visningsvard_order_edit', {'id': entity.id}) }}">Edit</a>
+                                <input type="submit" value="CONFIRM" class="btn btn-dark-red">
                             </div>
 
-
                         </form>
+
                     </div>
                 </div>
             </div>
@@ -112,6 +121,8 @@
     <script src="{{ asset('bundles/maklarresursadmin/js/jquery.nicescroll.min.js') }}"></script>
     <script src="{{ asset('bundles/maklarresursadmin/js/unicorn.js') }}"></script>
     <script src="{{ asset('bundles/maklarresursadmin/js/unicorn.tables.js') }}"></script>
+
+
 
 
 {% endblock %}

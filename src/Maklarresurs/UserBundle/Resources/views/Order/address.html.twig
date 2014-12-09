@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/icheck/flat/blue.css') }}" />
     <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/select2.css') }}" />
     <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.red.css') }}" class="skin-color" />
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.blue.css') }}" class="skin-color" />
 
 {% endblock %}
 
@@ -28,11 +28,11 @@
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <h3>Zone : Vasastan [ Total : {{ total }} addresses ]</h3>
+                <h3>Zone : Vasastan [ Total : <b style="color: green;" id="total">{{ total }}</b> addresses ]</h3>
 
                 <form action="{{ path('user_extras') }}" method="get" style="float: right; margin-right: 50px;">
                     <input type="hidden" name="district" value="{% for d in districts %} {{ d }}, {% endfor %}">
-                    <input type="hidden" name="flyers" value="{{ total }}">
+                    <input type="hidden" name="flyers" id="flyers" value="{{ total }}">
                     <input type="submit" value="NEXT" class="btn btn-dark-red">
                 </form>
 
@@ -47,13 +47,16 @@
                                         <th>
                                             <h5>District {{ district }} - [ {{ entities[i]|length }} addresses ] </h5>
                                         </th>
+                                        <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     {% for entity in entities[i] %}
-                                        <tr class="gradeA">
+                                        <tr class="gradeA item" id="{{ entity.id }}">
                                             <td>{{ entity.name }}</td>
+                                            <td><a style="cursor:pointer" class="row_delete" id="{{ entity.id }}">X</a></td>
                                         </tr>
+
                                     {% endfor %}
                                 </tbody>
                             </table>
@@ -77,6 +80,45 @@
     <script src="{{ asset('bundles/maklarresursadmin/js/jquery.nicescroll.min.js') }}"></script>
     <script src="{{ asset('bundles/maklarresursadmin/js/unicorn.js') }}"></script>
     <script src="{{ asset('bundles/maklarresursadmin/js/unicorn.tables.js') }}"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function(jQuery) {
+
+            jQuery('.row_delete').click(function(){
+                var the_id = jQuery(this).attr("id");
+                var data = "id="+the_id;
+                var total = jQuery("#total").text();
+                jQuery('.item#'+the_id).hide('slow'); //DELETES ITEMS HERE
+                jQuery("#total").empty();
+                total = parseInt(total) - 1;
+                jQuery("#total").text(total);
+                jQuery("#flyers").val(total);
+                //DELETES THE ITEMS ONE AT A TIME
+                {#jQuery.ajax({#}
+                    {#type: "POST",#}
+                    {#url: "{{ path('order_address_delete') }}",#}
+                    {#data: data,#}
+                    {#success: function(data){#}
+                        {#if(data = 'success'){#}
+                            {#jQuery('.item#'+the_id).hide('slow'); //DELETES ITEMS HERE#}
+                            {#jQuery("#total").empty();#}
+                            {#total = parseInt(total) - 1;#}
+                            {#jQuery("#total").text(total);#}
+                            {#jQuery("#flyers").val(total);#}
+                        {#}#}
+                        {#else{#}
+                            {#hudMsg('error', 'Failed!', 3000);#}
+                        {#}#}
+
+                    {#}#}
+                {#});#}
+            });
+        });
+
+    </script>
+
+
+
 
 
 {% endblock %}

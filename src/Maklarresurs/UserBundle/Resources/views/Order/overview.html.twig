@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/icheck/flat/blue.css') }}" />
     <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/select2.css') }}" />
     <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.red.css') }}" class="skin-color" />
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.blue.css') }}" class="skin-color" />
 
     <style>
         .form-horizontal .control-label {
@@ -76,6 +76,12 @@
                                 </div>
                             </div>
 
+                            <div class="form-group" style="background-color: #E7E9EC;">
+                                <label class="control-label">Total Price : </label>
+                                <div class="controls">
+                                    {{ entity.price }}
+                                </div>
+                            </div>
 
                             <div class="form-actions">
                                 <input type="submit" value="CONFIRM" class="btn btn-dark-red">

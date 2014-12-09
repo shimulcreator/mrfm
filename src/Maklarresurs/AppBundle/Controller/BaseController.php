@@ -227,10 +227,10 @@ class BaseController extends Controller
     }
 
     /**
-     * @return \Yettic\AppBundle\Mailer\Mailer
+     * @return \Maklarresurs\AppBundle\Mailer\Mailer
      */
     public function getMailer(){
-        return $this->get('yettic_app.mailer');
+        return $this->get('maklarresurs_app.mailer');
     }
 
 

@@ -121,19 +121,45 @@ class OrderController extends BaseController
         $paperSize = $request->get('paper_size');
         $addressType = $request->get('address_type');
 
+        $flyersPrice = $flyers*3;
+
+        if($paperSize == "200g"){
+            $paperPrice = $flyers * 0.3;
+        }
+        elseif($paperSize == "250g"){
+            $paperPrice = $flyers * 0.6;
+        }
+        elseif($paperSize == "300g"){
+            $paperPrice = $flyers * 0.9;
+        }
+        elseif($paperSize == "150g"){
+            $paperPrice = 0;
+        }
+        else{
+            throw $this->createNotFoundException('Wrong Information');
+        }
+
+        if($addressType == "Adresserat"){
+            $addressPrice = $flyers * 1;
+        }else{
+            $addressPrice = 0;
+        }
+
+        $price = $flyersPrice + $paperPrice + $addressPrice;
+
         $lappning = new Lappning();
         $lappning->setZone($zone);
         $lappning->setDistricts($districts);
         $lappning->setFlyers($flyers);
         $lappning->setPaperSize($paperSize);
         $lappning->setAddressType($addressType);
+        $lappning->setPrice($price);
         $lappning->setUser($user);
         $lappning->setConfirmation(0);
 
         $em->persist($lappning);
         $em->flush();
 
-        //return array();
         return $this->redirect($this->generateUrl('lappning_uploads', array('id' => $lappning->getId())));
     }
 
@@ -232,8 +258,10 @@ class OrderController extends BaseController
         $em = $this->getDoctrine()->getManager();
         $entity = $em->getRepository('MaklarresursAppBundle:Lappning')->find($id);
 
-        $entity->setConfirmation(1);
-        $em->flush();
+        $this->getMailer()->sendOrderEmail($id);
+
+//        $entity->setConfirmation(1);
+//        $em->flush();
 
         return $this->redirect($this->generateUrl('user_lappning_order_confirmed'));
     }
@@ -273,5 +301,38 @@ class OrderController extends BaseController
         $response = new JsonResponse($data);
         //$response->setSharedMaxAge(500); //TODO: set cache time on production
         return $response;
+    }
+
+    /**
+     * Deletes an existing Address entity.
+     *
+     * @Route("/delete", name="order_address_delete")
+     * @Method("POST")
+     * @Template()
+     */
+    public function deleteUserAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $id = $request->get('id');
+        $entity = $em->getRepository('MaklarresursAppBundle:Address')->find($id);
+
+        if (!$entity) {
+            throw $this->createNotFoundException('Unable to find Address entity.');
+        }
+
+        if ($entity) {
+            $em->remove($entity);
+            $em->flush();
+
+//            return $this->redirect($this->generateUrl('admin_user'));
+            $response = 'success';
+
+        }
+        else{
+            $response = 'failed';
+        }
+
+        return new Response($response);
     }
 }

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/icheck/flat/blue.css') }}" />
     <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/select2.css') }}" />
     <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.blue.css') }}" class="skin-color" />
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.red.css') }}" class="skin-color" />
 
 {% endblock %}
 
@@ -18,34 +18,46 @@
 {% block body %}
     <div id="content">
         <div id="content-header">
-            <h1>LAPPNING</h1>
+            <h1>BOKA-VISNINGSVARD</h1>
         </div>
         <div id="breadcrumb">
             <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-            <a href="#" class="current">Creating Order</a>
+            <a href="#" class=""> Order</a>
+            <a href="#" class="">Vasastan</a>
+            <a href="#" class="current">Addresses</a>
         </div>
         <div class="row">
             <div class="col-xs-12">
+
                 <div class="widget-box">
 
-                    <div class="widget-content nopadding">
-                        <table class="table table-bordered table-striped table-hover data-table">
-                            <thead>
-                            <tr>
-                                <th>Zones</th>
-                                <th>Map</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            {% for entity in entities if entity.depth == 1 %}
-                                <tr class="gradeA">
-                                    <td>{{ entity.name }}</td>
-                                    <td><a href="{{ path('user_zone_map', {'id': entity.id}) }}">Click to view map</a></td>
+                        <div class="widget-content nopadding">
+                            <table class="table table-bordered table-striped table-hover ">
+                                <thead>
+                                <tr>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                    <th>Start Time</th>
+                                    <th>End Time</th>
+                                    <th>Address</th>
+                                    <th>Note</th>
                                 </tr>
-                            {% endfor %}
-                            </tbody>
-                        </table>
-                    </div>
+                                </thead>
+                                <tbody>
+                                {% for entity in entities %}
+                                    <tr class="gradeA item" id="{{ entity.id }}">
+                                        <td>{{ entity.startDate }}</td>
+                                        <td>{{ entity.endDate }}</td>
+                                        <td>{{ entity.startTime }}</td>
+                                        <td>{{ entity.endTime }}</td>
+                                        <td>{{ entity.address }}</td>
+                                        <td>{{ entity.note }}</td>
+                                    </tr>
+
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
                 </div>
             </div>
         </div>

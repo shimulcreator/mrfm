@@ -1,0 +1,127 @@
+{% extends 'MaklarresursUserBundle::layout.html.twig' %}
+{% set pageClass = 'customer' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/font-awesome.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/jquery-ui.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/icheck/flat/blue.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/select2.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.red.css') }}" class="skin-color" />
+
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/mapjs/jquery-jvectormap-2.0.1.css') }}" />
+{% endblock %}
+
+
+{% block body %}
+    <div id="content">
+        <div id="content-header">
+            <h1>LAPPNING</h1>
+        </div>
+        <div id="breadcrumb">
+            <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+            <a href="#" class="current">Creating Order</a>
+            <a href="#" class="current">Vasastan</a>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xs-12">
+                <h3>Select District region from the map and then click "NEXT"</h3>
+                <div class="widget-box">
+                    <div style="width: 100%; margin: 0 auto; background: #000000 ">
+                        <div style="width: 100%; height: 400px; margin: 0 auto;" id="map" class="jvectormap jvectormap-mill" data-projection="merc" data-name="fr_merc_en"></div>
+                    </div>
+
+                    <div id="form_district" style="float: right; position: relative; width: 20%; margin: 10px; height: 100px;">
+                        <form action="{{ path('user_address') }}" method="get">
+                            <input type="submit" value="NEXT" class="btn btn-dark-red">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <!-- ***************** - JavaScript Starts Here - ***************** -->
+    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('bundles/maklarresursadmin/js/jquery-ui.custom.js') }}"></script>
+    <script src="{{ asset('bundles/maklarresursadmin/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.icheck.min.js') }}"></script>
+    <script src="{{ asset('bundles/maklarresursadmin/js/select2.min.js') }}"></script>
+    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.jpanelmenu.min.js') }}"></script>
+    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.nicescroll.min.js') }}"></script>
+    <script src="{{ asset('bundles/maklarresursadmin/js/unicorn.js') }}"></script>
+    <script src="{{ asset('bundles/maklarresursadmin/js/unicorn.tables.js') }}"></script>
+
+    <script src="{{ asset('bundles/maklarresursadmin/mapjs/jquery-jvectormap-2.0.1.min.js') }}"></script>
+    <script src="{{ asset('bundles/maklarresursadmin/mapjs/jquery-jvectormap-fr_regions-merc-en.js') }}"></script>
+
+
+    <script>
+        jQuery(function($){
+            var mapData = [];
+            $.getJSON('{{ path('map_data') }}', function(data){
+                mapData = data;
+            });
+            $('#map').vectorMap({
+                map: 'fr_regions_merc_en',
+                regionsSelectable: true,
+                regionStyle: {
+                    initial: {
+                        fill: '#B8E186',
+                        "fill-opacity": 1.0,
+                        stroke: 'none',
+                        "stroke-width": 0,
+                        "stroke-opacity": 1,
+                        clicked: '0'
+                    },
+                    hover: {
+                        "fill-opacity": 0.8
+                    },
+                    selected: {
+                        fill: '#F4A582',
+                        clicked: '1'
+                    },
+                    selectedHover: {
+                    }
+                },
+
+                onRegionSelected: function(e, regionCode){
+                    var temp = 0;
+                    $('input[name="district[]"]').each(function() {
+                        var district = $(this).attr("mapRef");
+                        if(district == regionCode){
+                            temp = 1;
+                            $(this).remove();
+                        }
+                    });
+                    if(temp == 0){
+                        var districtId, i;
+                        for(i= 0; i < mapData.length; i++) {
+                            if(mapData[i].mapRef == regionCode) {
+                                districtId = mapData[i].id;
+                            }
+                        }
+                        $('#form_district form').prepend("<input type='hidden' name='district[]' mapRef='"+ regionCode +"' value='" + districtId + "'/>");
+                    }
+
+
+
+                }
+            });
+
+            $('#btn').on('click', function(e){
+
+            });
+        });
+    </script>
+
+{% endblock %}

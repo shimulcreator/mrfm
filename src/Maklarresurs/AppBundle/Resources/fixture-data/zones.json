@@ -111,6 +111,22 @@
                         "mapRef": "VT-Z",
                         "name": "District 26",
                         "regionalName": "District 26"
+                    }, {
+                        "mapRef": "VT-AA",
+                        "name": "District 27",
+                        "regionalName": "District 27"
+                    }, {
+                        "mapRef": "VT-AB",
+                        "name": "District 28",
+                        "regionalName": "District 28"
+                    }, {
+                        "mapRef": "VT-AC",
+                        "name": "District 29",
+                        "regionalName": "District 29"
+                    }, {
+                        "mapRef": "VT-AD",
+                        "name": "District 30",
+                        "regionalName": "District 30"
                     }
 
                 ]
