@@ -2,33 +2,14 @@
 
 {% block subject %}
     {% autoescape false %}
-    {{ 'New Order From Maklarresurs' }}
+    {{ 'Hahahhahaha' }}
     {% endautoescape %}
 {% endblock %}
 
 {% block body_text %}
     {% autoescape false %}
-    Hello,
+    Hello Patrick,
+        Its Shimul, How are you? :p
 
-    A New Order has been create.
-        <table>
-            <tr>
-                <td>Flyers</td>
-                <td>{{ lappning.flyers|raw }}</td>
-            </tr>
-            <tr>
-                <td>Paper Size</td>
-                <td>{{ lappning.paperSize|raw }}</td>
-            </tr>
-            <tr>
-                <td>Address Type</td>
-                <td>{{ lappning.addressType|raw }}</td>
-            </tr>
-        </table>
-    
-        Download PDF file : http://mrfm.localhost.com/user/order/order-confirmed
-
-    MRFM Dev,
-    the Team.
     {% endautoescape %}
 {%endblock%}

@@ -130,6 +130,943 @@
                     }
 
                 ]
+            },
+
+            {
+                "name": "Södermalm",
+                "regionalName": "Södermalm",
+                "mapRef": "SM",
+                "areas": [
+                    {
+                        "mapRef": "SM-A",
+                        "name": "District 1",
+                        "regionalName": "District 1"
+                    }, {
+                        "mapRef": "SM-B",
+                        "name": "District 2",
+                        "regionalName": "District 2"
+                    }, {
+                        "mapRef": "SM-C",
+                        "name": "District 3",
+                        "regionalName": "District 3"
+                    }, {
+                        "mapRef": "SM-D",
+                        "name": "District 4",
+                        "regionalName": "District 4"
+                    }, {
+                        "mapRef": "SM-E",
+                        "name": "District 5",
+                        "regionalName": "District 5"
+                    }, {
+                        "mapRef": "SM-F",
+                        "name": "District 6",
+                        "regionalName": "District 6"
+                    }, {
+                        "mapRef": "SM-G",
+                        "name": "District 7",
+                        "regionalName": "District 7"
+                    }, {
+                        "mapRef": "SM-H",
+                        "name": "District 8",
+                        "regionalName": "District 8"
+                    }, {
+                        "mapRef": "SM-I",
+                        "name": "District 9",
+                        "regionalName": "District 9"
+                    }, {
+                        "mapRef": "SM-J",
+                        "name": "District 10",
+                        "regionalName": "District 10"
+                    }, {
+                        "mapRef": "SM-K",
+                        "name": "District 11",
+                        "regionalName": "District 11"
+                    }, {
+                        "mapRef": "SM-L",
+                        "name": "District 12",
+                        "regionalName": "District 12"
+                    }, {
+                        "mapRef": "SM-M",
+                        "name": "District 13",
+                        "regionalName": "District 13"
+                    }, {
+                        "mapRef": "SM-N",
+                        "name": "District 14",
+                        "regionalName": "District 14"
+                    }, {
+                        "mapRef": "SM-O",
+                        "name": "District 15",
+                        "regionalName": "District 15"
+                    }, {
+                        "mapRef": "SM-P",
+                        "name": "District 16",
+                        "regionalName": "District 16"
+                    }, {
+                        "mapRef": "SM-Q",
+                        "name": "District 17",
+                        "regionalName": "District 17"
+                    }, {
+                        "mapRef": "SM-R",
+                        "name": "District 18",
+                        "regionalName": "District 18"
+                    }, {
+                        "mapRef": "SM-S",
+                        "name": "District 19",
+                        "regionalName": "District 19"
+                    }, {
+                        "mapRef": "SM-T",
+                        "name": "District 20",
+                        "regionalName": "District 20"
+                    }, {
+                        "mapRef": "SM-U",
+                        "name": "District 21",
+                        "regionalName": "District 21"
+                    }, {
+                        "mapRef": "SM-V",
+                        "name": "District 22",
+                        "regionalName": "District 22"
+                    }, {
+                        "mapRef": "SM-W",
+                        "name": "District 23",
+                        "regionalName": "District 23"
+                    }, {
+                        "mapRef": "SM-X",
+                        "name": "District 24",
+                        "regionalName": "District 24"
+                    }, {
+                        "mapRef": "SM-Y",
+                        "name": "District 25",
+                        "regionalName": "District 25"
+                    }, {
+                        "mapRef": "SM-Z",
+                        "name": "District 26",
+                        "regionalName": "District 26"
+                    }, {
+                        "mapRef": "SM-AA",
+                        "name": "District 27",
+                        "regionalName": "District 27"
+                    }, {
+                        "mapRef": "SM-AB",
+                        "name": "District 28",
+                        "regionalName": "District 28"
+                    }, {
+                        "mapRef": "SM-AC",
+                        "name": "District 29",
+                        "regionalName": "District 29"
+                    }, {
+                        "mapRef": "SM-AD",
+                        "name": "District 30",
+                        "regionalName": "District 30"
+                    }
+
+                ]
+            },
+
+            {
+                "name": "Fredhall",
+                "regionalName": "Fredhall",
+                "mapRef": "FH",
+                "areas": [
+                    {
+                        "mapRef": "FH-A",
+                        "name": "District 1",
+                        "regionalName": "District 1"
+                    }, {
+                        "mapRef": "FH-B",
+                        "name": "District 2",
+                        "regionalName": "District 2"
+                    }, {
+                        "mapRef": "FH-C",
+                        "name": "District 3",
+                        "regionalName": "District 3"
+                    }, {
+                        "mapRef": "FH-D",
+                        "name": "District 4",
+                        "regionalName": "District 4"
+                    }, {
+                        "mapRef": "FH-E",
+                        "name": "District 5",
+                        "regionalName": "District 5"
+                    }, {
+                        "mapRef": "FH-F",
+                        "name": "District 6",
+                        "regionalName": "District 6"
+                    }, {
+                        "mapRef": "FH-G",
+                        "name": "District 7",
+                        "regionalName": "District 7"
+                    }, {
+                        "mapRef": "FH-H",
+                        "name": "District 8",
+                        "regionalName": "District 8"
+                    }, {
+                        "mapRef": "FH-I",
+                        "name": "District 9",
+                        "regionalName": "District 9"
+                    }, {
+                        "mapRef": "FH-J",
+                        "name": "District 10",
+                        "regionalName": "District 10"
+                    }, {
+                        "mapRef": "FH-K",
+                        "name": "District 11",
+                        "regionalName": "District 11"
+                    }
+
+                ]
+            },
+
+            {
+                "name": "Gardet",
+                "regionalName": "Gardet",
+                "mapRef": "GD",
+                "areas": [
+                    {
+                        "mapRef": "GD-A",
+                        "name": "District 1",
+                        "regionalName": "District 1"
+                    }, {
+                        "mapRef": "GD-B",
+                        "name": "District 2",
+                        "regionalName": "District 2"
+                    }, {
+                        "mapRef": "GD-C",
+                        "name": "District 3",
+                        "regionalName": "District 3"
+                    }, {
+                        "mapRef": "GD-D",
+                        "name": "District 4",
+                        "regionalName": "District 4"
+                    }, {
+                        "mapRef": "GD-E",
+                        "name": "District 5",
+                        "regionalName": "District 5"
+                    }, {
+                        "mapRef": "GD-F",
+                        "name": "District 6",
+                        "regionalName": "District 6"
+                    }, {
+                        "mapRef": "GD-G",
+                        "name": "District 7",
+                        "regionalName": "District 7"
+                    }, {
+                        "mapRef": "GD-H",
+                        "name": "District 8",
+                        "regionalName": "District 8"
+                    }, {
+                        "mapRef": "GD-I",
+                        "name": "District 9",
+                        "regionalName": "District 9"
+                    }, {
+                        "mapRef": "GD-J",
+                        "name": "District 10",
+                        "regionalName": "District 10"
+                    }, {
+                        "mapRef": "GD-K",
+                        "name": "District 11",
+                        "regionalName": "District 11"
+                    }, {
+                        "mapRef": "GD-L",
+                        "name": "District 12",
+                        "regionalName": "District 12"
+                    }, {
+                        "mapRef": "GD-M",
+                        "name": "District 13",
+                        "regionalName": "District 13"
+                    }, {
+                        "mapRef": "GD-N",
+                        "name": "District 14",
+                        "regionalName": "District 14"
+                    }, {
+                        "mapRef": "GD-O",
+                        "name": "District 15",
+                        "regionalName": "District 15"
+                    }, {
+                        "mapRef": "GD-P",
+                        "name": "District 16",
+                        "regionalName": "District 16"
+                    }, {
+                        "mapRef": "GD-Q",
+                        "name": "District 17",
+                        "regionalName": "District 17"
+                    }, {
+                        "mapRef": "GD-R",
+                        "name": "District 18",
+                        "regionalName": "District 18"
+                    }, {
+                        "mapRef": "GD-S",
+                        "name": "District 19",
+                        "regionalName": "District 19"
+                    }, {
+                        "mapRef": "GD-T",
+                        "name": "District 20",
+                        "regionalName": "District 20"
+                    }, {
+                        "mapRef": "GD-U",
+                        "name": "District 21",
+                        "regionalName": "District 21"
+                    }, {
+                        "mapRef": "GD-V",
+                        "name": "District 22",
+                        "regionalName": "District 22"
+                    }, {
+                        "mapRef": "GD-W",
+                        "name": "District 23",
+                        "regionalName": "District 23"
+                    }, {
+                        "mapRef": "GD-X",
+                        "name": "District 24",
+                        "regionalName": "District 24"
+                    }, {
+                        "mapRef": "GD-Y",
+                        "name": "District 25",
+                        "regionalName": "District 25"
+                    }, {
+                        "mapRef": "GD-Z",
+                        "name": "District 26",
+                        "regionalName": "District 26"
+                    }, {
+                        "mapRef": "GD-AA",
+                        "name": "District 27",
+                        "regionalName": "District 27"
+                    }, {
+                        "mapRef": "GD-AB",
+                        "name": "District 28",
+                        "regionalName": "District 28"
+                    }, {
+                        "mapRef": "GD-AC",
+                        "name": "District 29",
+                        "regionalName": "District 29"
+                    }, {
+                        "mapRef": "GD-AD",
+                        "name": "District 30",
+                        "regionalName": "District 30"
+                    }, {
+                        "mapRef": "GD-AE",
+                        "name": "District 31",
+                        "regionalName": "District 31"
+                    }, {
+                        "mapRef": "GD-AF",
+                        "name": "District 32",
+                        "regionalName": "District 32"
+                    }, {
+                        "mapRef": "GD-AG",
+                        "name": "District 33",
+                        "regionalName": "District 33"
+                    }, {
+                        "mapRef": "GD-AH",
+                        "name": "District 34",
+                        "regionalName": "District 34"
+                    }, {
+                        "mapRef": "GD-AI",
+                        "name": "District 35",
+                        "regionalName": "District 35"
+                    }, {
+                        "mapRef": "GD-AJ",
+                        "name": "District 36",
+                        "regionalName": "District 36"
+                    }, {
+                        "mapRef": "GD-AK",
+                        "name": "District 37",
+                        "regionalName": "District 37"
+                    }, {
+                        "mapRef": "GD-AL",
+                        "name": "District 38",
+                        "regionalName": "District 38"
+                    }, {
+                        "mapRef": "GD-AM",
+                        "name": "District 39",
+                        "regionalName": "District 39"
+                    }, {
+                        "mapRef": "GD-AN",
+                        "name": "District 40",
+                        "regionalName": "District 40"
+                    }, {
+                        "mapRef": "GD-AO",
+                        "name": "District 41",
+                        "regionalName": "District 41"
+                    }
+
+                ]
+            },
+
+            {
+                "name": "Kristineberg",
+                "regionalName": "Kristineberg",
+                "mapRef": "KB",
+                "areas": [
+                    {
+                        "mapRef": "KB-A",
+                        "name": "District 1",
+                        "regionalName": "District 1"
+                    }, {
+                        "mapRef": "KB-B",
+                        "name": "District 2",
+                        "regionalName": "District 2"
+                    }, {
+                        "mapRef": "KB-C",
+                        "name": "District 3",
+                        "regionalName": "District 3"
+                    }, {
+                        "mapRef": "KB-D",
+                        "name": "District 4",
+                        "regionalName": "District 4"
+                    }, {
+                        "mapRef": "KB-E",
+                        "name": "District 5",
+                        "regionalName": "District 5"
+                    }, {
+                        "mapRef": "KB-F",
+                        "name": "District 6",
+                        "regionalName": "District 6"
+                    }
+
+                ]
+            },
+
+            {
+                "name": "Kungsholmen",
+                "regionalName": "Kungsholmen",
+                "mapRef": "KM",
+                "areas": [
+                    {
+                        "mapRef": "KM-A",
+                        "name": "District 1",
+                        "regionalName": "District 1"
+                    }, {
+                        "mapRef": "KM-B",
+                        "name": "District 2",
+                        "regionalName": "District 2"
+                    }, {
+                        "mapRef": "KM-C",
+                        "name": "District 3",
+                        "regionalName": "District 3"
+                    }, {
+                        "mapRef": "KM-D",
+                        "name": "District 4",
+                        "regionalName": "District 4"
+                    }, {
+                        "mapRef": "KM-E",
+                        "name": "District 5",
+                        "regionalName": "District 5"
+                    }, {
+                        "mapRef": "KM-F",
+                        "name": "District 6",
+                        "regionalName": "District 6"
+                    }, {
+                        "mapRef": "KM-G",
+                        "name": "District 7",
+                        "regionalName": "District 7"
+                    }, {
+                        "mapRef": "KM-H",
+                        "name": "District 8",
+                        "regionalName": "District 8"
+                    }, {
+                        "mapRef": "KM-I",
+                        "name": "District 9",
+                        "regionalName": "District 9"
+                    }, {
+                        "mapRef": "KM-J",
+                        "name": "District 10",
+                        "regionalName": "District 10"
+                    }, {
+                        "mapRef": "KM-K",
+                        "name": "District 11",
+                        "regionalName": "District 11"
+                    }, {
+                        "mapRef": "KM-L",
+                        "name": "District 12",
+                        "regionalName": "District 12"
+                    }, {
+                        "mapRef": "KM-M",
+                        "name": "District 13",
+                        "regionalName": "District 13"
+                    }, {
+                        "mapRef": "KM-N",
+                        "name": "District 14",
+                        "regionalName": "District 14"
+                    }, {
+                        "mapRef": "KM-O",
+                        "name": "District 15",
+                        "regionalName": "District 15"
+                    }, {
+                        "mapRef": "KM-P",
+                        "name": "District 16",
+                        "regionalName": "District 16"
+                    }, {
+                        "mapRef": "KM-Q",
+                        "name": "District 17",
+                        "regionalName": "District 17"
+                    }, {
+                        "mapRef": "KM-R",
+                        "name": "District 18",
+                        "regionalName": "District 18"
+                    }, {
+                        "mapRef": "KM-S",
+                        "name": "District 19",
+                        "regionalName": "District 19"
+                    }, {
+                        "mapRef": "KM-T",
+                        "name": "District 20",
+                        "regionalName": "District 20"
+                    }, {
+                        "mapRef": "KM-U",
+                        "name": "District 21",
+                        "regionalName": "District 21"
+                    }, {
+                        "mapRef": "KM-V",
+                        "name": "District 22",
+                        "regionalName": "District 22"
+                    }, {
+                        "mapRef": "KM-W",
+                        "name": "District 23",
+                        "regionalName": "District 23"
+                    }, {
+                        "mapRef": "KM-X",
+                        "name": "District 24",
+                        "regionalName": "District 24"
+                    }, {
+                        "mapRef": "KM-Y",
+                        "name": "District 25",
+                        "regionalName": "District 25"
+                    }, {
+                        "mapRef": "KM-Z",
+                        "name": "District 26",
+                        "regionalName": "District 26"
+                    }, {
+                        "mapRef": "KM-AA",
+                        "name": "District 27",
+                        "regionalName": "District 27"
+                    }, {
+                        "mapRef": "KM-AB",
+                        "name": "District 28",
+                        "regionalName": "District 28"
+                    }, {
+                        "mapRef": "KM-AC",
+                        "name": "District 29",
+                        "regionalName": "District 29"
+                    }
+
+                ]
+            },
+
+            {
+                "name": "LillaEssingen",
+                "regionalName": "LillaEssingen",
+                "mapRef": "LE",
+                "areas": [
+                    {
+                        "mapRef": "LE-A",
+                        "name": "District 1",
+                        "regionalName": "District 1"
+                    }, {
+                        "mapRef": "LE-B",
+                        "name": "District 2",
+                        "regionalName": "District 2"
+                    }, {
+                        "mapRef": "LE-C",
+                        "name": "District 3",
+                        "regionalName": "District 3"
+                    }, {
+                        "mapRef": "LE-D",
+                        "name": "District 4",
+                        "regionalName": "District 4"
+                    }, {
+                        "mapRef": "LE-E",
+                        "name": "District 5",
+                        "regionalName": "District 5"
+                    }, {
+                        "mapRef": "LE-F",
+                        "name": "District 6",
+                        "regionalName": "District 6"
+                    }, {
+                        "mapRef": "LE-G",
+                        "name": "District 7",
+                        "regionalName": "District 7"
+                    }, {
+                        "mapRef": "LE-H",
+                        "name": "District 8",
+                        "regionalName": "District 8"
+                    }, {
+                        "mapRef": "LE-I",
+                        "name": "District 9",
+                        "regionalName": "District 9"
+                    }, {
+                        "mapRef": "LE-J",
+                        "name": "District 10",
+                        "regionalName": "District 10"
+                    }, {
+                        "mapRef": "LE-K",
+                        "name": "District 11",
+                        "regionalName": "District 11"
+                    }, {
+                        "mapRef": "LE-L",
+                        "name": "District 12",
+                        "regionalName": "District 12"
+                    }, {
+                        "mapRef": "LE-M",
+                        "name": "District 13",
+                        "regionalName": "District 13"
+                    }, {
+                        "mapRef": "LE-N",
+                        "name": "District 14",
+                        "regionalName": "District 14"
+                    }, {
+                        "mapRef": "LE-O",
+                        "name": "District 15",
+                        "regionalName": "District 15"
+                    }, {
+                        "mapRef": "LE-P",
+                        "name": "District 16",
+                        "regionalName": "District 16"
+                    }, {
+                        "mapRef": "LE-Q",
+                        "name": "District 17",
+                        "regionalName": "District 17"
+                    }, {
+                        "mapRef": "LE-R",
+                        "name": "District 18",
+                        "regionalName": "District 18"
+                    }, {
+                        "mapRef": "LE-S",
+                        "name": "District 19",
+                        "regionalName": "District 19"
+                    }
+
+                ]
+            },
+
+            {
+                "name": "Marieberg",
+                "regionalName": "Marieberg",
+                "mapRef": "MB",
+                "areas": [
+                    {
+                        "mapRef": "MB-A",
+                        "name": "District 1",
+                        "regionalName": "District 1"
+                    }, {
+                        "mapRef": "MB-B",
+                        "name": "District 2",
+                        "regionalName": "District 2"
+                    }, {
+                        "mapRef": "MB-C",
+                        "name": "District 3",
+                        "regionalName": "District 3"
+                    }, {
+                        "mapRef": "MB-D",
+                        "name": "District 4",
+                        "regionalName": "District 4"
+                    }, {
+                        "mapRef": "MB-E",
+                        "name": "District 5",
+                        "regionalName": "District 5"
+                    }, {
+                        "mapRef": "MB-F",
+                        "name": "District 6",
+                        "regionalName": "District 6"
+                    }, {
+                        "mapRef": "MB-G",
+                        "name": "District 7",
+                        "regionalName": "District 7"
+                    }, {
+                        "mapRef": "MB-H",
+                        "name": "District 8",
+                        "regionalName": "District 8"
+                    }, {
+                        "mapRef": "MB-I",
+                        "name": "District 9",
+                        "regionalName": "District 9"
+                    }, {
+                        "mapRef": "MB-J",
+                        "name": "District 10",
+                        "regionalName": "District 10"
+                    }, {
+                        "mapRef": "MB-K",
+                        "name": "District 11",
+                        "regionalName": "District 11"
+                    }, {
+                        "mapRef": "MB-L",
+                        "name": "District 12",
+                        "regionalName": "District 12"
+                    }, {
+                        "mapRef": "MB-M",
+                        "name": "District 13",
+                        "regionalName": "District 13"
+                    }
+
+                ]
+            },
+
+            {
+                "name": "Ostermalm",
+                "regionalName": "Ostermalm",
+                "mapRef": "OM",
+                "areas": [
+                    {
+                        "mapRef": "OM-A",
+                        "name": "District 1",
+                        "regionalName": "District 1"
+                    }, {
+                        "mapRef": "OM-B",
+                        "name": "District 2",
+                        "regionalName": "District 2"
+                    }, {
+                        "mapRef": "OM-C",
+                        "name": "District 3",
+                        "regionalName": "District 3"
+                    }, {
+                        "mapRef": "OM-D",
+                        "name": "District 4",
+                        "regionalName": "District 4"
+                    }, {
+                        "mapRef": "OM-E",
+                        "name": "District 5",
+                        "regionalName": "District 5"
+                    }, {
+                        "mapRef": "OM-F",
+                        "name": "District 6",
+                        "regionalName": "District 6"
+                    }, {
+                        "mapRef": "OM-G",
+                        "name": "District 7",
+                        "regionalName": "District 7"
+                    }, {
+                        "mapRef": "OM-H",
+                        "name": "District 8",
+                        "regionalName": "District 8"
+                    }, {
+                        "mapRef": "OM-I",
+                        "name": "District 9",
+                        "regionalName": "District 9"
+                    }, {
+                        "mapRef": "OM-J",
+                        "name": "District 10",
+                        "regionalName": "District 10"
+                    }, {
+                        "mapRef": "OM-K",
+                        "name": "District 11",
+                        "regionalName": "District 11"
+                    }, {
+                        "mapRef": "OM-L",
+                        "name": "District 12",
+                        "regionalName": "District 12"
+                    }, {
+                        "mapRef": "OM-M",
+                        "name": "District 13",
+                        "regionalName": "District 13"
+                    }, {
+                        "mapRef": "OM-N",
+                        "name": "District 14",
+                        "regionalName": "District 14"
+                    }, {
+                        "mapRef": "OM-O",
+                        "name": "District 15",
+                        "regionalName": "District 15"
+                    }, {
+                        "mapRef": "OM-P",
+                        "name": "District 16",
+                        "regionalName": "District 16"
+                    }, {
+                        "mapRef": "OM-Q",
+                        "name": "District 17",
+                        "regionalName": "District 17"
+                    }, {
+                        "mapRef": "OM-R",
+                        "name": "District 18",
+                        "regionalName": "District 18"
+                    }, {
+                        "mapRef": "OM-S",
+                        "name": "District 19",
+                        "regionalName": "District 19"
+                    }, {
+                        "mapRef": "OM-T",
+                        "name": "District 20",
+                        "regionalName": "District 20"
+                    }, {
+                        "mapRef": "OM-U",
+                        "name": "District 21",
+                        "regionalName": "District 21"
+                    }, {
+                        "mapRef": "OM-V",
+                        "name": "District 22",
+                        "regionalName": "District 22"
+                    }, {
+                        "mapRef": "OM-W",
+                        "name": "District 23",
+                        "regionalName": "District 23"
+                    }, {
+                        "mapRef": "OM-X",
+                        "name": "District 24",
+                        "regionalName": "District 24"
+                    }, {
+                        "mapRef": "OM-Y",
+                        "name": "District 25",
+                        "regionalName": "District 25"
+                    }, {
+                        "mapRef": "OM-Z",
+                        "name": "District 26",
+                        "regionalName": "District 26"
+                    }, {
+                        "mapRef": "OM-AA",
+                        "name": "District 27",
+                        "regionalName": "District 27"
+                    }, {
+                        "mapRef": "OM-AB",
+                        "name": "District 28",
+                        "regionalName": "District 28"
+                    }, {
+                        "mapRef": "OM-AC",
+                        "name": "District 29",
+                        "regionalName": "District 29"
+                    }, {
+                        "mapRef": "OM-AD",
+                        "name": "District 30",
+                        "regionalName": "District 30"
+                    }, {
+                        "mapRef": "OM-AE",
+                        "name": "District 31",
+                        "regionalName": "District 31"
+                    }, {
+                        "mapRef": "OM-AF",
+                        "name": "District 32",
+                        "regionalName": "District 32"
+                    }, {
+                        "mapRef": "OM-AG",
+                        "name": "District 33",
+                        "regionalName": "District 33"
+                    }, {
+                        "mapRef": "OM-AH",
+                        "name": "District 34",
+                        "regionalName": "District 34"
+                    }, {
+                        "mapRef": "OM-AI",
+                        "name": "District 35",
+                        "regionalName": "District 35"
+                    }, {
+                        "mapRef": "OM-AJ",
+                        "name": "District 36",
+                        "regionalName": "District 36"
+                    }, {
+                        "mapRef": "OM-AK",
+                        "name": "District 37",
+                        "regionalName": "District 37"
+                    }, {
+                        "mapRef": "OM-AL",
+                        "name": "District 38",
+                        "regionalName": "District 38"
+                    }, {
+                        "mapRef": "OM-AM",
+                        "name": "District 39",
+                        "regionalName": "District 39"
+                    }, {
+                        "mapRef": "OM-AN",
+                        "name": "District 40",
+                        "regionalName": "District 40"
+                    }
+
+                ]
+            },
+            {
+                "name": "Norrmalm",
+                "regionalName": "Norrmalm",
+                "mapRef": "NM",
+                "areas": [
+                    {
+                        "mapRef": "NM-A",
+                        "name": "District 1",
+                        "regionalName": "District 1"
+                    }, {
+                        "mapRef": "NM-B",
+                        "name": "District 2",
+                        "regionalName": "District 2"
+                    }, {
+                        "mapRef": "NM-C",
+                        "name": "District 3",
+                        "regionalName": "District 3"
+                    }, {
+                        "mapRef": "NM-D",
+                        "name": "District 4",
+                        "regionalName": "District 4"
+                    }, {
+                        "mapRef": "NM-E",
+                        "name": "District 5",
+                        "regionalName": "District 5"
+                    }, {
+                        "mapRef": "NM-F",
+                        "name": "District 6",
+                        "regionalName": "District 6"
+                    }, {
+                        "mapRef": "NM-G",
+                        "name": "District 7",
+                        "regionalName": "District 7"
+                    }, {
+                        "mapRef": "NM-H",
+                        "name": "District 8",
+                        "regionalName": "District 8"
+                    }, {
+                        "mapRef": "NM-I",
+                        "name": "District 9",
+                        "regionalName": "District 9"
+                    }, {
+                        "mapRef": "NM-J",
+                        "name": "District 10",
+                        "regionalName": "District 10"
+                    }, {
+                        "mapRef": "NM-K",
+                        "name": "District 11",
+                        "regionalName": "District 11"
+                    }, {
+                        "mapRef": "NM-L",
+                        "name": "District 12",
+                        "regionalName": "District 12"
+                    }, {
+                        "mapRef": "NM-M",
+                        "name": "District 13",
+                        "regionalName": "District 13"
+                    }, {
+                        "mapRef": "NM-N",
+                        "name": "District 14",
+                        "regionalName": "District 14"
+                    }, {
+                        "mapRef": "NM-O",
+                        "name": "District 15",
+                        "regionalName": "District 15"
+                    }, {
+                        "mapRef": "NM-P",
+                        "name": "District 16",
+                        "regionalName": "District 16"
+                    }, {
+                        "mapRef": "NM-Q",
+                        "name": "District 17",
+                        "regionalName": "District 17"
+                    }, {
+                        "mapRef": "NM-R",
+                        "name": "District 18",
+                        "regionalName": "District 18"
+                    }, {
+                        "mapRef": "NM-S",
+                        "name": "District 19",
+                        "regionalName": "District 19"
+                    }, {
+                        "mapRef": "NM-T",
+                        "name": "District 20",
+                        "regionalName": "District 20"
+                    }, {
+                        "mapRef": "NM-U",
+                        "name": "District 21",
+                        "regionalName": "District 21"
+                    }, {
+                        "mapRef": "NM-V",
+                        "name": "District 22",
+                        "regionalName": "District 22"
+                    }, {
+                        "mapRef": "NM-W",
+                        "name": "District 23",
+                        "regionalName": "District 23"
+                    }
+
+                ]
             }
 
         ]

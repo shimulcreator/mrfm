@@ -78,7 +78,7 @@
         <div id="breadcrumb">
             <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
             <a href="#" class="current">Creating Order</a>
-            <a href="#" class="current">Vasastan</a>
+            <a href="#" class="current">{{ entity.name }}</a>
         </div>
 
 
@@ -87,23 +87,12 @@
                 <h3>Select District region from the map and then click "NEXT"</h3>
 
                 <div class="widget-box">
-
-
-
-                <div id="map_demo" style=" padding: 20px;">
-
-                    <div style="width:720px; border:0; overflow: hidden; float:left;">
-                        <img style="width:720px;border:0;" id="usa_image" src="{{ asset('bundles/maklarresursadmin/mapFiles/map.png') }}" usemap="#usa" >
-                    </div>
-                    <div  id="statelist" style="float:left; padding-left: 10px; width:180px; "></div>
-
-                    <div style="clear:both; height:8px;"></div>
-                    <div>
-
-
-                    </div>
-
+                    {%block map%}
+                        {% include 'MaklarresursUserBundle:Maps:map-'~ entity.name ~'.html.twig' %}
+                    {%endblock%}
                 </div>
+
+
 
                 <script type="text/javascript">
                 if (window.Zepto) {
@@ -196,12 +185,10 @@
                                 showToolTip: true,
                                 toolTipClose: ["area-mouseout"],
                                 areas: [
-                                    {% for entity in entities %}
                                     { key: "{{ entity.mapRef }}",
                                         toolTip: $('<div>{{ entity.name }}  (231 Flyers)</div>')
 
                                     },
-                                    {% endfor %}
 
                                 ]
                             };
@@ -415,38 +402,7 @@
 
                 </script>
 
-                <map id="usa_image_map" name="usa">
-                    <area state="VT-A" full="District 1" class="district" id="1" alt="" title="District 1" href="#" shape="poly" coords="13,377,24,367,45,353,67,336,84,326,101,314,119,300,131,289,143,298,157,310,165,327,173,348,183,371,193,393,199,412,177,416,162,418,139,419,119,420,108,419,88,408,73,400,58,391,16,378" />
-                    <area state="VT-B" full="District 2" class="district" id="2" alt="" title="" href="#" shape="poly" coords="133,286,139,274,146,264,156,258,167,245,192,224,213,222,231,202,249,178,271,161,280,174,289,186,300,202,290,211,274,220,263,227,232,249,213,265,189,281,169,296,151,297,136,288" />
-                    <area state="VT-C" full="District 3" class="district" id="3" alt="" title="" href="#" shape="poly" coords="149,297,161,312,170,334,178,352,193,383,203,409,206,413,228,410,233,382,242,352,258,338,242,331,228,325,215,319,198,310,179,304,165,297" />
-                    <area state="VT-D" full="District 4" class="district" id="4" alt="" title="" href="#" shape="poly" coords="172,295,175,296,185,304,198,307,214,315,228,322,242,326,247,308,248,296,248,283,255,266,260,242,263,232,253,238,244,242,235,252,221,264,203,277,191,288,191,285,172,298" />
-                    <area state="VT-E" full="District 5" class="district" id="5" alt="" title="" href="#" shape="poly" coords="265,232,285,220,304,206,317,230,297,248,262,248" />
-                    <area state="VT-F" full="District 6" class="district" id="6" alt="" title="" href="#" shape="poly" coords="275,160,308,152,352,153,346,124,346,99,348,31,381,1,443,33,447,58,469,84,484,111,500,151,460,166,421,176,368,184,338,185,305,199" />
-                    <area state="VT-G" full="District 7" class="district" id="7" alt="" title="" href="#" shape="poly" coords="308,205,340,189,395,186,398,190,324,226,318,222" />
-                    <area state="VT-H" full="District 8" class="district" id="8" alt="" title="" href="#" shape="poly" coords="262,254,299,251,321,236,317,277,255,279" />
-                    <area state="VT-I" full="District 9" class="district" id="9" alt="" title="" href="#" shape="poly" coords="6,385,13,380,54,395,111,426,95,474,39,457,23,434" />
-                    <area state="VT-J" full="District 10" class="district" id="10" alt="" title="" href="#" shape="poly" coords="118,427,166,426,196,419,176,459,165,492,161,495,99,476" />
-                    <area state="VT-K" full="District 11" class="district" id="11" alt="" title="" href="#" shape="poly" coords="206,418,232,416,260,478,206,507,199,506,167,496,189,445" />
-                    <area state="VT-L" full="District 12" class="district" id="12" alt="" title="" href="#" shape="poly" coords="259,346,284,392,311,376,366,352,394,340,418,392,327,398,286,404,233,406,246,354" />
-                    <area state="VT-M" full="District 13" class="district" id="13" alt="" title="" href="#" shape="poly" coords="255,284,248,327,260,329,327,296,320,284" />
-                    <area state="VT-N" full="District 14" class="district" id="14" alt="" title="" href="#" shape="poly" coords="263,340,332,304,358,349,286,384" />
-                    <area state="VT-O" full="District 15" class="district" id="15" alt="" title="" href="#" shape="poly" coords="333,294,327,283,325,274,326,232,402,194,423,218,430,241,413,257" />
-                    <area state="VT-P" full="District 16" class="district" id="16" alt="" title="" href="#" shape="poly" coords="239,415,265,472,297,458,342,441,390,422,442,396,381,400,339,402" />
-                    <area state="VT-Q" full="District 17" class="district" id="17" alt="" title="" href="#" shape="poly" coords="335,299,364,345,415,323,457,295,433,249" />
-                    <area state="VT-R" full="District 18" class="district" id="18" alt="" title="" href="#" shape="poly" coords="400,337,423,326,465,300,502,286,518,313,532,344,499,365,454,388,425,390" />
-                    <area state="VT-S" full="District 19" class="district" id="19" alt="" title="" href="#" shape="poly" coords="404,186,458,175,504,159,511,175,507,201,516,225,520,245,528,265,505,281,463,294,430,227,446,260,422,211" />
-                    <area state="VT-T" full="District 20" class="district" id="20" alt="" title="" href="#" shape="poly" coords="497,130,522,142,547,165,563,214,575,247,532,261,524,244,511,198,515,175" />
-                    <area state="VT-U" full="District 21" class="district" id="21" alt="" title="" href="#" shape="poly" coords="506,284,531,266,556,259,571,278,588,319,559,335,538,341" />
-                    <area state="VT-V" full="District 22" class="district" id="22" alt="" title="" href="#" shape="poly" coords="562,258,578,250,595,284,606,310,594,315,577,281" />
-                    <area state="VT-W" full="District 23" class="district" id="23" alt="" title="" href="#" shape="poly" coords="42,465,49,479,52,515,99,541,141,565,159,572,185,539,196,512,129,496,75,472" />
-                    <area state="VT-X" full="District 24" class="district" id="24" alt="" title="" href="#" shape="poly" coords="169,577,190,546,204,516,235,498,267,479,345,446,381,504,405,556,386,571,384,599,371,611,356,638,301,615,250,605,200,585,173,578" />
-                    <area state="VT-Y" full="District 25" class="district" id="25" alt="" title="" href="#" shape="poly" coords="349,445,395,425,407,450,421,478,384,497" />
-                    <area state="VT-Z" full="District 26" class="district" id="26" alt="" title="" href="#" shape="poly" coords="399,425,450,397,499,372,532,428,483,452,454,464,428,475" />
-                    <area state="VT-AA" full="District 27" class="district" id="27" alt="" title="" href="#" shape="poly" coords="506,369,539,346,591,324,610,316,627,344,623,385,582,403,538,423" />
-                    <area state="VT-AB" full="District 28" class="district" id="28" alt="" title="" href="#" shape="poly" coords="392,576,391,597,407,600,432,579,470,560,457,530,438,501,426,484,387,502,411,560" />
-                    <area state="VT-AC" full="District 29" class="district" id="29" alt="" title="" href="#" shape="poly" coords="431,480,457,518,475,555,489,540,508,542,519,535,484,481,456,470" />
-                    <area state="VT-AD" full="District 30" class="district" id="30" alt="" title="" href="#" shape="poly" coords="463,466,541,432,593,404,623,391,624,419,637,435,650,461,631,481,585,501,525,531,482,475" />
-                </map>
+
 
 
 

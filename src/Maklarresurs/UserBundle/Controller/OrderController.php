@@ -49,13 +49,13 @@ class OrderController extends BaseController
      * @Method("GET")
      * @Template()
      */
-    public function zoneMapAction()
+    public function zoneMapAction($id)
     {
         $em = $this->getDoctrine()->getManager();
-        $entities = $em->getRepository('MaklarresursAppBundle:Area')->findAll();
+        $entity = $em->getRepository('MaklarresursAppBundle:Area')->find($id);
 
         return array(
-            'entities'      => $entities
+            'entity'      => $entity
         );
     }
 

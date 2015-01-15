@@ -44,7 +44,7 @@ class Mailer
         $this->container = $container;
 
         $this->defaultOptions = array(
-            'fromEmail' => array('info@maklarresurs.nu' => 'maklarresurs.nu'),
+            'fromEmail' => array('douagpatrick@yahoo.fr' => 'Patrick Douag'),
             'mailAssetsDir' => $this->container->getParameter(
                 'kernel.root_dir'
             ) . "/../web/uploads",
@@ -65,7 +65,7 @@ class Mailer
 
         $context = compact('lappning', 'loginUrl');
 
-        $this->sendTwigEmail($template, $context, 'khubchena@gmail.com');
+        $this->sendTwigEmail($template, $context, 'douagpatrick@gmail.com');
     }
 
 

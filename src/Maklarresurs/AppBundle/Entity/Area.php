@@ -8,7 +8,7 @@ use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * @ORM\Table(name="area")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Maklarresurs\AppBundle\Entity\AreaRepository")
  * @ORM\HasLifecycleCallbacks
  */
 class Area {

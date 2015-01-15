@@ -5,10 +5,11 @@ parameters:
     database_port: null
     database_name: mrfm
     database_user: root
-    database_password: shimul
+    database_password: shimul2014
     mailer_transport: smtp
-    mailer_host: 127.0.0.1
-    mailer_user: null
-    mailer_password: null
+    mailer_host: smtp.mandrillapp.com
+    mailer_user: khubchena@gmail.com
+    mailer_password: rxgjA6aZRIlpn6gpNvBpjg
     locale: en
-    secret: ThisTokenIsNotSoSecretChangeIt
+    secret: rxgjA6aZRIlpn6gpNvBpjg
+

@@ -2,7 +2,9 @@
 
 namespace Maklarresurs\AdminBundle\Controller;
 
+use Maklarresurs\AppBundle\Controller\BaseController;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -15,7 +17,7 @@ use Maklarresurs\AdminBundle\Form\AddressType;
  *
  * @Route("/address")
  */
-class AddressController extends Controller
+class AddressController extends BaseController
 {
 
     /**
@@ -44,22 +46,26 @@ class AddressController extends Controller
      */
     public function createAction(Request $request)
     {
-        $entity = new Address();
-        $form = $this->createCreateForm($entity);
-        $form->handleRequest($request);
+        $em = $this->getDoctrine()->getManager();
 
-        if ($form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
+        $district = $request->get('district');
+        $address = $request->get('address');
+
+        $entity = new Address();
+
+        $area = $em->getRepository('MaklarresursAppBundle:Area')->find($district);
+        $entity->setArea($area);
+        $entity->setName($address);
+
+
+        if ($entity) {
             $em->persist($entity);
             $em->flush();
 
-            return $this->redirect($this->generateUrl('address_show', array('id' => $entity->getId())));
+            return $this->redirect($this->generateUrl('address_new'));
         }
 
-        return array(
-            'entity' => $entity,
-            'form'   => $form->createView(),
-        );
+        return $this->redirect($this->generateUrl('address_new'));
     }
 
     /**
@@ -90,12 +96,14 @@ class AddressController extends Controller
      */
     public function newAction()
     {
-        $entity = new Address();
-        $form   = $this->createCreateForm($entity);
+//        $entity = new Address();
+//        $form   = $this->createCreateForm($entity);
+        $em = $this->getDoctrine()->getManager();
+
+        $entities = $em->getRepository('MaklarresursAppBundle:Area')->findAll();
 
         return array(
-            'entity' => $entity,
-            'form'   => $form->createView(),
+            'entities' => $entities,
         );
     }
 
@@ -243,5 +251,30 @@ class AddressController extends Controller
             ->add('submit', 'submit', array('label' => 'Delete'))
             ->getForm()
         ;
+    }
+
+
+    /**
+     * Lists all Districts by Zone.
+     *
+     * @Route("/get/districts", name="get_districts")
+     * @Method("POST")
+     * @Template()
+     */
+    public function getDistrictsAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $districts = $em->getRepository('MaklarresursAppBundle:Area')->getChildByParentIds($request->get('zone', array()));
+
+        $response = array();
+        foreach($districts as $district) {
+            /** @var $district Area */
+            $response[] = array(
+                "id" => $district->getId(),
+                "name" => $district->getName()
+            );
+        }
+
+        return new Response(json_encode($response));
     }
 }
