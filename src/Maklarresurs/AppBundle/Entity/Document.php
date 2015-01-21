@@ -34,7 +34,7 @@ class Document
     /**
      * @var
      *
-     * @ORM\ManyToOne(targetEntity="Lappning")
+     * @ORM\ManyToOne(targetEntity="Sample")
      */
     protected  $lappning;
 

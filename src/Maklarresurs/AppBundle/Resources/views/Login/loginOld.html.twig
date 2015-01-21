@@ -1,20 +1,28 @@
-<style>
-    input{
-        border: 1px solid #ccc;
-        height: 25px;
-        padding: 5px;
-        border-radius: 3px;
-    }
-    input[type=submit]{
-        height: 25px;
-    }
-</style>
+{% extends 'MaklarresursAppBundle::layout.html.twig' %}
+{% set pageClass = 'home' %}
 
-<!-- ***************** - Main Content Area - ***************** -->
-<div id="main" class="tt-slider-karma-custom-jquery-1">
-    <div class="main-area" style="padding-top: 150px">
-        <div class="spbox3" style="margin: 0 auto; width: 30%; height: auto; background: #ffffff; border: 1px solid #cccccc; border-radius: 5px; padding: 15px;">
-            <h1 style="color: blue"> Maklareurs LOGIN</h1>
+{% block title %}Home{% endblock %}
+
+
+{% block body %}
+
+    <style>
+        input{
+            border: 1px solid #ccc;
+            height: 15px;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        input[type=submit]{
+            height: 25px;
+        }
+    </style>
+
+    <!-- ***************** - Main Content Area - ***************** -->
+    <div id="main" class="tt-slider-karma-custom-jquery-1">
+        <div class="main-area">
+            <div class="spbox3" style="margin: 0 auto; width: 50%; height: auto; background: #ffffff; border: 1px solid #cccccc; border-radius: 5px; padding: 15px;">
+                <h1> Login Here</h1>
 
             <form action="{{ path("_login_check") }}" method="post">
                 <div class="form clear">
@@ -56,10 +64,12 @@
                 </div>
                 <!-- /col-md-3 -->
             </form>
-        </div>
+            </div>
 
-    </div><!-- END main-area -->
+        </div><!-- END main-area -->
 
-    <div id="footer-top">&nbsp;</div>
-</div><!-- END main -->
+        <div id="footer-top">&nbsp;</div>
+    </div><!-- END main -->
 
+
+{% endblock %}
