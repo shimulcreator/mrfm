@@ -1,12 +1,61 @@
 <style>
     input{
         border: 1px solid #ccc;
-        height: 25px;
+        height: 30px;
         padding: 5px;
         border-radius: 3px;
     }
     input[type=submit]{
         height: 25px;
+    }
+    .header_login{
+        margin: 0 auto; width: 90%; height: auto; background-color: blue; text-align: center; padding: 10px 10px 20px 10px; border-radius: 3px;background-image: -webkit-linear-gradient(top, #007CB7, #003869);
+        border-top: 1px solid #00A2ED;
+        background-color: #003869;
+        background-image: linear-gradient(to bottom, #007CB7, #003869);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#007CB7), to(#003869));
+        background-image: -webkit-linear-gradient(top, #007CB7, #003869);
+        background-image: -moz-linear-gradient(top, #007CB7, #003869);
+        background-image: -webkit-linear-gradient(top, #007CB7, #003869);
+        background-image: -o-linear-gradient(top, #007CB7, #003869);
+        background-image: ms-linear-gradient(to bottom, #007CB7, #003869);
+        -pie-background: linear-gradient(to bottom, #007CB7, #003869);
+    }
+    www.maklarresurs.nu/media="all"
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+        border: 0;
+        /* outline: 0; */
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+        margin: 0;
+        padding: 0;
+    }
+    user agent stylesheetdiv {
+        display: block;
+    }
+    Pseudo ::selection element
+    www.maklarresurs.nu/media="all"
+    ::selection {
+        background:
+    }
+    .logo-text {
+        font-weight: 700;
+        font-size: 1.5em;
+        letter-spacing: -.5px;
+        color: #FFF;
+        padding-left: 7px;
+        word-spacing: 4px;
+    }
+    table{
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    table td{
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 13px;
+        color: #2E4452;
     }
 </style>
 
@@ -14,7 +63,10 @@
 <div id="main" class="tt-slider-karma-custom-jquery-1">
     <div class="main-area" style="padding-top: 150px">
         <div class="spbox3" style="margin: 0 auto; width: 30%; height: auto; background: #ffffff; border: 1px solid #cccccc; border-radius: 5px; padding: 15px;">
-            <h1 style="color: blue"> Maklareurs LOGIN</h1>
+            <div class="header_login">
+                <img style="margin-bottom: -17px;" src="http://www.maklarresurs.nu/wp-content/themes/Karma/images/_global/custom-logo-2.png" alt="Mäklarresurs AB">
+                <span class="logo-text">Mäklarresurs LOGIN</span>
+            </div>
 
             <form action="{{ path("_login_check") }}" method="post">
                 <div class="form clear">
@@ -37,22 +89,21 @@
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
-                            <td><input type="checkbox" id="remember_me" name="_remember_me" value="on" checked="checked" > Remember me</td>
+                            <td>
+                                <div style="float: left">
+                                    <input type="checkbox" id="remember_me" name="_remember_me" value="on" checked="checked" >
+                                </div>
+                                <div style="float: left; padding: 9px;">
+                                    Remember me
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
-                            <td><input type="submit" placeholder="" value="Sign in"/></td>
+                            <td><input type="submit" placeholder="" value="LOGIN" style="height: auto; padding: 8px;"/></td>
                         </tr>
-                        <tr>
-                            <td></td>
-                            <td><a href="{{ path('fos_user_resetting_request') }}" style="color: #01BAEB;">Forget your password ?</a></td>
-                        </tr>
+
                     </table>
-
-
-
-
-
                 </div>
                 <!-- /col-md-3 -->
             </form>

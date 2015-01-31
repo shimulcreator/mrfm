@@ -15,6 +15,11 @@
     <style>
         .form-horizontal .control-label {
             padding-top: 10px;
+            color: #000B5A;
+        }
+        table#adrs td{
+            padding-left: 20px;
+            color: #000B5A;
         }
     </style>
 {% endblock %}
@@ -66,6 +71,7 @@
                                 </div>
                             </div>
 
+                            <!--
                             <div class="form-group">
                                 <label class="control-label">Flyers : </label>
                                 <div class="controls">
@@ -73,14 +79,43 @@
                                     <input type="hidden" name="flyers" id="flyers" value="0">
                                 </div>
                             </div>
+                            -->
+
+                            <input type="hidden" name="flyers" id="flyers" value="0">
 
                             <div class="form-group">
-                                <label class="control-label">Type Address : </label>
+                                <label class="control-label">Fill up address</label>
                                 <div class="controls">
-                                    <textarea name="address" id="address" style="height: 60px; width: 300px;"></textarea>
-                                    <input type="hidden" name="addresses" id="addresses" value="">
-                                    <a id="add" class="btn btn-dark-red">Add</a>
+                                    <table id="adrs">
+                                        <tr>
+                                            <td style="padding-left: 0">
+                                                Address <br>
+                                                <input type="text" id="address">
+                                            </td>
+                                            <td>
+                                                Nr <br>
+                                                <input type="text" id="nr" style="width: 40px;">
+                                            </td>
+                                            <td>
+                                                Bokstav <br>
+                                                <input type="text" id="bokstav" style="width: 40px;">
+                                            </td>
+                                            <td>
+                                                Zon(Stadsdel) <br>
+                                                <input type="text" id="zone">
+                                            </td>
+                                            <td> <br>
+                                                <input type="hidden" name="addresses" id="addresses" value="">
+                                                <a id="add" class="btn btn-dark-red">Add</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                   <!-- <textarea name="address" id="address" style="height: 60px; width: 300px;"></textarea> -->
+
+
                                 </div>
+
                             </div>
 
                             <div class="form-group">
@@ -93,8 +128,6 @@
                                     </table>
                                 </div>
                             </div>
-
-
 
                             <div class="form-actions">
                                 <input type="submit" value="NEXT" class="btn btn-dark-red">
@@ -126,8 +159,23 @@
         jQuery(document).ready(function(jQuery) {
             jQuery('#add').click(function(){
                 var address = jQuery("#address").val();
+                var nr = jQuery("#nr").val();
+                var bokstav = jQuery("#bokstav").val();
+                var zone = jQuery("#zone").val();
                 if(address == '' || address == null){
                     alert('please type a address');
+                    return 0;
+                }
+                if(nr == '' || nr == null){
+                    alert('please type Nr');
+                    return 0;
+                }
+                if(bokstav == '' || bokstav == null){
+                    alert('please type bokstav');
+                    return 0;
+                }
+                if(zone == '' || zone == null){
+                    alert('please type zone');
                     return 0;
                 }
                 var flyers = jQuery("#flyers").val();
@@ -135,7 +183,10 @@
                 jQuery("#flyers_view").html(parseInt(flyers)+1);
                 jQuery("#addresses").val(jQuery("#addresses").val() + " | " + address);
 
-                $( "#address_list" ).prepend( $('<tr class="gradeA item" id="'+flyers+'"><td>'+ address +'</td></tr>') );
+                var fulladdress = address + ", " + nr + ", " + bokstav + ", " + zone;
+
+
+                $( "#address_list" ).prepend( $('<tr class="gradeA item" id="'+flyers+'"><td>'+ fulladdress +'</td></tr>') );
                 jQuery("#address").val('');
 
             });
