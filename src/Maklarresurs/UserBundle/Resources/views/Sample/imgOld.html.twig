@@ -1,0 +1,109 @@
+{% extends 'MaklarresursUserBundle::layout.html.twig' %}
+{% set pageClass = 'customer' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/font-awesome.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/jquery-ui.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/icheck/flat/blue.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/select2.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.blue.css') }}" class="skin-color" />
+
+    <style>
+        input[type="file"] {
+            width: 320px;
+            height: 35px;
+            border: 1px solid #BBB;
+            /*border-right: 0;*/
+            color: #888;
+            padding: 5px;
+
+            -webkit-border-top-left-radius: 5px;
+            -webkit-border-bottom-left-radius: 5px;
+            -moz-border-radius-topleft: 5px;
+            -moz-border-radius-bottomleft: 5px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+
+            outline: none;
+        }
+        .upload{
+            height: 34px;
+            margin-left: -4px;
+            margin-top: 2px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            background-color: #914DCF;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            border: none;
+        }
+        form{
+            margin-bottom: 20px;
+        }
+    </style>
+
+{% endblock %}
+
+
+{% block body %}
+    <div id="content">
+        <div id="content-header">
+            <h1>LAPPNING</h1>
+        </div>
+        <div id="breadcrumb">
+            <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+            <a href="#" class="current">Creating Order</a>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="widget-box">
+                    <div class="widget-title">
+                        <span class="icon">
+                            <i class="icon-align-justify"></i>
+                        </span>
+                        <h5>Creating Order</h5>
+                    </div>
+                    <div class="widget-content nopadding">
+
+                        <form class="form-horizontal" action="{{ path('sample_file_uploads_create', {'id': lappningId}) }}" method="post" {{ form_enctype(form) }}>
+                            <div class="form-group">
+                                <label class="control-label">Upload File : </label>
+                                <div class="controls">
+                                    {{ form_widget(form.image) }}
+                                    {{ form_widget(form._token) }}
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <input type="submit" value="NEXT" class="btn btn-dark-red">
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <!-- ***************** - JavaScript Starts Here - ***************** -->
+    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('bundles/maklarresursadmin/js/jquery-ui.custom.js') }}"></script>
+    <script src="{{ asset('bundles/maklarresursadmin/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.icheck.min.js') }}"></script>
+    <script src="{{ asset('bundles/maklarresursadmin/js/select2.min.js') }}"></script>
+    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.jpanelmenu.min.js') }}"></script>
+    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.nicescroll.min.js') }}"></script>
+    <script src="{{ asset('bundles/maklarresursadmin/js/unicorn.js') }}"></script>
+    <script src="{{ asset('bundles/maklarresursadmin/js/unicorn.tables.js') }}"></script>
+
+
+{% endblock %}

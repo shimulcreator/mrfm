@@ -1,100 +1,60 @@
 {% extends 'MaklarresursUserBundle::layout.html.twig' %}
-{% set pageClass = 'customer' %}
 
 {% block title %}Dashboard{% endblock %}
 
-{% block stylesheets %}
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/font-awesome.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/jquery-ui.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/icheck/flat/blue.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/select2.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.blue.css') }}" class="skin-color" />
-
-    <style>
-        .form-horizontal .control-label {
-            padding-top: 10px;
-        }
-    </style>
-
-{% endblock %}
 
 
 {% block body %}
-    <div id="content">
-        <div id="content-header">
-            <h1>LAPPNING</h1>
+
+    <style type="text/css">
+        #theme_switcher {
+            display: none;
+        }
+
+        .quick-btn i {
+            /*font-size: 50px;*/
+        }
+        .quick-btn {
+            /*font-size: 17px;*/
+            font-weight: bold;
+        }
+    </style>
+    <h3 class="box-header">LAPPNING</h3>
+    <div class="box">
+        <div class="row-fluid" style="margin-bottom: 20px">
+            <form class="form-horizontal" method="post" action="{{ path('user_sample_order_confirmation', {'id': entity.id}) }}">
+
+                <h3>Overview</h3>
+                <table class="table table-hover" >
+                    <tbody>
+                    <tr>
+                        <th>Flyers</th>
+                        <td>Total {{ entity.flyers }} st</td>
+                    </tr>
+                    <tr>
+                        <th>Paper Size</th>
+                        <td>{{ entity.paperSize }}</td>
+                    </tr>
+                    <tr>
+                        <th>Address Type</th>
+                        <td>{{ entity.addressType }}</td>
+                    </tr>
+                    <tr>
+                        <th>Total Price</th>
+                        <td> {{ entity.price }}</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit" class="btn btn-primary">CONFIRM</button></td>
+                    </tr>
+                    </tbody>
+                </table>
+
         </div>
-        <div id="breadcrumb">
-            <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-            <a href="#" class="">Creating Order</a>
-            <a href="#" class="current">Overview</a>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="widget-box">
-                    <div class="widget-title">
-                        <span class="icon">
-                            <i class="icon-align-justify"></i>
-                        </span>
-                        <h5>Overview</h5>
-                    </div>
-                    <div class="widget-content nopadding">
 
-                        <form class="form-horizontal" method="post" action="{{ path('user_sample_order_confirmation', {'id': entity.id}) }}">
-
-                            <div class="form-group">
-                                <label class="control-label">Flyers : </label>
-                                <div class="controls">
-                                    Total {{ entity.flyers }} st
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="control-label">Paper Size : </label>
-                                <div class="controls">
-                                    {{ entity.paperSize }}
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="control-label">Address Type: </label>
-                                <div class="controls">
-                                    {{ entity.addressType }}
-                                </div>
-                            </div>
-
-                            <div class="form-group" style="background-color: #E7E9EC;">
-                                <label class="control-label">Total Price : </label>
-                                <div class="controls">
-                                    {{ entity.price }}
-                                </div>
-                            </div>
-
-                            <div class="form-actions">
-                                <input type="submit" value="CONFIRM" class="btn btn-dark-red">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-{% endblock %}
 
-{% block javascripts %}
-    <!-- ***************** - JavaScript Starts Here - ***************** -->
-    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/jquery-ui.custom.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.icheck.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/select2.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.jpanelmenu.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.nicescroll.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/unicorn.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/unicorn.tables.js') }}"></script>
 
 
 {% endblock %}
+

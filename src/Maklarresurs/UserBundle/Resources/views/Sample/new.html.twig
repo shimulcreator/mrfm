@@ -1,161 +1,80 @@
 {% extends 'MaklarresursUserBundle::layout.html.twig' %}
-{% set pageClass = 'customer' %}
 
 {% block title %}Dashboard{% endblock %}
 
-{% block stylesheets %}
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/font-awesome.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/jquery-ui.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/icheck/flat/blue.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/select2.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.blue.css') }}" class="skin-color" />
-
-    <style>
-        .form-horizontal .control-label {
-            padding-top: 10px;
-            color: #000B5A;
-        }
-        table#adrs td{
-            padding-left: 20px;
-            color: #000B5A;
-        }
-    </style>
-{% endblock %}
 
 
 {% block body %}
-    <div id="content">
-        <div id="content-header">
-            <h1>LAPPNING</h1>
-        </div>
-        <div id="breadcrumb">
-            <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-            <a href="#" class="current">Creating Order</a>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="widget-box">
-                    <div class="widget-title">
-                        <span class="icon">
-                            <i class="icon-align-justify"></i>
-                        </span>
-                        <h5>Creating Order</h5>
-                    </div>
-                    <div class="widget-content nopadding">
-
-                        <form class="form-horizontal" method="post" action="{{ path('sample_order_create') }}">
-
-
-                            <div class="form-group">
-                                <label class="control-label">Select Paper Size : </label>
-                                <div class="controls">
-                                    <select name="paper_size" required="">
-                                        <option>200g</option>
-                                        <option>150g</option>
-                                        <option>250g</option>
-                                        <option>300g</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="control-label">Select Address Type: </label>
-                                <div class="controls">
-                                    <select name="address_type" required="">
-                                        <option></option>
-                                        <option>Adresserat</option>
-                                        <option>Oadresserat</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <!--
-                            <div class="form-group">
-                                <label class="control-label">Flyers : </label>
-                                <div class="controls">
-                                    <b id="flyers_view">0</b> st
-                                    <input type="hidden" name="flyers" id="flyers" value="0">
-                                </div>
-                            </div>
-                            -->
-
-                            <input type="hidden" name="flyers" id="flyers" value="0">
-
-                            <div class="form-group">
-                                <label class="control-label">Fill up address</label>
-                                <div class="controls">
-                                    <table id="adrs">
-                                        <tr>
-                                            <td style="padding-left: 0">
-                                                Address <br>
-                                                <input type="text" id="address">
-                                            </td>
-                                            <td>
-                                                Nr <br>
-                                                <input type="text" id="nr" style="width: 40px;">
-                                            </td>
-                                            <td>
-                                                Bokstav <br>
-                                                <input type="text" id="bokstav" style="width: 40px;">
-                                            </td>
-                                            <td>
-                                                Zon(Stadsdel) <br>
-                                                <input type="text" id="zone">
-                                            </td>
-                                            <td> <br>
-                                                <input type="hidden" name="addresses" id="addresses" value="">
-                                                <a id="add" class="btn btn-dark-red">Add</a>
-                                            </td>
-                                        </tr>
-                                    </table>
-
-                                   <!-- <textarea name="address" id="address" style="height: 60px; width: 300px;"></textarea> -->
-
-
-                                </div>
-
-                            </div>
-
-                            <div class="form-group">
-                                <label class="control-label"></label>
-                                <div class="controls">
-                                    <table class="table table-bordered table-striped table-hover " style="width: 70%;">
-                                        <tbody id="address_list">
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <div class="form-actions">
-                                <input type="submit" value="NEXT" class="btn btn-dark-red">
-                            </div>
-
-                        </form>
+    <h3 class="box-header">DASHBOARD</h3>
+    <div class="box">
+        <div class="row-fluid" style="margin-bottom: 20px">
+            <form class="form-horizontal" method="post" action="{{ path('sample_order_create') }}" id="validate-form" >
+                <div class="control-group">
+                    <label class="control-label" for="inputEmail">Select Paper Size</label>
+                    <div class="controls">
+                        <select name="paper_size" required="">
+                            <option>200g</option>
+                            <option>150g</option>
+                            <option>250g</option>
+                            <option>300g</option>
+                        </select>
                     </div>
                 </div>
-            </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputEmail">Select Address Type</label>
+                    <div class="controls">
+                        <select name="address_type" required="">
+                            <option></option>
+                            <option>Adresserat</option>
+                            <option>Oadresserat</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputEmail">Address </label>
+                    <div class="controls">
+
+                        <div class="input-append">
+                            <input type="text" class="input-large" id="address"  placeholder="Address">
+                            <input type="text" class="input-mini" id="nr" placeholder="Nr">
+                            <input type="text" class="input-mini"  id="bokstav" placeholder="Bokstav">
+                            <input type="text" class="input-large" id="zone" placeholder="Zon(Stadsdel) ">
+
+                            <a id="add" class="btn btn-info">Add</a>
+
+
+                            <input type="hidden" name="addresses" id="addresses" value="">
+                            <input type="hidden" name="flyers" id="flyers" value="1">
+                            {#<button class="btn btn-info" type="button">ADD</button>#}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="inputEmail"></label>
+                    <div class="controls">
+                        <table class="table table-bordered table-striped table-hover " style="width: 70%;">
+                            <tbody id="address_list">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" id="next" class="btn btn-primary">NEXT</button>
+                    </div>
+                </div>
+            </form>
+
+
         </div>
+
     </div>
-{% endblock %}
-
-{% block javascripts %}
-    <!-- ***************** - JavaScript Starts Here - ***************** -->
-    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/jquery-ui.custom.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.icheck.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/select2.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.jpanelmenu.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.nicescroll.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/unicorn.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/unicorn.tables.js') }}"></script>
-
 
     <script type="text/javascript">
+
         jQuery(document).ready(function(jQuery) {
             jQuery('#add').click(function(){
                 var address = jQuery("#address").val();
@@ -181,13 +100,37 @@
                 var flyers = jQuery("#flyers").val();
                 jQuery("#flyers").val(parseInt(flyers)+1);
                 jQuery("#flyers_view").html(parseInt(flyers)+1);
-                jQuery("#addresses").val(jQuery("#addresses").val() + " | " + address);
 
                 var fulladdress = address + ", " + nr + ", " + bokstav + ", " + zone;
 
 
-                $( "#address_list" ).prepend( $('<tr class="gradeA item" id="'+flyers+'"><td>'+ fulladdress +'</td></tr>') );
+
+                $( "#address_list" ).prepend( $('<tr class="gradeA item" id="'+flyers+'"><td><a href="#" id="editAddress" class="ad" data-pk="'+flyers+'">'+ fulladdress +'</a></td></tr>') );
                 jQuery("#address").val('');
+
+                $("#editAddress").unbind();
+                //editables
+                $('#editAddress').editable({
+                    type: 'text',
+                    name: 'username',
+                    title: 'Edit Address'
+                });
+
+
+
+
+            });
+
+            jQuery('#next').click(function(jQuery){
+                $("#addresses").val('');
+                var lol = '';
+                $( ".ad" ).each(function( index ) {
+                    lol = lol + " | " + $( this ).text();
+                });
+
+                $("#addresses").val(lol);
+                return true;
+
 
             });
 
@@ -223,4 +166,6 @@
     </script>
 
 
+
 {% endblock %}
+
