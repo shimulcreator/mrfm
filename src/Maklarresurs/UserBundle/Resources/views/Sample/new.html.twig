@@ -10,7 +10,7 @@
         <div class="row-fluid" style="margin-bottom: 20px">
             <form class="form-horizontal" method="post" action="{{ path('sample_order_create') }}" id="validate-form" >
                 <div class="control-group">
-                    <label class="control-label" for="inputEmail">Select Paper Size</label>
+                    <label class="control-label" for="inputEmail">Välj papperstorlek</label>
                     <div class="controls">
                         <select name="paper_size" required="">
                             <option>200g</option>
@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label" for="inputEmail">Select Address Type</label>
+                    <label class="control-label" for="inputEmail">Välj adresseringstyp</label>
                     <div class="controls">
                         <select name="address_type" required="">
                             <option></option>
@@ -31,13 +31,13 @@
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label" for="inputEmail">Address </label>
+                    <label class="control-label" for="inputEmail">Förening </label>
                     <div class="controls">
 
                         <div class="input-append">
                             <input type="text" class="input-large" id="address"  placeholder="Address">
-                            <input type="text" class="input-mini" id="nr" placeholder="Nr">
-                            <input type="text" class="input-mini"  id="bokstav" placeholder="Bokstav">
+                            {#<input type="text" class="input-mini" id="nr" placeholder="Nr">#}
+                            {#<input type="text" class="input-mini"  id="bokstav" placeholder="Bokstav">#}
                             <input type="text" class="input-large" id="zone" placeholder="Zon(Stadsdel) ">
 
                             <a id="add" class="btn btn-info">Add</a>
@@ -78,21 +78,21 @@
         jQuery(document).ready(function(jQuery) {
             jQuery('#add').click(function(){
                 var address = jQuery("#address").val();
-                var nr = jQuery("#nr").val();
-                var bokstav = jQuery("#bokstav").val();
+//                var nr = jQuery("#nr").val();
+//                var bokstav = jQuery("#bokstav").val();
                 var zone = jQuery("#zone").val();
                 if(address == '' || address == null){
                     alert('please type a address');
                     return 0;
                 }
-                if(nr == '' || nr == null){
-                    alert('please type Nr');
-                    return 0;
-                }
-                if(bokstav == '' || bokstav == null){
-                    alert('please type bokstav');
-                    return 0;
-                }
+//                if(nr == '' || nr == null){
+//                    alert('please type Nr');
+//                    return 0;
+//                }
+//                if(bokstav == '' || bokstav == null){
+//                    alert('please type bokstav');
+//                    return 0;
+//                }
                 if(zone == '' || zone == null){
                     alert('please type zone');
                     return 0;
@@ -101,7 +101,7 @@
                 jQuery("#flyers").val(parseInt(flyers)+1);
                 jQuery("#flyers_view").html(parseInt(flyers)+1);
 
-                var fulladdress = address + ", " + nr + ", " + bokstav + ", " + zone;
+                var fulladdress = address + ", " + zone;
 
 
 
