@@ -4,6 +4,7 @@ security:
 
     role_hierarchy:
             ROLE_ADMIN:       ROLE_ADMIN
+            ROLE_PS:          ROLE_PS
             ROLE_USER:        ROLE_USER
 
     providers:
@@ -21,7 +22,7 @@ security:
                 logout:       true
                 anonymous:    true
 
-
-#        access_control:
-            #- { path: ^/admin/, role: ROLE_ADMIN }
-            #- { path: ^/user/, role: ROLE_USER}
+    access_control:
+            - { path: ^/admin/, role: ROLE_ADMIN }
+            - { path: ^/supplier/, role: ROLE_PS}
+            - { path: ^/user/, role: ROLE_USER}

@@ -31,18 +31,35 @@ class UserController extends BaseController
     public function indexAction()
     {
         $userType = 1;
-        $entities = $this->getMainRepo()->getUsersQuery($userType);
+        $entities = $this->getMainRepo()->getUsersQuery($userType)->getResult();
         $pagination = $this->paginateQuery($entities);
 
         return array(
-            'pagination'    => $pagination,
+            'entities'    => $entities,
+        );
+    }
+
+    /**
+     * Lists all User entities.
+     *
+     * @Route("/show/{id}", name="admin_user_show")
+     * @Method("GET")
+     * @Template()
+     */
+    public function showAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $entity = $em->getRepository('MaklarresursUserBundle:User')->find($id);
+
+        return array(
+            'entity'    => $entity,
         );
     }
 
     /**
      * Creates a new User entity.
      *
-     * @Route("/", name="admin_user_create")
+     * @Route("/new", name="admin_user_create")
      * @Method("POST")
      * @Template("MaklarresursAdminBundle:User:new.html.twig")
      */

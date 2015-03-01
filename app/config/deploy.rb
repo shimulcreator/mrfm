@@ -1,6 +1,6 @@
 #default_run_options[:env] = { 'TERM' => 'xterm' }
 set :application, "Maklarresurs"
-set :domain,      "shimulrahman.com"
+set :domain,      "198.12.91.10"
 set :deploy_to,   "/var/www/Projects/maklarresurs.shimulrahman.com"
 set :app_path,    "app"
 

@@ -64,11 +64,13 @@ class LoadStaticData extends \Doctrine\Common\DataFixtures\AbstractFixture imple
 
         $this->ROLE_SUPER_ADMIN = new Role('ROLE_SUPER_ADMIN');
         $this->ROLE_ADMIN = new Role('ROLE_ADMIN');
+        $this->ROLE_PS = new Role('ROLE_PS');
         $this->ROLE_USER = new Role('ROLE_USER');
 
         $em = $this->em;
         $em->persist($this->ROLE_SUPER_ADMIN);
         $em->persist($this->ROLE_ADMIN);
+        $em->persist($this->ROLE_PS);
         $em->persist($this->ROLE_USER);
 
         $em->flush();
@@ -97,26 +99,39 @@ class LoadStaticData extends \Doctrine\Common\DataFixtures\AbstractFixture imple
         $this->admin = $user;
 
 
-        //adding merchants
-        for ($i = 1; $i <= 10; $i++) {
-            $user = new User();
+        $user = new User();
 
-            $user->setFirstName("USER {$i}");
-            $user->setUsername("user{$i}");
-            $user->setPlainPassword("user{$i}");
-            $user->setEmail("user{$i}@mrfm.com");
-            $user->setEnabled(true);
-            $user->setSuperAdmin(false);
-            $user->setConfirmationToken(null);
-            $user->setUserType(1);
+        $user->setFirstName("Shimul");
+        $user->setUsername("testuser");
+        $user->setPlainPassword("testuser");
+        $user->setEmail("testuser@mrfm.com");
+        $user->setEnabled(true);
+        $user->setSuperAdmin(false);
+        $user->setConfirmationToken(null);
+        $user->setUserType(1);
 
-            $user->addRole($this->ROLE_USER);
+        $user->addRole($this->ROLE_USER);
 
-            $em->persist($user);
-            $this->addReference("user-$i", $user);
-            $this->users[] = $user;
+        $em->persist($user);
+        $this->addReference("testuser", $user);
+        $this->users[] = $user;
 
-        }
+        $user = new User();
+
+        $user->setFirstName("Shimul PS");
+        $user->setUsername("testps");
+        $user->setPlainPassword("testps");
+        $user->setEmail("testps@mrfm.com");
+        $user->setEnabled(true);
+        $user->setSuperAdmin(false);
+        $user->setConfirmationToken(null);
+        $user->setUserType(3);
+
+        $user->addRole($this->ROLE_PS);
+
+        $em->persist($user);
+        $this->addReference("testps", $user);
+        $this->users[] = $user;
 
         $this->em->flush();
     }

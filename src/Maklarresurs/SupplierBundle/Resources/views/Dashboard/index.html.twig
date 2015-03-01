@@ -1,0 +1,55 @@
+{% extends 'MaklarresursSupplierBundle::layout.html.twig' %}
+
+{% block title %}Dashboard{% endblock %}
+
+
+
+{% block body %}
+    <h3 class="box-header">DASHBOARD</h3>
+    <div class="box">
+        <div class="row-fluid" style="margin-bottom: 20px">
+            <a href="{{ path('supplier_lappning_pending') }}" class="btn btn-blue quick-btn span2">
+                <i class="icon-edit"></i>
+                <span class="quick-btn-title">New <br> Lappning</span>
+            </a>
+            <a href="{{ path('supplier_lappning_finished') }}" class="btn btn-cyan quick-btn span2">
+                <i class="icon-table"></i>
+                <span class="quick-btn-title">Finished <br> Lappning</span>
+            </a>
+            <a href="{{ path('supplier_lappning') }}" class="btn btn-blue quick-btn span2">
+                <i class="icon-edit"></i>
+                <span class="quick-btn-title">All <br> Lappning</span>
+            </a>
+        </div>
+
+    </div>
+    <h3 class="box-header">inställningar</h3>
+    <div class="box">
+        <div class="row-fluid" style="margin-bottom: 20px">
+            <a href="#" class="btn  quick-btn span2">
+                <i class="icon-user"></i>
+                <span class="quick-btn-title">VISA <br> PROFIL </span>
+            </a>
+            <a href="#" class="btn btn-green quick-btn span2">
+                <i class="icon-wrench"></i>
+                <span class="quick-btn-title">EDITERA <br> PROFIL </span>
+            </a>
+            <a href="#" class="btn btn-orange quick-btn span2">
+                <i class="icon-key"></i>
+                <span class="quick-btn-title">Byt <br> lösenord</span>
+            </a>
+            <a href="#" class="btn btn-orange quick-btn span2">
+                <i class="icon-picture"></i>
+                <span class="quick-btn-title">Uppdatera <br> profilbild</span>
+            </a>
+            <a href="{{ path('fos_user_security_logout') }}" class="btn btn-red quick-btn span2">
+                <i class="icon-lock"></i>
+                <span class="quick-btn-title">logga ut <br> &nbsp;</span>
+            </a>
+
+
+        </div>
+
+    </div>
+
+{% endblock %}

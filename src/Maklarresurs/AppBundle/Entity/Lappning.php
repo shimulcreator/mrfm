@@ -65,6 +65,11 @@ class Lappning
     protected $confirmation;
 
     /**
+     * @ORM\Column(name="isCompleted", type="boolean")
+     */
+    protected $isCompleted;
+
+    /**
      * @ORM\Column(type="datetime", nullable=true)
      * @Gedmo\Timestampable(on="create")
      */

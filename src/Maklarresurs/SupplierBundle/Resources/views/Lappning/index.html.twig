@@ -1,0 +1,62 @@
+{% extends 'MaklarresursSupplierBundle::layout.html.twig' %}
+
+{% block title %}Users{% endblock %}
+
+
+
+{% block body %}
+
+    <style type="text/css">
+        #theme_switcher {
+            display: none;
+        }
+
+        .quick-btn i {
+            /*font-size: 50px;*/
+        }
+        .quick-btn {
+            /*font-size: 17px;*/
+            font-weight: bold;
+        }
+    </style>
+    <h3 class="box-header">Lappning</h3>
+    <div class="box">
+        <div class="row-fluid" style="margin-bottom: 20px">
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th>Company Name</th>
+                    <th>Flyers</th>
+                    <th>Paper Size</th>
+                    <th>Address Type</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for entity in entities if entity.confirmation == 1 %}
+                    <tr>
+                        <td>{{ entity.user.companyName }}</td>
+                        <td>{{ entity.flyers }}</td>
+                        <td>{{ entity.paperSize }}</td>
+                        <td>{{ entity.addressType }}</td>
+                        <td>{{ entity.Price }}</td>
+                        <td>
+                            <a href="{{ path('supplier_lappning_show', {'id':entity.id}) }}" title="Show" <i class=" icon-list icon-2x"></i></a>
+                            {% if entity.isCompleted == 1 %}
+                                <i class="icon-ok icon-2x btn-success" style="margin-left: 20px"></i>
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+
+
+{% endblock %}
+

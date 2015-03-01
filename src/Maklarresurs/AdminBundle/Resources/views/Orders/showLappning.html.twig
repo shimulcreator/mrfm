@@ -1,0 +1,68 @@
+{% extends 'MaklarresursAdminBundle::layout.html.twig' %}
+
+{% block title %}Dashboard{% endblock %}
+
+
+
+{% block body %}
+
+    <style type="text/css">
+        #theme_switcher {
+            display: none;
+        }
+
+        .quick-btn i {
+            /*font-size: 50px;*/
+        }
+        .quick-btn {
+            /*font-size: 17px;*/
+            font-weight: bold;
+        }
+    </style>
+    <h3 class="box-header">Lappning</h3>
+    <div class="box">
+        <div class="row-fluid" style="margin-bottom: 20px">
+            <h3>Order</h3>
+            <table class="table table-hover" >
+                <tbody>
+                    <tr>
+                        <th>Company Name</th>
+                        <td>{{ entity.user.companyName }} </td>
+                    </tr>
+                    <tr>
+                        <th>Flyers</th>
+                        <td>{{ entity.flyers }}</td>
+                    </tr>
+                    <tr>
+                        <th>Paper Size</th>
+                        <td>{{ entity.paperSize }}</td>
+                    </tr>
+                    <tr>
+                        <th>Address Type</th>
+                        <td> {{ entity.addressType }}</td>
+                    </tr>
+                    <tr>
+                        <th>Price</th>
+                        <td>{{ entity.price }}</td>
+                    </tr>
+                    <tr>
+                        <th>Addresses</th>
+                        <td>
+                            {% set adds = entity.addresses|split('|') %}
+                            {% for a in adds %}
+                                {{ a }} <br>
+                            {% endfor %}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+
+    </div>
+
+
+
+{% endblock %}
+

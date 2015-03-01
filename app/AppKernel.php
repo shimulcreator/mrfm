@@ -24,6 +24,7 @@ class AppKernel extends Kernel
             new Maklarresurs\AdminBundle\MaklarresursAdminBundle(),
             new Maklarresurs\AppBundle\MaklarresursAppBundle(),
             new Maklarresurs\UserBundle\MaklarresursUserBundle(),
+            new Maklarresurs\SupplierBundle\MaklarresursSupplierBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

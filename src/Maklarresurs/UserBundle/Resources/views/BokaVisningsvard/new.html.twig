@@ -1,138 +1,56 @@
 {% extends 'MaklarresursUserBundle::layout.html.twig' %}
-{% set pageClass = 'customer' %}
 
 {% block title %}Dashboard{% endblock %}
 
-{% block stylesheets %}
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/font-awesome.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/jquery-ui.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/icheck/flat/blue.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/select2.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/unicorn.red.css') }}" class="skin-color" />
-
-    <link rel="stylesheet" type="text/css" href="https://jonthornton.github.io/jquery-timepicker/jquery.timepicker.css" />
-    <link rel="stylesheet" href="{{ asset('bundles/maklarresursadmin/css/datepicker.css') }}" />
-
-    <style>
-        .form-horizontal .control-label {
-            padding-top: 10px;
-        }
-        input.time{
-            width: 90px;
-        }
-        input.date{
-            width: 120px;
-        }
-        textarea{
-            width: 450px;
-            height: 80px;
-        }
-    </style>
-{% endblock %}
 
 
 {% block body %}
-    <div id="content">
-        <div id="content-header">
-            <h1>BOKA-VISNINGSVARD</h1>
-        </div>
-        <div id="breadcrumb">
-            <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-            <a href="#" class="current">Creating Order</a>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="widget-box">
-                    <div class="widget-title">
-                        <span class="icon">
-                            <i class="icon-align-justify"></i>
-                        </span>
-                        <h5>Creating Order</h5>
-                    </div>
-                    <div class="widget-content nopadding">
-
-                        <form class="form-horizontal" method="post" action="{{ path('user_boka_visningsvard_order_create') }}">
-                            <div class="form-group">
-                                <label class="control-label">Booking Time : </label>
-                                <div class="controls">
-                                    <p id="workingTime">
-                                        <input type="text" class="date start" name="startDate" placeholder="Start Date" required="" />
-                                        <input type="text" class="time start" name="startTime" placeholder="Start Time" required=""/> to
-                                        <input type="text" class="time end" name="endTime" placeholder="End Time" required=""/>
-                                        <input type="text" class="date end" name="endDate" placeholder="End Date" required=""/>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="control-label">Address : </label>
-                                <div class="controls">
-                                    <textarea name="address" required=""></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">Note : </label>
-                                <div class="controls">
-                                    <textarea name="note" required=""></textarea>
-                                </div>
-                            </div>
-
-
-                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-                            <script type="text/javascript" src="http://jonthornton.github.io/Datepair.js/dist/datepair.js"></script>
-                            <script>
-
-                                jQuery(function($){
-                                    // initialize input widgets first
-                                    $('#workingTime .time').timepicker({
-                                        'showDuration': true,
-                                        'timeFormat': 'g:ia'
-                                    });
-
-                                    $('#workingTime .date').datepicker({
-                                        'format': 'm/d/yyyy',
-                                        'autoclose': true
-                                    });
-
-                                    // initialize datepair
-                                    var workingTimeEl = document.getElementById('workingTime');
-                                    var datepair = new Datepair(workingTimeEl);
-                                });
-
-                            </script>
-
-
-
-                            <div class="form-actions">
-                                <input type="submit" value="Create" class="btn btn-dark-red">
-                            </div>
-
-
-                        </form>
+    <h3 class="box-header">DASHBOARD</h3>
+    <div class="box">
+        <div class="row-fluid" style="margin-bottom: 20px">
+            <form class="form-horizontal" method="post" action="{{ path('user_boka_visningsvard_order_create') }}">
+                <div class="form-group">
+                    <label class="control-label">Booking Time : </label>
+                    <div class="controls">
+                        <p id="workingTime">
+                            <input type="text" class="date start" name="startDate" placeholder="Start Date" required="" />
+                            <input type="text" class="time start" name="startTime" placeholder="Start Time" required=""/> to
+                            <input type="text" class="time end" name="endTime" placeholder="End Time" required=""/>
+                            <input type="text" class="date end" name="endDate" placeholder="End Date" required=""/>
+                        </p>
                     </div>
                 </div>
-            </div>
+
+                <div class="form-group">
+                    <label class="control-label">Address : </label>
+                    <div class="controls">
+                        <textarea name="address" required=""></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Note : </label>
+                    <div class="controls">
+                        <textarea name="note" required=""></textarea>
+                    </div>
+                </div>
+
+
+
+                <div class="form-actions">
+                    <input type="submit" value="Create" class="btn btn-dark-red">
+                </div>
+
+
+            </form>
+
+
         </div>
+
     </div>
-{% endblock %}
 
-{% block javascripts %}
-    <!-- ***************** - JavaScript Starts Here - ***************** -->
-    <script src="{{ asset('bundles/maklarresursadmin/js/jquery-ui.custom.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.icheck.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/select2.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.jpanelmenu.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/jquery.nicescroll.min.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/unicorn.js') }}"></script>
-    <script src="{{ asset('bundles/maklarresursadmin/js/unicorn.tables.js') }}"></script>
 
-    <script src="https://jonthornton.github.io/jquery-timepicker/jquery.timepicker.js"></script>
-    <script src="http://jonthornton.github.io/Datepair.js/lib/bootstrap-datepicker.js"></script>
 
 
 
 {% endblock %}
+

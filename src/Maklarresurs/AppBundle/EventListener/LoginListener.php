@@ -57,9 +57,12 @@ class LoginListener
             if ($this->securityContext->isGranted('ROLE_ADMIN')) {
                 // do stuff for admins here...
                 $request->request->set('_target_path', $this->router->generate('admin_dashboard'));
+            }else if ($this->securityContext->isGranted('ROLE_PS')) {
+                $request->request->set('_target_path', $this->router->generate('supplier_dashboard'));
             }else if ($this->securityContext->isGranted('ROLE_USER')) {
                 $request->request->set('_target_path', $this->router->generate('user_dashboard'));
             }
+
 
 
         }

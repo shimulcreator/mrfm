@@ -89,6 +89,7 @@ class SampleController extends BaseController
         $lappning->setPrice($price);
         $lappning->setUser($user);
         $lappning->setConfirmation(0);
+        $lappning->setIsCompleted(0);
 
         $em->persist($lappning);
         $em->flush();
@@ -194,8 +195,8 @@ class SampleController extends BaseController
 
         $this->getMailer()->sendOrderEmail($id);
 
-//        $entity->setConfirmation(1);
-//        $em->flush();
+        $entity->setConfirmation(1);
+        $em->flush();
 
         return $this->redirect($this->generateUrl('user_sample_order_confirmed'));
     }
@@ -213,6 +214,41 @@ class SampleController extends BaseController
     }
 
 
+    /**
+     * Lists all Sample entities.
+     *
+     * @Route("/order-list", name="user_sample_order_view")
+     * @Method("GET")
+     * @Template()
+     */
+    public function indexAction()
+    {
+        $user = $this->getUser();
+        $em = $this->getDoctrine()->getManager();
+
+        $entities = $em->getRepository('MaklarresursAppBundle:Sample')->findByUser($user);
+
+        return array(
+            'entities' => $entities,
+        );
+    }
+
+    /**
+     * Lists all User entities.
+     *
+     * @Route("/order/show/{id}", name="user_sample_order_show")
+     * @Method("GET")
+     * @Template()
+     */
+    public function showAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $entity = $em->getRepository('MaklarresursAppBundle:Sample')->find($id);
+
+        return array(
+            'entity'    => $entity,
+        );
+    }
 
 
 

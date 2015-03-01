@@ -60,6 +60,11 @@ class Sample
     protected $confirmation;
 
     /**
+     * @ORM\Column(name="isCompleted", type="boolean")
+     */
+    protected $isCompleted;
+
+    /**
      * @ORM\Column(type="datetime", nullable=true)
      * @Gedmo\Timestampable(on="create")
      */
@@ -70,6 +75,30 @@ class Sample
      * @Gedmo\Timestampable(on="update")
      */
     protected $updatedAt;
+
+    /**
+     * @var
+     * @ORM\OneToMany(targetEntity="Document", mappedBy="lappning")
+     */
+    protected $documents;
+
+    /**
+     * @return mixed
+     */
+    public function getDocuments()
+    {
+        return $this->documents;
+    }
+
+    /**
+     * @param mixed $documents
+     */
+    public function setDocuments($documents)
+    {
+        $this->documents = $documents;
+    }
+
+
 
 
     /**
@@ -206,6 +235,23 @@ class Sample
     {
         $this->addresses = $addresses;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getIsCompleted()
+    {
+        return $this->isCompleted;
+    }
+
+    /**
+     * @param mixed $isCompleted
+     */
+    public function setIsCompleted($isCompleted)
+    {
+        $this->isCompleted = $isCompleted;
+    }
+
 
 
 

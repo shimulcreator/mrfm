@@ -1,0 +1,79 @@
+{% extends 'MaklarresursAdminBundle::layout.html.twig' %}
+
+{% block title %}Dashboard{% endblock %}
+
+
+
+{% block body %}
+
+    <style type="text/css">
+        #theme_switcher {
+            display: none;
+        }
+
+        .quick-btn i {
+            /*font-size: 50px;*/
+        }
+        .quick-btn {
+            /*font-size: 17px;*/
+            font-weight: bold;
+        }
+    </style>
+    <h3 class="box-header">USER</h3>
+    <div class="box">
+        <div class="row-fluid" style="margin-bottom: 20px">
+            <h3>{{ entity.companyName }}</h3>
+            <table class="table table-hover" >
+                <tbody>
+                    <tr>
+                        <th>Username</th>
+                        <td>{{ entity.username }} </td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>{{ entity.email }}</td>
+                    </tr>
+                    <tr>
+                        <th>Org Nr</th>
+                        <td>{{ entity.orgNr }}</td>
+                    </tr>
+                    <tr>
+                        <th>Street Address</th>
+                        <td> {{ entity.streetAddress }}</td>
+                    </tr>
+                    <tr>
+                        <th>Billing Address</th>
+                        <td>{{ entity.billingAddress }}</td>
+                    </tr>
+                    <tr>
+                        <th>Contact Person</th>
+                        <td>{{ entity.contactPerson }}</td>
+                    </tr>
+                    <tr>
+                        <th>Telephone Nr</th>
+                        <td>{{ entity.telephoneNr }}</td>
+                    </tr>
+                    <tr>
+                        <th>Website URL</th>
+                        <td><a href="{{ entity.website }}" target="_blank">{{ entity.website }}</a></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <a class="btn btn-primary" href="{{ path('admin_user_edit', {'id':entity.id}) }}"><i class="icon-edit icon-3x"></i></a>
+                            <a href="{{ path('admin_user_show', {'id':entity.id}) }}" class="btn btn-red" style="margin-left: 40px"><i class="icon-remove-sign icon-3x"></i></a>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+
+    </div>
+
+
+
+{% endblock %}
+

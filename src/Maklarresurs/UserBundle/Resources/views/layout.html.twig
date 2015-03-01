@@ -59,7 +59,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle usermenu" data-toggle="dropdown">
                             <img alt="Avatar" src="{{ asset('bundles/maklarresursadmin/images/avatar.png') }}">
-                            <span>&nbsp;&nbsp;Admin</span>
+                            <span>&nbsp;&nbsp;{{ app.user.firstName }}</span>
                         </a>
                         <ul class="dropdown-menu">
                             <li>
@@ -69,7 +69,7 @@
                                 <a href="#">Settings</a>
                             </li>
                             <li>
-                                <a href="#">Logout</a>
+                                <a href="/logout">Logout</a>
                             </li>
                         </ul>
                     </li>
@@ -141,7 +141,7 @@
                 <a tabindex="-1" href="{{ path('sample_order') }}"><span class="icon-edit"></span>Skapa</a>
             </li>
             <li>
-                <a tabindex="-1" href="#"><span class="icon-table"></span>översikt</a>
+                <a tabindex="-1" href="{{ path('user_sample_order_view') }}"><span class="icon-table"></span>översikt</a>
             </li>
         </ul>
     </div>

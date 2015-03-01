@@ -24,7 +24,8 @@ class Role extends CoreRole
 {
     const ROLE_SUPER_ADMIN = 'ROLE_SUPER_ADMIN';
     const ROLE_ADMIN        = 'ROLE_ADMIN';
-    const ROLE_MERCHANT     = 'ROLE_USER';
+    const ROLE_PS     = 'ROLE_PS';
+    const ROLE_USER     = 'ROLE_USER';
     /**
      * @ORM\Id
      * @ORM\Column(type="integer", name="id")
