@@ -1,4 +1,4 @@
-{% extends 'MaklarresursSupplierBundle::layout.html.twig' %}
+{% extends 'MaklarresursUserBundle::layout.html.twig' %}
 
 {% block title %}Users{% endblock %}
 
@@ -19,28 +19,25 @@
             font-weight: bold;
         }
     </style>
-    <h3 class="box-header">Lappning</h3>
+    <h3 class="box-header">Employees</h3>
     <div class="box">
         <div class="row-fluid" style="margin-bottom: 20px">
             <table class="table table-striped table-hover">
                 <thead>
                 <tr>
-                    <th>Company Name</th>
-                    <th>Flyers</th>
-                    <th>Paper Size</th>
-                    <th>Address Type</th>
+                    <th>Email</th>
+                    <th>Username</th>
                     <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
-                {% for entity in entities if entity.confirmation == 1 and entity.isCompleted == 1 %}
+                {% for entity in entities %}
                     <tr>
-                        <td>{{ entity.user.companyName }}</td>
-                        <td>{{ entity.flyers }}</td>
-                        <td>{{ entity.paperSize }}</td>
-                        <td>{{ entity.addressType }}</td>
+                        <td>{{ entity.email }}</td>
+                        <td>{{ entity.username }}</td>
                         <td>
-                            <a href="{{ path('supplier_lappning_show', {'id':entity.id}) }}" title="Show" style="margin-left: 20px"><i class=" icon-list icon-2x"></i></a>
+                            <a href="{{ path('admin_user_edit', {'id':entity.id}) }}" title="Edit"><i class="icon-edit icon-2x"></i></a>
+                            <a href="{{ path('admin_user_show', {'id':entity.id}) }}" title="Show" style="margin-left: 20px"><i class=" icon-list icon-2x"></i></a>
                         </td>
                     </tr>
                 {% endfor %}

@@ -29,7 +29,6 @@
                     <th>Flyers</th>
                     <th>Paper Size</th>
                     <th>Address Type</th>
-                    <th>Price</th>
                     <th>Action</th>
                 </tr>
                 </thead>
@@ -40,7 +39,6 @@
                         <td>{{ entity.flyers }}</td>
                         <td>{{ entity.paperSize }}</td>
                         <td>{{ entity.addressType }}</td>
-                        <td>{{ entity.Price }}</td>
                         <td>
                             <a href="{{ path('supplier_lappning_show', {'id':entity.id}) }}" title="Show" style="margin-left: 20px"><i class=" icon-list icon-2x"></i></a>
                             <a href="{{ path('supplier_lappning_finish', {'id':entity.id}) }}" title="Click to Finish" style="margin-left: 20px"><i class=" icon-ok icon-2x"></i></a>

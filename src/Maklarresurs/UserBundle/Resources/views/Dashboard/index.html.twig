@@ -16,21 +16,24 @@
                 <i class="icon-table"></i>
                 <span class="quick-btn-title">översikt <br> Lappning</span>
             </a>
-            <a href="#" class="btn btn-blue quick-btn span2">
+            <a href="{{ path('user_boka_visningsvard_order_new') }}" class="btn btn-blue quick-btn span2">
                 <i class="icon-edit"></i>
                 <span class="quick-btn-title">Boka <br> Visningsvärd</span>
             </a>
-            <a href="#" class="btn btn-cyan quick-btn span2">
+            <a href="{{ path('user_boka_visningsvard_order') }}" class="btn btn-cyan quick-btn span2">
                 <i class="icon-table"></i>
                 <span class="quick-btn-title">översikt Boka visningsvärd</span>
             </a>
-            <a href="#" class="btn btn-blue quick-btn span2">
+           {#{% if app.user.createdBy.id == 1 %}#}
+               {##}
+           {#{% endif %}#}
+            <a href="{{ path('user_employee_new') }}" class="btn btn-blue quick-btn span2">
                 <i class="icon-edit"></i>
                 <span class="quick-btn-title">Skapa <br> Användare</span>
             </a>
-            <a href="#" class="btn btn-cyan quick-btn span2">
+            <a href="{{ path('user_employee') }}" class="btn btn-cyan quick-btn span2">
                 <i class="icon-table"></i>
-                <span class="quick-btn-title">översikt <br> Employees </span>
+                <span class="quick-btn-title">översikt <br> Användare </span>
             </a>
 
         </div>
@@ -39,19 +42,19 @@
     <h3 class="box-header">inställningar</h3>
     <div class="box">
         <div class="row-fluid" style="margin-bottom: 20px">
-            <a href="#" class="btn  quick-btn span2">
+            <a href="{{ path('user_profile') }}" class="btn  quick-btn span2">
                 <i class="icon-user"></i>
                 <span class="quick-btn-title">VISA <br> PROFIL </span>
             </a>
-            <a href="#" class="btn btn-green quick-btn span2">
+            <a href="{{ path('user_profile_edit') }}" class="btn btn-green quick-btn span2">
                 <i class="icon-wrench"></i>
                 <span class="quick-btn-title">EDITERA <br> PROFIL </span>
             </a>
-            <a href="#" class="btn btn-orange quick-btn span2">
+            <a href="{{ path('user_change_password') }}" class="btn btn-orange quick-btn span2">
                 <i class="icon-key"></i>
                 <span class="quick-btn-title">Byt <br> lösenord</span>
             </a>
-            <a href="#" class="btn btn-orange quick-btn span2">
+            <a href="{{ path('avater_img_uploads') }}" class="btn btn-orange quick-btn span2">
                 <i class="icon-picture"></i>
                 <span class="quick-btn-title">Uppdatera <br> profilbild</span>
             </a>
@@ -59,8 +62,6 @@
                 <i class="icon-lock"></i>
                 <span class="quick-btn-title">logga ut <br> &nbsp;</span>
             </a>
-
-
         </div>
 
     </div>

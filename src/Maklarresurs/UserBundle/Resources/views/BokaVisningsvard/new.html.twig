@@ -5,44 +5,93 @@
 
 
 {% block body %}
-    <h3 class="box-header">DASHBOARD</h3>
+    <h3 class="box-header">Boka Visningsvärd</h3>
     <div class="box">
         <div class="row-fluid" style="margin-bottom: 20px">
             <form class="form-horizontal" method="post" action="{{ path('user_boka_visningsvard_order_create') }}">
                 <div class="form-group">
                     <label class="control-label">Booking Time : </label>
                     <div class="controls">
-                        <p id="workingTime">
-                            <input type="text" class="date start" name="startDate" placeholder="Start Date" required="" />
-                            <input type="text" class="time start" name="startTime" placeholder="Start Time" required=""/> to
-                            <input type="text" class="time end" name="endTime" placeholder="End Time" required=""/>
-                            <input type="text" class="date end" name="endDate" placeholder="End Date" required=""/>
-                        </p>
+                            <input type="text" class="input-small datepicker" id="dpd1" name="startDate" data-date-format="dd/mm/yyyy" placeholder="Start Date" required="">
+
+                            <div class="input-append bootstrap-timepicker">
+                                <input id="timepickerz" class="input-small timepicker" type="text" name="startTime" placeholder="Start Time" required="">
+                                <span class="add-on"><i class="icon-time"></i></span>
+                            </div> to
+                            <div class="input-append bootstrap-timepicker">
+                                <input id="timepicker-default" class="input-small timepicker" type="text" name="endTime" placeholder="End Time" required="">
+                                <span class="add-on"><i class="icon-time"></i></span>
+                            </div>
+
+                            <input type="text" class="input-small datepicker" id="dpd2" name="endDate" data-date-format="dd/mm/yyyy" placeholder="End Date" required="">
+
                     </div>
-                </div>
+                </div> <br>
 
                 <div class="form-group">
                     <label class="control-label">Address : </label>
                     <div class="controls">
-                        <textarea name="address" required=""></textarea>
+                        <textarea name="address" required="" style="width: 480px;"></textarea>
                     </div>
-                </div>
+                </div> <br>
                 <div class="form-group">
                     <label class="control-label">Note : </label>
                     <div class="controls">
-                        <textarea name="note" required=""></textarea>
+                        <textarea name="note" required="" style="width: 480px;"></textarea>
                     </div>
                 </div>
 
 
 
                 <div class="form-actions">
-                    <input type="submit" value="Create" class="btn btn-dark-red">
+                    <input type="submit" value="Create" class="btn btn-primary">
                 </div>
 
 
             </form>
 
+            <script>
+
+                jQuery(function($){
+                    /* Bootstrap-datepicker
+                     ================================================== */
+//                    $(".datepicker").datepicker();
+
+                    var nowTemp = new Date();
+                    var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+
+                    var checkin = $('#dpd1').datepicker({
+                        onRender: function(date) {
+                            return date.valueOf() < now.valueOf() ? 'disabled' : '';
+                        }
+                    }).on('changeDate', function(ev) {
+                        if (ev.date.valueOf() > checkout.date.valueOf()) {
+                            var newDate = new Date(ev.date)
+                            newDate.setDate(newDate.getDate());
+                            checkout.setValue(newDate);
+                        }
+                        checkin.hide();
+                        $('#dpd2')[0].focus();
+                    }).data('datepicker');
+                    var checkout = $('#dpd2').datepicker({
+                        onRender: function(date) {
+                            return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+                        }
+                    }).on('changeDate', function(ev) {
+                        checkout.hide();
+                    }).data('datepicker');
+
+
+                    /* Bootstrap-timepicker
+                     ================================================== */
+                    $('.timepicker').timepicker({
+                        defaultTime: 'value'
+                    });
+
+
+                });
+
+            </script>
 
         </div>
 

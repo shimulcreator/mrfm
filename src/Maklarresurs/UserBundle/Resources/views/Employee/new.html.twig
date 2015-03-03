@@ -1,0 +1,54 @@
+{% extends 'MaklarresursUserBundle::layout.html.twig' %}
+
+{% block title %}Dashboard{% endblock %}
+
+
+
+{% block body %}
+    <h3 class="box-header">CREATE Employee</h3>
+    <div class="box">
+        <div class="row-fluid" style="margin-bottom: 20px">
+            {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+
+                <div class="control-group">
+                    <label class="control-label" for="inputEmail">Email</label>
+                    <div class="controls">
+                        {{ form_widget(form.email, {'attr': {'placeholder': 'Enter Valid Email ', 'class': 'input-xlarge'}}) }}
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputEmail">Username</label>
+                    <div class="controls">
+                        {{ form_widget(form.username, {'attr': {'placeholder': 'Enter Username ', 'class': 'input-xlarge'}}) }}
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputEmail">Password</label>
+                    <div class="controls">
+                        {{ form_widget(form.plainPassword.first, {'attr': {'placeholder': 'Enter Password ', 'class': 'input-xlarge'}}) }}
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputEmail">Confirm Password</label>
+                    <div class="controls">
+                        {{ form_widget(form.plainPassword.second, {'attr': {'placeholder': 'Re-Type Password ', 'class': 'input-xlarge'}}) }}
+                    </div>
+                </div>
+
+
+
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" id="next" class="btn btn-primary">CREATE</button>
+                    </div>
+                </div>
+            {{ form_widget(form._token) }}
+
+
+        </div>
+
+    </div>
+
+
+{% endblock %}
+

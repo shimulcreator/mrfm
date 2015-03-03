@@ -67,22 +67,24 @@
             </a>
 
             <div class="nav-collapse collapse">
-                <form class="navbar-search pull-left" action="" _lpchecked="1">
-                    <input class="search-query" placeholder="Search" style="width: 120px" type="text">
-                </form>
+                {#<form class="navbar-search pull-left" action="" _lpchecked="1">#}
+                    {#<input class="search-query" placeholder="Search" style="width: 120px" type="text">#}
+                {#</form>#}
                 <ul class="nav pull-right">
                     <li class="separator"></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle usermenu" data-toggle="dropdown">
-                            <img alt="Avatar" src="{{ asset('bundles/maklarresursadmin/images/avatar.png') }}">
+                            {% for images in app.user.getAvatars()|slice(0,1) %}
+                                <img src="{{ asset('uploads/users/') }}{{ app.user.id }}/{{ images.image }}" alt="" />
+                            {% endfor %}
                             <span>&nbsp;&nbsp;{{ app.user.firstName }}</span>
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="#">Profile</a>
+                                <a href="{{ path('supplier_profile') }}">Profile</a>
                             </li>
                             <li>
-                                <a href="#">Settings</a>
+                                <a href="{{ path('supplier_change_password') }}">Change Password</a>
                             </li>
                             <li>
                                 <a href="{{ path('fos_user_security_logout') }}">Logout</a>

@@ -1,0 +1,84 @@
+{% extends 'MaklarresursUserBundle::layout.html.twig' %}
+
+{% block title %}Dashboard{% endblock %}
+
+
+
+{% block body %}
+
+    <style type="text/css">
+        #theme_switcher {
+            display: none;
+        }
+
+        .quick-btn i {
+            /*font-size: 50px;*/
+        }
+        .quick-btn {
+            /*font-size: 17px;*/
+            font-weight: bold;
+        }
+    </style>
+    <h3 class="box-header">My Profile</h3>
+    <div class="box">
+        <div class="row-fluid" style="margin-bottom: 20px">
+            <div style="float: left; width: 20%; position: relative">
+                {% for images in app.user.getAvatars()|slice(0,1) %}
+                    <img src="{{ asset('uploads/users/') }}{{ app.user.id }}/{{ images.image }}" alt="" style="max-width: 180px" />
+
+                {% endfor %}
+                <h4>{{ entity.firstName }} {{ entity.lastName }}</h4>
+            </div>
+            <table class="table table-hover" style="width: 78%; float: left; position: relative" >
+                <tbody>
+                    <tr>
+                        <th>Company Name</th>
+                        <td>{{ entity.companyName }} </td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>{{ entity.email }}</td>
+                    </tr>
+                    <tr>
+                        <th>Org Nr</th>
+                        <td>{{ entity.orgNr }}</td>
+                    </tr>
+                    <tr>
+                        <th>Street Address</th>
+                        <td> {{ entity.streetAddress }}</td>
+                    </tr>
+                    <tr>
+                        <th>Billing Address</th>
+                        <td>{{ entity.billingAddress }}</td>
+                    </tr>
+                    <tr>
+                        <th>Contact Person</th>
+                        <td>{{ entity.contactPerson }}</td>
+                    </tr>
+                    <tr>
+                        <th>Telephone Nr</th>
+                        <td>{{ entity.telephoneNr }}</td>
+                    </tr>
+                    <tr>
+                        <th>Website URL</th>
+                        <td><a href="{{ entity.website }}" target="_blank">{{ entity.website }}</a></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <a class="btn btn-primary" href="{{ path('user_profile_edit') }}"><i class="icon-edit icon-3x"></i></a>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+
+    </div>
+
+
+
+{% endblock %}
+

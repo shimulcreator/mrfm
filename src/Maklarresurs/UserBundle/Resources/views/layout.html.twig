@@ -51,22 +51,24 @@
             </a>
 
             <div class="nav-collapse collapse">
-                <form class="navbar-search pull-left" action="" _lpchecked="1">
-                    <input class="search-query" placeholder="Search" style="width: 120px" type="text">
-                </form>
+                {#<form class="navbar-search pull-left" action="" _lpchecked="1">#}
+                    {#<input class="search-query" placeholder="Search" style="width: 120px" type="text">#}
+                {#</form>#}
                 <ul class="nav pull-right">
                     <li class="separator"></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle usermenu" data-toggle="dropdown">
-                            <img alt="Avatar" src="{{ asset('bundles/maklarresursadmin/images/avatar.png') }}">
+                            {% for images in app.user.getAvatars()|slice(0,1) %}
+                                <img src="{{ asset('uploads/users/') }}{{ app.user.id }}/{{ images.image }}" alt="" />
+                            {% endfor %}
                             <span>&nbsp;&nbsp;{{ app.user.firstName }}</span>
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="#">Profile</a>
+                                <a href="{{ path('user_profile') }}">Profile</a>
                             </li>
                             <li>
-                                <a href="#">Settings</a>
+                                <a href="{{ path('user_change_password') }}">Change Password</a>
                             </li>
                             <li>
                                 <a href="/logout">Logout</a>
@@ -94,8 +96,11 @@
             <li class="lp-dropdown">
                 <a href="#" class="lp-dropdown-toggle" id="boka-dropdown"><span class="icon-reorder"></span>Boka Visningsvärd</a>
             </li>
-            <li>
-                <a href="#"><span class="icon-user-md"></span>användare</a>
+            {#{% if app.user.createdBy.id == 1 %}#}
+                {##}
+            {#{% endif %}#}
+            <li class="lp-dropdown">
+                <a href="#" class="lp-dropdown-toggle" id="employee-dropdown"><span class="icon-reorder"></span>Användare</a>
             </li>
             <li>
                 <a href="#"><span class="icon-envelope"></span>Kontakt</a>
@@ -149,12 +154,24 @@
         <div class="arrow"></div>
         <ul style="width: 246px;" class="lp-dropdown-menu" data-dropdown-owner="boka-dropdown">
             <li>
-                <a tabindex="-1" href="#"><span class="icon-edit"></span>Skapa</a>
+                <a tabindex="-1" href="{{ path('user_boka_visningsvard_order_new') }}"><span class="icon-edit"></span>Skapa</a>
             </li>
             <li>
-                <a tabindex="-1" href="#"><span class="icon-table"></span>översikt</a>
+                <a tabindex="-1" href="{{ path('user_boka_visningsvard_order') }}"><span class="icon-table"></span>översikt</a>
             </li>
         </ul>
     </div>
+
+<div style="left: 92px; width: 246px;" class="lp-dropdown-wrapper" data-dropdown-owner="employee-dropdown">
+    <div class="arrow"></div>
+    <ul style="width: 246px;" class="lp-dropdown-menu" data-dropdown-owner="employee-dropdown">
+        <li>
+            <a tabindex="-1" href="{{ path('user_employee_new') }}"><span class="icon-edit"></span>Skapa</a>
+        </li>
+        <li>
+            <a tabindex="-1" href="{{ path('user_employee') }}"><span class="icon-table"></span>översikt</a>
+        </li>
+    </ul>
+</div>
 </body>
 </html>

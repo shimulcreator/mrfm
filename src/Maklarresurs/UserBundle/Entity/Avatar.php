@@ -1,6 +1,6 @@
 <?php
 
-namespace Maklarresurs\AppBundle\Entity;
+namespace Maklarresurs\UserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
@@ -12,7 +12,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @ORM\HasLifecycleCallbacks
  * @ORM\Entity
  */
-class Document
+class Avatar
 {
     /**
      * @var integer $id
@@ -23,7 +23,6 @@ class Document
      */
     private $id;
 
-
     /**
      * @var
      *
@@ -31,22 +30,24 @@ class Document
      */
     protected $user;
 
-
-    /**
-     * @var
-     *
-     * @ORM\ManyToOne(targetEntity="Sample")
-     */
-    protected  $lappning;
-
     /**
      * @var string $image
-     * @Assert\File( maxSize = "10024k", mimeTypesMessage = "Please upload a valid File")
+     * @Assert\File( maxSize = "1024k", mimeTypesMessage = "Please upload a valid Image")
      * @ORM\Column(name="image", type="string", length=255)
      */
     private $image;
 
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     * @Gedmo\Timestampable(on="create")
+     */
+    protected $createdAt;
 
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     * @Gedmo\Timestampable(on="update")
+     */
+    protected $updatedAt;
 
     /**
      * Get id
@@ -57,23 +58,6 @@ class Document
     {
         return $this->id;
     }
-
-    /**
-     * @return mixed
-     */
-    public function getLappning()
-    {
-        return $this->lappning;
-    }
-
-    /**
-     * @param mixed $lappning
-     */
-    public function setLappning($lappning)
-    {
-        $this->lappning = $lappning;
-    }
-
 
     /**
      * @param mixed $user
@@ -119,12 +103,12 @@ class Document
 
     protected function getUploadRootDir() {
         // the absolute directory path where uploaded campaigns should be saved
-        return $this->getTmpUploadRootDir().$this->getId()."/";
+        return $this->getTmpUploadRootDir().$this->getUser()->getId()."/";
     }
 
     protected function getTmpUploadRootDir() {
         // the absolute directory path where uploaded campaigns should be saved
-        return __DIR__ . '/../../../../web/uploads/';
+        return __DIR__ . '/../../../../web/uploads/users/';
     }
 
     /**

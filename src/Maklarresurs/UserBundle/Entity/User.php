@@ -104,6 +104,52 @@ class User extends Baseuser
      */
     protected $userType;
 
+    /**
+     * @return mixed
+     */
+    public function getAvatars()
+    {
+        return $this->avatars;
+    }
+
+    /**
+     * @param mixed $avatars
+     */
+    public function setAvatars($avatars)
+    {
+        $this->avatars = $avatars;
+    }
+
+    /**
+     * @var
+     *
+     * @ORM\ManyToOne(targetEntity="Maklarresurs\UserBundle\Entity\User")
+     */
+    protected $createdBy;
+
+    /**
+     * @var
+     * @ORM\OneToMany(targetEntity="Avatar", mappedBy="user")
+     */
+    protected $avatars;
+
+    /**
+     * @return mixed
+     */
+    public function getCreatedBy()
+    {
+        return $this->createdBy;
+    }
+
+    /**
+     * @param mixed $createdBy
+     */
+    public function setCreatedBy($createdBy)
+    {
+        $this->createdBy = $createdBy;
+    }
+
+
     public function __construct()
     {
         $this->userRoles = new ArrayCollection();

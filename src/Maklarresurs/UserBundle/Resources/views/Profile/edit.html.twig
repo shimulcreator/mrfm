@@ -1,0 +1,88 @@
+{% extends 'MaklarresursUserBundle::layout.html.twig' %}
+
+{% block title %}Dashboard{% endblock %}
+
+
+
+{% block body %}
+    <h3 class="box-header">EDIT Profile</h3>
+    <div class="box">
+        <div class="row-fluid" style="margin-bottom: 20px">
+            {{ form_start(edit_form, {'attr': {'class': 'form-horizontal'}}) }}
+            <div class="control-group">
+                <label class="control-label" for="inputEmail">{{ form_label(edit_form.firstName) }}</label>
+                <div class="controls">
+                    {{ form_widget(edit_form.firstName, {'attr': {'placeholder': 'Enter First Name ', 'class': 'input-xlarge'}}) }}
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="inputEmail">{{ form_label(edit_form.lastName) }}</label>
+                <div class="controls">
+                    {{ form_widget(edit_form.lastName, {'attr': {'placeholder': 'Enter Last Name ', 'class': 'input-xlarge'}}) }}
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="inputEmail">{{ form_label(edit_form.companyName) }}</label>
+                <div class="controls">
+                    {{ form_widget(edit_form.companyName, {'attr': {'placeholder': 'Enter Company Name ', 'class': 'input-xlarge'}}) }}
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="inputEmail">{{ form_label(edit_form.orgNr) }}</label>
+                <div class="controls">
+                    {{ form_widget(edit_form.orgNr, {'attr': {'placeholder': 'Enter Org Nr ', 'class': 'input-xlarge'}}) }}
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="inputEmail">{{ form_label(edit_form.streetAddress) }}</label>
+                <div class="controls">
+                    {{ form_widget(edit_form.streetAddress, {'attr': {'placeholder': 'Enter Street Address', 'class': 'input-xlarge'}}) }}
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="inputEmail">{{ form_label(edit_form.billingAddress) }}</label>
+                <div class="controls">
+                    {{ form_widget(edit_form.billingAddress, {'attr': {'placeholder': 'Enter Billing Address ', 'class': 'input-xlarge'}}) }}
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="inputEmail">{{ form_label(edit_form.contactPerson) }}</label>
+                <div class="controls">
+                    {{ form_widget(edit_form.contactPerson, {'attr': {'placeholder': 'Enter Contact Person ', 'class': 'input-xlarge'}}) }}
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="inputEmail">{{ form_label(edit_form.telephoneNr) }}</label>
+                <div class="controls">
+                    {{ form_widget(edit_form.telephoneNr, {'attr': {'placeholder': 'Enter Telephone Nr ', 'class': 'input-xlarge'}}) }}
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="inputEmail">{{ form_label(edit_form.website) }}</label>
+                <div class="controls">
+                    {{ form_widget(edit_form.website, {'attr': {'placeholder': 'Enter Website URL ', 'class': 'input-xlarge'}}) }}
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="inputEmail">Email</label>
+                <div class="controls">
+                    {{ form_widget(edit_form.email, {'attr': {'placeholder': 'Enter Valid Email ', 'class': 'input-xlarge'}}) }}
+                </div>
+            </div>
+
+
+            <div class="control-group">
+                <div class="controls">
+                    <button type="submit" id="next" class="btn btn-primary">UPDATE</button>
+                </div>
+            </div>
+            {{ form_widget(edit_form._token) }}
+
+
+        </div>
+
+    </div>
+
+
+{% endblock %}
+

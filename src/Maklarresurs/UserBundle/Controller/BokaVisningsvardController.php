@@ -38,11 +38,13 @@ class BokaVisningsvardController extends BaseController {
      */
     public function indexAction()
     {
+        $user = $this->getUser();
         $em = $this->getDoctrine()->getManager();
-        $entities = $em->getRepository('MaklarresursAppBundle:BokaVisningsvard')->findAll();
+
+        $entities = $em->getRepository('MaklarresursAppBundle:BokaVisningsvard')->findByUser($user);
 
         return array(
-            'entities' => $entities
+            'entities' => $entities,
         );
     }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Maklarresurs\AdminBundle\Controller;
+namespace Maklarresurs\UserBundle\Controller;
 
 use Maklarresurs\AppBundle\Controller\BaseController;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -17,22 +17,22 @@ use Maklarresurs\AdminBundle\Form\UserType;
 /**
  * User controller.
  *
- * @Route("/user")
+ * @Route("/employee")
  */
-class UserController extends BaseController
+class EmployeeController extends BaseController
 {
     /**
      * Lists all User entities.
      *
-     * @Route("/", name="admin_user")
+     * @Route("/", name="user_employee")
      * @Method("GET")
      * @Template()
      */
     public function indexAction()
     {
-        $userType = 1;
-        $entities = $this->getMainRepo()->getUsersQuery($userType)->getResult();
-        $pagination = $this->paginateQuery($entities);
+        $user = $this->getUser();
+        $em = $this->getDoctrine()->getManager();
+        $entities = $em->getRepository('MaklarresursUserBundle:User')->findByCreatedBy($user);
 
         return array(
             'entities'    => $entities,
@@ -59,9 +59,9 @@ class UserController extends BaseController
     /**
      * Creates a new User entity.
      *
-     * @Route("/new", name="admin_user_create")
+     * @Route("/create", name="user_employee_create")
      * @Method("POST")
-     * @Template("MaklarresursAdminBundle:User:new.html.twig")
+     * @Template("MaklarresursUserBundle:Employee:new.html.twig")
      */
     public function createAction(Request $request)
     {
@@ -80,7 +80,7 @@ class UserController extends BaseController
             $em->persist($entity);
             $em->flush();
 
-            return $this->redirect($this->generateUrl('admin_user'));
+            return $this->redirect($this->generateUrl('user_employee'));
         }
 
         return array(
@@ -99,7 +99,7 @@ class UserController extends BaseController
     private function createCreateForm(User $entity)
     {
         $form = $this->createForm(new UserType(), $entity, array(
-            'action' => $this->generateUrl('admin_user_create'),
+            'action' => $this->generateUrl('user_employee_create'),
             'method' => 'POST',
         ));
 
@@ -109,7 +109,7 @@ class UserController extends BaseController
     /**
      * Displays a form to create a new User entity.
      *
-     * @Route("/new", name="admin_user_new")
+     * @Route("/new", name="user_employee_new")
      * @Method("GET")
      * @Template()
      */
