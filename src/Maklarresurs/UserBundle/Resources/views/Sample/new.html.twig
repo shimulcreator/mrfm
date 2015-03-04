@@ -35,7 +35,7 @@
                     <div class="controls">
 
                         <div class="input-append">
-                            <input type="text" class="input-large" id="address"  placeholder="Address">
+                            <input type="text" class="input-large" id="address"  placeholder="Föreningsnamn">
                             {#<input type="text" class="input-mini" id="nr" placeholder="Nr">#}
                             {#<input type="text" class="input-mini"  id="bokstav" placeholder="Bokstav">#}
                             <input type="text" class="input-large" id="zone" placeholder="Zon(Stadsdel) ">
@@ -107,6 +107,7 @@
 
                 $( "#address_list" ).prepend( $('<tr class="gradeA item" id="'+flyers+'"><td><a href="#" id="editAddress" class="ad" data-pk="'+flyers+'">'+ fulladdress +'</a></td></tr>') );
                 jQuery("#address").val('');
+                jQuery("#zone").val('');
 
                 $("#editAddress").unbind();
                 //editables
